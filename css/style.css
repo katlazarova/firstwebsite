@@ -85,14 +85,11 @@ body {
   position: relative;
 }
 
-.border {
+.content-divider {
   height: 3px;
   width: 30%;
   background-color: var(--secondary-color);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px auto;
 }
 
 .footer .footer-top {
