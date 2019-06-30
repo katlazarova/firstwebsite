@@ -129,17 +129,17 @@ body {
 }
 
 .footer .footer-top .facebook a::before {
-  background-image: url(../img/facebook-sm.png);
+  background-image: url('../img/facebook-sm.png');
 }
 
 .footer .footer-top .twitter a::before {
-  background-image: url(../img/twitter-sm.png);
+  background-image: url('../img/twitter-sm.png');
 }
 
 .footer .footer-top .instagram a::before {
   height: 50px;
   width: 50px;
-  background-image: url(../img/instagram-sm.png);
+  background-image: url('../img/instagram-sm.png');
 }
 
 .footer .footer-bottom {
@@ -173,3 +173,4 @@ body {
   flex-basis: 0;
   max-width: 100%;
 }
+
