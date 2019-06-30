@@ -1,0 +1,168 @@
+/*
+primary (blue) - #0099ff
+secndary (yellow) - #ffff33
+tertiary ( dark blue) - #0039e6 
+*/
+:root {
+  --primary-color: #0099ff;
+  --secondary-color: #ffff33;
+  --tertiary-color: #0039e6;
+}
+
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  height: 100%;
+}
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.navbar-wrapper {
+	display: flex;
+  background-color: var(--primary-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-wrapper .navbar {
+  color: white;
+  font-weight: bold;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  margin: 0;
+}
+
+.navbar-wrapper > a {
+  display: flex;
+}
+
+.navbar-wrapper .logo {
+  /* height and width */
+  
+	width:50px;
+	height:100%;
+}
+
+.navbar li {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  border-right: 3px solid white;
+  background-color: var(--primary-color);
+  height: 50px;
+}
+
+.navbar li:last-child {
+	border-right: none;
+}
+
+.navbar li a {
+  color: white;
+  padding: 0;
+  text-decoration: none;
+}
+
+.navbar li:hover {
+  background-color: var(--tertiary-color);
+}
+
+.hero-image {
+  background-image: url("../img/happy-children.jpg"); 
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.footer .footer-top {
+ display: flex;
+ background-color: var(--primary-color);
+}
+
+.footer .footer-top ul{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .footer-top h2{
+  color: white;
+  margin: 40px;
+}
+
+.footer .footer-top .facebook a::before,
+.footer .footer-top .twitter a::before,
+.footer .footer-top .instagram a::before{
+  content: "";
+  height: 60px;
+  width: 60px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+
+.footer .footer-top .facebook a::before {
+  background-image: url(../img/facebook-sm.png);
+}
+
+.footer .footer-top .twitter a::before {
+  background-image: url(../img/twitter-sm.png);
+}
+
+.footer .footer-top .instagram a::before {
+  height: 50px;
+  width: 50px;
+  background-image: url(../img/instagram-sm.png);
+}
+
+.footer .footer-bottom {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.footer .footer-bottom-left {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.footer .footer-bottom-right {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.footer .footer-bottom ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer .navlinks {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.navlinks li {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+}
