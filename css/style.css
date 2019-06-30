@@ -1,8 +1,10 @@
 /* Need to add more colours later. */
 :root {
-  --primary-color: #0099ff;
-  --secondary-color: #ffff33;
-  --tertiary-color: #0039e6;
+  --primary-color: #80ced6;
+  --secondary-color: #618685;
+  --tertiary-color: #d5f4e6;
+  --accent-color: #fefbd8;
+  --gutter-size: 90%;
 }
 
 body {
@@ -73,7 +75,7 @@ body {
 }
 
 .navbar li:hover {
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
 }
 
 .hero-image {
@@ -88,7 +90,7 @@ body {
 .content-divider {
   height: 3px;
   width: 30%;
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
   margin: 30px auto;
 }
 
@@ -99,11 +101,17 @@ body {
 }
 
 .card-component-container {
-  max-width: 80%;
+  width: 90%;
   margin: 20px auto;
   display: block;
   padding-right: 15px;
   padding-left: 15px;
+  background-color: var(--tertiary-color);
+}
+
+.card-component-container h2 {
+  text-align: center;
+  padding: 10px;
 }
 
 .row-container {
@@ -128,15 +136,38 @@ body {
 .card {
   display: flex; 
   flex-direction: column;
-  position: relative;
-  box-sizing: border-box;
-  text-anchor: middle;   
+  position: relative;  
 }
 
-.illustrative-image {
+.card-image-wrapper {
+  width: 100%;
+  height: 225px;
+  overflow: hidden;
+}
+
+.card-wrapper a:hover {
+  transform: scale(1, 1);
+}
+
+.card-image {
   object-fit: cover;
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: initial;
+}
+
+.text-container {
+  padding-top: 20px;
+}
+
+.card-wrapper .text-container a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .footer .footer-top {
