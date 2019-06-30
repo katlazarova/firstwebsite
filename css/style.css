@@ -133,6 +133,12 @@ body {
   text-anchor: middle;   
 }
 
+.illustrative-image {
+  object-fit: cover;
+  width: 300px;
+  height: 200px;
+}
+
 .footer .footer-top {
  display: flex;
  background-color: var(--primary-color);
