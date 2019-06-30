@@ -1,8 +1,4 @@
-/*
-primary (blue) - #0099ff
-secndary (yellow) - #ffff33
-tertiary ( dark blue) - #0039e6 
-*/
+/* Need to add more colours later. */
 :root {
   --primary-color: #0099ff;
   --secondary-color: #ffff33;
@@ -87,6 +83,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.content-divider {
+  height: 3px;
+  width: 30%;
+  background-color: var(--secondary-color);
+  margin: 10px auto;
 }
 
 .footer .footer-top {
