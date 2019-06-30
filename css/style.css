@@ -92,6 +92,10 @@ body {
   margin: 10px auto;
 }
 
+.header-text-component {
+  text-align: center
+}
+
 .footer .footer-top {
  display: flex;
  background-color: var(--primary-color);
