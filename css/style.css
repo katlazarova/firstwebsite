@@ -98,6 +98,41 @@ body {
   margin: 0 auto;
 }
 
+.card-component-container {
+  max-width: 80%;
+  margin: 20px auto;
+  display: block;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row-container {
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.card-wrapper {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.card {
+  display: flex; 
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  text-anchor: middle;   
+}
+
 .footer .footer-top {
  display: flex;
  background-color: var(--primary-color);
