@@ -85,6 +85,13 @@ body {
   position: relative;
 }
 
+.content-divider {
+  height: 3px;
+  width: 30%;
+  background-color: var(--secondary-color);
+  margin: 10px auto;
+}
+
 .footer .footer-top {
  display: flex;
  background-color: var(--primary-color);
