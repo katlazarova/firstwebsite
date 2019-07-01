@@ -111,7 +111,8 @@ body {
 
 .card-component-container h2 {
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  font-size: 30px;
 }
 
 .row-container {
@@ -146,7 +147,7 @@ body {
 }
 
 .card .card-image-wrapper:hover img {
-  transform: scale(1, 1);
+  transform: scale(1.1);
 }
 
 .card-image {
@@ -188,6 +189,15 @@ body {
   margin: 40px;
 }
 
+.footer .footer-top .facebook,
+.footer .footer-top .instagram {
+  margin-right: 20px;
+}
+
+.footer .footer-top .twitter {
+  margin-right: 22px;
+}
+
 .footer .footer-top .facebook a::before,
 .footer .footer-top .twitter a::before,
 .footer .footer-top .instagram a::before{
@@ -197,7 +207,6 @@ body {
   display: block;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 20px;
 }
 
 .footer .footer-top .facebook a::before {
@@ -217,6 +226,7 @@ body {
 .footer .footer-bottom {
   flex-wrap: wrap;
   display: flex;
+  margin: 0 40px;
 }
 
 .footer .footer-bottom-left {
