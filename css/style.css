@@ -1,8 +1,10 @@
 /* Need to add more colours later. */
 :root {
-  --primary-color: #0099ff;
-  --secondary-color: #ffff33;
-  --tertiary-color: #0039e6;
+  --primary-color: #80ced6;
+  --secondary-color: #618685;
+  --tertiary-color: #d5f4e6;
+  --accent-color: #fefbd8;
+  --gutter-size: 90%;
 }
 
 body {
@@ -73,7 +75,7 @@ body {
 }
 
 .navbar li:hover {
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
 }
 
 .hero-image {
@@ -88,7 +90,7 @@ body {
 .content-divider {
   height: 3px;
   width: 30%;
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
   margin: 30px auto;
 }
 
@@ -96,6 +98,77 @@ body {
   text-align: center;
   width: 60%;
   margin: 0 auto;
+}
+
+.card-component-container {
+  width: var(--gutter-size);
+  margin: 20px auto;
+  display: block;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: var(--tertiary-color);
+}
+
+.card-component-container h2 {
+  text-align: center;
+  padding: 15px;
+  font-size: 30px;
+}
+
+.row-container {
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.card-wrapper {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.card {
+  display: flex; 
+  flex-direction: column;
+  position: relative;  
+}
+
+.card-image-wrapper {
+  width: 100%;
+  height: 225px;
+  overflow: hidden;
+}
+
+.card .card-image-wrapper:hover img {
+  transform: scale(1.1);
+}
+
+.card-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: initial;
+}
+
+.text-container {
+  padding-top: 20px;
+}
+
+.card-wrapper .text-container a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .footer .footer-top {
@@ -116,6 +189,15 @@ body {
   margin: 40px;
 }
 
+.footer .footer-top .facebook,
+.footer .footer-top .instagram {
+  margin-right: 20px;
+}
+
+.footer .footer-top .twitter {
+  margin-right: 22px;
+}
+
 .footer .footer-top .facebook a::before,
 .footer .footer-top .twitter a::before,
 .footer .footer-top .instagram a::before{
@@ -125,7 +207,6 @@ body {
   display: block;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 20px;
 }
 
 .footer .footer-top .facebook a::before {
@@ -145,16 +226,19 @@ body {
 .footer .footer-bottom {
   flex-wrap: wrap;
   display: flex;
+  margin: 0 40px;
 }
 
 .footer .footer-bottom-left {
   flex: 0 0 25%;
   max-width: 25%;
+  padding-right: 5%;
 }
 
 .footer .footer-bottom-right {
-  flex: 0 0 75%;
-  max-width: 75%;
+  flex: 0 0 70%;
+  max-width: 70%;
+  font-size: 12px;
 }
 
 .footer .footer-bottom ul{
