@@ -101,7 +101,7 @@ body {
 }
 
 .card-component-container {
-  width: 90%;
+  width: var(--gutter-size);
   margin: 20px auto;
   display: block;
   padding-right: 15px;
@@ -145,7 +145,7 @@ body {
   overflow: hidden;
 }
 
-.card-wrapper a:hover {
+.card .card-image-wrapper:hover img {
   transform: scale(1, 1);
 }
 
@@ -222,11 +222,13 @@ body {
 .footer .footer-bottom-left {
   flex: 0 0 25%;
   max-width: 25%;
+  padding-right: 5%;
 }
 
 .footer .footer-bottom-right {
-  flex: 0 0 75%;
-  max-width: 75%;
+  flex: 0 0 70%;
+  max-width: 70%;
+  font-size: 12px;
 }
 
 .footer .footer-bottom ul{
