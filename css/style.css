@@ -79,7 +79,7 @@ body {
 }
 
 .hero-image {
-  background-image: url("../img/happy-children.jpg"); 
+  background-image: url("../img/hero-image.jpg"); 
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -98,6 +98,19 @@ body {
   text-align: center;
   width: 60%;
   margin: 0 auto;
+}
+
+.text-and-image-component-one, 
+.text-and-image-component-two {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.text-and-image-container img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .card-component-container {
