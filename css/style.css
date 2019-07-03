@@ -35,6 +35,8 @@ body {
   top: 0;
   z-index: 1000;
   align-content: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .header .header-left a {
@@ -65,13 +67,17 @@ body {
   justify-content: space-between;
 }
 
+.header .header-right .navbar a:hover {
+  color: lightgrey;
+}
+
 .header > a {
   display: flex;
 }
 
 .header .logo {
   width:50px;
-	height:100%;
+  height:100%;
 }
 
 .navbar li {
@@ -203,31 +209,39 @@ body {
   flex: 0 0 20%;
   max-width: 20%;
   color: white;
+  font-size: 12px;
 }
 
-.footer .footer-links {
-  flex: 0 0 50%;
-  max-width: 50%;
+.footer .footer-navlinks,
+.footer .footer-extra-links {
+  flex: 0 0 25%;
+  max-width: 25%;
   font-size: 14px;
-  list-style-type: none;
   padding: 0;
   display: flex;
   justify-content: center;
   color: white;
 }
 
-.footer .footer-container .footer-links ul {
+.footer .footer-container ul {
   max-width: 90%;
   display: flex;
   padding: 1px;
   flex-direction: column;
+  list-style-type: none;
 }
 
-.footer .footer-container .footer-links a {
+.footer .footer-container .footer-navlinks a,
+.footer .footer-container .footer-extra-links a {
   text-decoration: none;
   color: white;
   font-size: 15px;
 }
+
+.footer .footer-container .footer-navlinks a:hover,
+.footer .footer-container .footer-extra-links a:hover {
+  text-decoration: underline;
+} 
 
 .footer .footer-container .social-media-links h2{
   color: white;
