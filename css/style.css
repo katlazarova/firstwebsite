@@ -100,11 +100,25 @@ body {
   margin: 0 auto;
 }
 
-.text-and-image-component-one, 
-.text-and-image-component-two {
+.text-and-image-component {
   text-align: center;
   width: 60%;
   margin: 0 auto;
+}
+
+.text-and-image-component .image-container {
+  padding-right: 30px;
+  margin-bottom: 10px;
+  width: 45%;
+  display: block;
+}
+
+.text-and-image-component .image-container .left {
+  float: left;
+}
+
+.text-and-image-component .image-container .right {
+  float: right;
 }
 
 .text-and-image-container img {
