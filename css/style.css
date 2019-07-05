@@ -94,7 +94,7 @@ body {
 }
 
 .hero-image {
-  background-image: url("../img/happy-children.jpg"); 
+  background-image: url("../img/hero-image.jpg"); 
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -113,6 +113,40 @@ body {
   text-align: center;
   width: 60%;
   margin: 0 auto;
+}
+
+.text-and-image-component {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.text-and-image-component .image-container {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.text-and-image-component.left .image-container {
+  float: left;
+  padding-right: 20px;
+}
+
+.text-and-image-component.right .image-container {
+  float: right;
+  padding-left: 20px;
+}
+
+.text-and-image-container img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.text-and-image-component.left .text-container {
+  text-align: left;
+}
+
+.text-and-image-component.right .text-container {
+  text-align: right;
 }
 
 .card-component-container {
