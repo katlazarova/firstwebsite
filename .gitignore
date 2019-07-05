@@ -10,3 +10,5 @@
 
 # Generated files
 .idea/**/contentModel.xml
+.idea
+*.idea/*
