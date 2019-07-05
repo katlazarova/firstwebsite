@@ -101,30 +101,38 @@ body {
 }
 
 .text-and-image-component {
-  text-align: center;
   width: 60%;
   margin: 0 auto;
 }
 
 .text-and-image-component .image-container {
-  padding-right: 30px;
   margin-bottom: 10px;
-  width: 45%;
   display: block;
 }
 
-.text-and-image-component .image-container .left {
+.text-and-image-component.left .image-container {
   float: left;
+  padding-right: 20px;
 }
 
-.text-and-image-component .image-container .right {
+.text-and-image-component.right .image-container {
   float: right;
+  text-align: right;
+  padding-left: 20px;
 }
 
 .text-and-image-container img {
   width: 400px;
   height: 200px;
   object-fit: cover;
+}
+
+.text-and-image-component.left .text-container {
+  text-align: left;
+}
+
+.text-and-image-component.right .text-container {
+  text-align: right;
 }
 
 .card-component-container {
@@ -186,10 +194,6 @@ body {
   transition-duration: 0.3s;
   transition-timing-function: ease;
   transition-delay: initial;
-}
-
-.text-container {
-  padding-top: 20px;
 }
 
 .card-wrapper .text-container a {
