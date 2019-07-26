@@ -110,7 +110,7 @@ body {
 /* Hero image */ 
 
 .hero-image {
-  background-image: url("../img/hero-image.jpg"); 
+  background-image: url("../../img/hero-image.jpg"); 
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -152,6 +152,11 @@ body {
   width: 400px;
   height: 200px;
   object-fit: cover;
+  filter:grayscale(100%);
+}
+
+.text-and-image-container img:hover {
+  filter:grayscale(0%);
 }
 
 .text-and-image-component.left .text-container {
@@ -325,16 +330,16 @@ body {
 }
 
 .footer .facebook a::before {
-  background-image: url('../img/facebook-sm.png');
+  background-image: url('../../img/facebook-sm.png');
 }
 
 .footer .twitter a::before {
-  background-image: url('../img/twitter-sm.png');
+  background-image: url('../../img/twitter-sm.png');
 }
 
 .footer .instagram a::before {
-  height: 50px;
-  width: 50px;
-  background-image: url('../img/instagram-sm.png');
-  margin-top: 3px;
+  height: 47px;
+  width: 47px;
+  background-image: url('../../img/instagram-sm.png');
+  margin-top: 4px;
 }
