@@ -14,4 +14,4 @@
 .idea/*
 learning.html
 ajax
-theme/node_modules
+theme/node_modules/*
