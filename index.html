@@ -5,6 +5,10 @@
 	<link rel="stylesheet" href="fonts/Quicksand">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="theme/css/style.css">
+	<script src="theme/node_modules/swiper/dist/js/swiper.min.js"></script>
+	<link rel="swiper" href="theme/css/swiper.css">
+	<link rel="stylesheet" href="theme/node_modules/swiper/dist/css/swiper.min.css">
+	<link href="theme/js/script.js">
 </head>
 <body>
 	<header class="header">
@@ -42,7 +46,7 @@
 		<div class="text-and-image-component left bottom-spacer">
 			<div class="text-and-image-container">
 				<div class="image-container">
-					<img src="img/vaccinated-child.jpg" alt="girl getting a vaccination">
+					<img src="theme/img/vaccinated-child.jpg" alt="girl getting a vaccination">
 				</div> <!-- End of image-container -->
 				<div class="text-container">
 					<h2>Why HealthMove?</h2>
@@ -56,7 +60,7 @@
 		<div class="text-and-image-component right bottom-spacer">
 			<div class="text-and-image-container">
 				<div class="image-container">
-					<img src="img/girl-in-refugee-camp.jpg" alt="girl in refugee camp">
+					<img src="theme/img/girl-in-refugee-camp.jpg" alt="girl in refugee camp">
 				</div> <!-- End of image-container -->
 
 				<div class="text-container">
@@ -73,7 +77,7 @@
 			<div class="row-container">
 				<div class="card-wrapper">
 					<div class="card card-one">
-						<a href="#" class="card-image-wrapper"><img src="img/volunteer.jpeg" alt="volunteers" class="card-image"></a>
+						<a href="#" class="card-image-wrapper"><img src="theme/img/volunteer.jpeg" alt="volunteers" class="card-image"></a>
 						<div class="text-container">
 							<a href="#">Volunteer With Us</a>
 							<p> JOIN THE TEAM! Volunteers are a crucial part of our organisation. Working as one team, we combine skills and experience to help those in need.</p>
@@ -83,7 +87,7 @@
 
 				<div class="card-wrapper">
 					<div class="card card-two">
-						<a href="#" class="card-image-wrapper"><img src="img/celebration-fundraising.jpeg" alt="birthday party" class="card-image"></a>
+						<a href="#" class="card-image-wrapper"><img src="theme/img/celebration-fundraising.jpeg" alt="birthday party" class="card-image"></a>
 						<div class="text-container">
 							<a href="#">Fundraising in Celebration</a>
 							<p>Whether it's a wedding, anniversary, a birthday, a new baby or your retirement, your big or little event could help raise money to save children's lives.</p>
@@ -92,7 +96,7 @@
 				</div> <!-- End of card-wrapper -->
 				<div class="card-wrapper">
 					<div class="card card-three">
-						<a href="#" class="card-image-wrapper"><img src="img/project-homepage.jpeg" alt="children" class="card-image"></a>
+						<a href="#" class="card-image-wrapper"><img src="theme/img/project-homepage.jpeg" alt="children" class="card-image"></a>
 						<div class="text-container">
 							<a href="#">Donate To Specific Project</a>
 							<p>Look through current projects and choose a specific cause to donate to, personal to you.</p>
@@ -101,6 +105,25 @@
 				</div> <!-- End of card-wrapper -->
 			</div> <!-- End of row-container -->
 		</div> <!-- End of card-component-container -->
+
+		<!-- Testimonial -->
+		<div class="testimonial-container swiper-container">
+			<div class="testimonial-wrapper swiper-wrapper">
+				<div class="swiper-slide">Slide 1</div>
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
+				<div class="swiper-slide">Slide 4</div>
+				<div class="swiper-slide">Slide 5</div>
+			</div> <!-- End of testimonial wrapper -->
+
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div> <!-- End of testimonial-container -->
+
+
 
 		<footer class="footer full-width">
 			<div class="footer-container">
@@ -136,6 +159,5 @@
 			</div> <!-- End of footer-container -->
 		</footer> <!-- End of footer -->
 	</div> <!-- End of container (page) -->
-
 </body>
 </html>
