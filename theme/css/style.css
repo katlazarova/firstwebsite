@@ -241,6 +241,18 @@ body {
   font-weight: bold;
 }
 
+/* Testimonials */
+.testimonial-container .swiper-slide {
+  font-style: italic;
+  font-size: 15px;
+  flex-direction: column;
+}
+
+.testimonial-container .swiper-slide .who {
+  font-weight: 800;
+  
+}
+
 /* Footer */
 
 .footer {
