@@ -38,6 +38,7 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 }
 
-.testimonial-container .swiper-container.swiper-pagination {
-  bottom: 0;
+.testimonial-container.swiper-container .swiper-pagination {
+  top: auto;
+  bottom: 50px;
 }
