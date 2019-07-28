@@ -8,7 +8,7 @@
   height: 200px;
 }
 
-.swiper-slide {
+.testimonial-container .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -30,12 +30,14 @@
   border-style: solid;
   border-width: 0.5px;
   border-color: gray;
+  transition: all .4s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .swiper-slide:hover {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,2);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 }
 
-.swiper-container .pagination-wrapper .swiper-pagination {
+.testimonial-container .swiper-container.swiper-pagination {
   bottom: 0;
 }

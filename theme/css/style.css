@@ -153,6 +153,7 @@ body {
   height: 200px;
   object-fit: cover;
   filter:grayscale(100%);
+  transition: all .4s ease-in-out;
 }
 
 .text-and-image-container img:hover {
