@@ -4,9 +4,10 @@ $(document).ready(function (){
       // Optional parameters
       slidesPerView: 3,
       spaceBetween: 40,
+      grabCursor: true,
       pagination: {
       	el: '.swiper-pagination',
       	type: 'progressbar',
       },
-    })
+    });
 });
