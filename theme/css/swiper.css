@@ -2,6 +2,7 @@
 .testimonial-container.swiper-container {
   width: 100%;
   height: 450px;
+  padding-top: 10px;
 }
 
 .testimonial-container.swiper-container.full-width {
@@ -11,7 +12,6 @@
 }
 
 .testimonial-container.swiper-container .swiper-wrapper {
-  height: 200px;
   width: 100%;
 }
 

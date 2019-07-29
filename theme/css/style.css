@@ -261,6 +261,7 @@ body {
   color: var(--primary-color);
   padding: 5px;
   margin: 0;
+  height: 30px;
 }
 
 /* Footer */
