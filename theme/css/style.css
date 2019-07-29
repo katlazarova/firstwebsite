@@ -243,6 +243,13 @@ body {
 }
 
 /* Testimonials */
+
+.testimonial-container.swiper-container.full-width {
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
 .testimonial-container .swiper-slide {
   font-style: italic;
   font-size: 15px;
@@ -251,7 +258,7 @@ body {
   margin-top: 0;
 }
 
-.testimonial-container .swiper-slide .who {
+.testimonial-container .who {
   font-weight: 800;
 }
 

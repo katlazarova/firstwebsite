@@ -5,16 +5,6 @@
   padding-top: 10px;
 }
 
-.testimonial-container.swiper-container.full-width {
-  width: 100vw;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
-
-.testimonial-container.swiper-container .swiper-wrapper {
-  width: 100%;
-}
-
 .testimonial-container .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -40,7 +30,7 @@
   padding: 5px 20px;
 }
 
-.swiper-slide:hover {
+.testimonial-container.swiper-slide:hover {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 }
 
