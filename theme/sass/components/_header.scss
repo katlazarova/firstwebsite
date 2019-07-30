@@ -1,4 +1,4 @@
-/* Header styles */
+
 
 .header {
     display: flex;
@@ -36,16 +36,15 @@
             margin: 0;
             justify-content: space-between;
 
-            &:hover {
-                a {
-                    color: lightgrey;
-                }
-            }
+            
 
             a {
                 color: var(--secondary-color);
                 padding: 0;
                 text-decoration: none;
+                &:hover {
+                    color: lightgrey;
+                }
             }
 
             li {

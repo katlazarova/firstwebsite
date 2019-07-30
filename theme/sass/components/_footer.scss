@@ -1,4 +1,4 @@
-/* Footer */
+
 
 .footer {
     display: flex;
@@ -28,16 +28,13 @@
             padding: 0;
             color: white;
 
-            &:hover {
-                a {
-                    text-decoration: underline;
-                }
-            }
-
             a {
                 text-decoration: none;
                 color: white;
                 font-size: 15px;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
 
@@ -65,13 +62,8 @@
                 padding: 0;
                 list-style-type: none;
 
-                .facebook,
-                .instagram {
-                    margin-right: 20px;
-                }
-
-                .footer .footer-container .twitter {
-                    margin-right: 22px;
+                .twitter {
+                    margin-right: 3px;
                 }
             }
         }
@@ -107,7 +99,7 @@
             height: 47px;
             width: 47px;
             background-image: url('../img/instagram-sm.png');
-            margin-top: 4px;
+            margin-top: 6px;
         }
     }
 }
