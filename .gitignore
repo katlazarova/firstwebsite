@@ -13,3 +13,5 @@
 .idea
 .idea/*
 learning.html
+ajax
+theme/node_modules/*
