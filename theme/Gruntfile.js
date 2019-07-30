@@ -4,6 +4,20 @@ module.exports = function(grunt) {
 	require('load-grunt-tasks')(grunt);
 
 	grunt.initConfig({
+		sass: {
+			options: {
+				implementation: sass,
+				sourceMap: true,
+			},
+			dist: {
+				options: {
+					outputStyle: 'compressed'
+				},
+				files: {
+					'build/styles.min.css': 'sass/app.scss',
+				}
+			}
+		},
 		concat:{
 			js: {
 				// Looks into directories inside js and then looks for files with the .js extensions.
@@ -11,23 +25,7 @@ module.exports = function(grunt) {
 				// Compresses into one file and places into the build folder.
 				dest: 'build/scripts.js'
 			},
-			css: {
-				src: ['sass/styles.css'],
-				dest: 'build/styles.css'
-			}
 		}, 
-		sass: {
-			options: {
-				implementation: sass,
-				sourceMap: true,
-			},
-			dist: {
-				files: [{
-					src: 'sass/**/*.scss',
-					dest: 'sass/styles.css'
-				}]
-			}
-		},
 		uglify: {
 			build: {
 				files: [{

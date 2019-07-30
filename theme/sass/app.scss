@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
 @import "variables";
-@import "header-text-component";
-@import "header"; 
+@import "components/header";
+@import "components/header-text-component";
+@import "components/hero-image.scss";
+@import "components/text-and-image-component.scss";
+@import "components/card-component.scss";
+@import "components/testimonials.scss";
+@import "components/footer.scss";
+@import "libraries/swiper.scss";

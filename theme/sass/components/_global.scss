@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  height: 100%;
+}
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.bottom-spacer {
+  /* !important has been added for spacing consistency throughout the site. */
+  margin-bottom: 3rem !important; 
+}
+
+.content-divider {
+  height: 3px;
+  width: 30%;
+  background-color: $secondary-color;
+  margin: 0 auto;
+}
