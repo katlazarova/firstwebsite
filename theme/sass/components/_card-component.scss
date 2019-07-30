@@ -6,68 +6,68 @@
   display: block;
   padding-right: 15px;
   padding-left: 15px;
-}
 
-.card-component-container h2 {
-  text-align: center;
-  padding: 15px;
-  font-size: 30px;
-}
+  h2 {
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+  }
 
-.card-component-container .row-container {
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  display: flex;
-  box-sizing: border-box;
-}
+  .row-container {
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    box-sizing: border-box;
 
-.card-component-container .card-wrapper {
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  box-sizing: border-box;
-  display: block;
-}
+    .card-wrapper {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      box-sizing: border-box;
+      display: block;
 
-.card-component-container .card {
-  display: flex; 
-  flex-direction: column;
-  position: relative;  
-}
+      .card {
+        display: flex; 
+        flex-direction: column;
+        position: relative;
 
-.card-component-container .card-image-wrapper {
-  width: 100%;
-  height: 225px;
-  overflow: hidden;
-}
+        .card-image-wrapper {
+          width: 100%;
+          height: 225px;
+          overflow: hidden;
+          &:hover {
+            .card-image {
+              transform: scale(1.1);
+            }
+          }
 
-.card .card-image-wrapper:hover img {
-  transform: scale(1.1);
-}
-
-.card-wrapper .card-image {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  transition: all 0.3s ease;
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transition-delay: initial;
-}
-
-.card-wrapper .text-container {
-  padding: 20px;
-  background-color: $tertiary-color;
-  height: 150px;
-}
-
-.card-wrapper .text-container a {
-  color: $secondary-color;
-  text-decoration: none;
-  font-weight: bold;
-}
+          .card-image {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s ease;
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: ease;
+            transition-delay: initial;
+          }
+        }
+        
+        .text-container {
+          padding: 20px;
+          background-color: $tertiary-color;
+          height: 150px;
+          a {
+            color: $secondary-color;
+            text-decoration: none;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+ 
