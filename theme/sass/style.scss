@@ -40,73 +40,6 @@ body {
   margin: 0 auto;
 }
 
-/* Header styles */
-
-.header {
-	display: flex;
-  background-color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  align-content: center;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.header .header-title a {
-  padding: 25px 5px;
-  margin: 20px 30px;
-  color: var(--primary-color);
-  font-weight: bold;
-  font-size: 40px;
-}
-
-.header a:link {
-  text-decoration: none;
-}
-
-.header .header-links {
-  display: flex;
-  position: absolute;
-  right: 15px;
-  width: 40%;
-}
-
-.header .navbar {
-  font-weight: bold;
-  list-style-type: none;
-  width: 100%;
-  display: flex;
-  margin: 0;
-  justify-content: space-between;
-}
-
-.header .navbar a:hover {
-  color: lightgrey;
-}
-
-.header > a {
-  display: flex;
-} 
-
-.header li {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-}
-
-.navbar li:last-child {
-	border-right: none;
-}
-
-.navbar a {
-  color: var(--secondary-color);
-  padding: 0;
-  text-decoration: none;
-}
-
 /* Hero image */ 
 
 .hero-image {
@@ -116,14 +49,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-}
-
-/* Header text component */
-
-.header-text-component {
-  text-align: center;
-  width: 60%;
-  margin: 0 auto;
 }
 
 /* Text and image component */
