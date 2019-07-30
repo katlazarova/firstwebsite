@@ -1,31 +1,30 @@
 /* Testimonials */
 
 .testimonial-container.swiper-container {
-  & .full-width {
-    width: 100vw;
-    margin-left: -50vw;
-    margin-right: -50vw;
-  }
+    & .full-width {
+        width: 100vw;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
 
-  .swiper-slide {
-    font-style: italic;
-    font-size: 15px;
-    flex-direction: column;
-    padding-top: 0;
-    margin-top: 0;
-  }
+    .swiper-slide {
+        font-style: italic;
+        font-size: 15px;
+        flex-direction: column;
+        padding-top: 0;
+        margin-top: 0;
+    }
 
-  .who {
-    font-weight: 800;
-  }
+    .who {
+        font-weight: 800;
+    }
 
-  .quotation-marks {
-    font-size: 50px;
-    font-weight: 900;
-    color: $primary-color;
-    padding: 5px;
-    margin: 0;
-    height: 30px;
-  }
+    .quotation-marks {
+        font-size: 50px;
+        font-weight: 900;
+        color: $primary-color;
+        padding: 5px;
+        margin: 0;
+        height: 30px;
+    }
 }
-

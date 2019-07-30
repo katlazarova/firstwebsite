@@ -1,73 +1,75 @@
 /* Card component */
 
 .card-component-container {
-  width: $gutter-size;
-  margin: 20px auto;
-  display: block;
-  padding-right: 15px;
-  padding-left: 15px;
+    width: $gutter-size;
+    margin: 20px auto;
+    display: block;
+    padding-right: 15px;
+    padding-left: 15px;
 
-  h2 {
-    text-align: center;
-    padding: 15px;
-    font-size: 30px;
-  }
-
-  .row-container {
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-    display: flex;
-    box-sizing: border-box;
-
-    .card-wrapper {
-      flex: 0 0 33.333333%;
-      max-width: 33.333333%;
-      position: relative;
-      width: 100%;
-      padding-right: 15px;
-      padding-left: 15px;
-      box-sizing: border-box;
-      display: block;
-
-      .card {
-        display: flex; 
-        flex-direction: column;
-        position: relative;
-
-        .card-image-wrapper {
-          width: 100%;
-          height: 225px;
-          overflow: hidden;
-          &:hover {
-            .card-image {
-              transform: scale(1.1);
-            }
-          }
-
-          .card-image {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            transition: all 0.3s ease;
-            transition-property: all;
-            transition-duration: 0.3s;
-            transition-timing-function: ease;
-            transition-delay: initial;
-          }
-        }
-        
-        .text-container {
-          padding: 20px;
-          background-color: $tertiary-color;
-          height: 150px;
-          a {
-            color: $secondary-color;
-            text-decoration: none;
-            font-weight: bold;
-          }
-        }
-      }
+    h2 {
+        text-align: center;
+        padding: 15px;
+        font-size: 30px;
     }
-  }
- 
+
+    .row-container {
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        display: flex;
+        box-sizing: border-box;
+
+        .card-wrapper {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            box-sizing: border-box;
+            display: block;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                .card-image-wrapper {
+                    width: 100%;
+                    height: 225px;
+                    overflow: hidden;
+
+                    &:hover {
+                        .card-image {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    .card-image {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        transition: all 0.3s ease;
+                        transition-property: all;
+                        transition-duration: 0.3s;
+                        transition-timing-function: ease;
+                        transition-delay: initial;
+                    }
+                }
+
+                .text-container {
+                    padding: 20px;
+                    background-color: $tertiary-color;
+                    height: 150px;
+
+                    a {
+                        color: $secondary-color;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
