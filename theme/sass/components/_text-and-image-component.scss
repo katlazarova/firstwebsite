@@ -1,0 +1,50 @@
+.text-and-image-component {
+    width: 60%;
+    margin: 0 auto;
+
+    &.left {
+
+        .image-container {
+            float: left;
+            padding-right: 20px;
+        }
+
+        .text-container {
+            text-align: left;
+        }
+    }
+
+    &.right {
+
+        .image-container {
+            float: right;
+            padding-left: 20px;
+        }
+
+        .text-container {
+            text-align: right;
+        }
+    }
+
+    .text-and-image-container {
+
+        .image-container {
+            margin-bottom: 10px;
+            display: block;
+
+            &:hover {
+                img {
+                    filter: grayscale(0%);
+                }
+            }
+
+            img {
+                width: 400px;
+                height: 200px;
+                object-fit: cover;
+                filter: grayscale(100%);
+                transition: all .4s ease-in-out;
+            }
+        }
+    }
+}
