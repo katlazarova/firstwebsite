@@ -4,12 +4,8 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    align-content: center;
-    margin-bottom: 5px;
-    margin-top: 5px;
 
     .header-title a {
-        padding: 25px 5px;
         margin: 20px 30px;
         color: $primary-color;
         font-weight: bold;
@@ -24,44 +20,49 @@
         display: flex;
         position: absolute;
         right: 15px;
-        width: 40%;
+        font-weight: bold;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
 
-        .navbar {
-            font-weight: bold;
-            list-style-type: none;
-            width: 100%;
-            display: flex;
-            margin: 0;
-            justify-content: space-between;
+        a {
+            color: $secondary-color;
+            padding: 15px;
 
-            
-
-            a {
-                color: var(--secondary-color);
-                padding: 0;
-                text-decoration: none;
-                &:hover {
-                    color: lightgrey;
-                }
-            }
-
-            li {
-                &:last-child {
-                    border-right: none;
-                }
+            &:hover {
+                background-color: $primary-color;
             }
         }
 
-        li {
-            display: flex;
-            flex-grow: 1;
-            align-items: center;
-            justify-content: center;
-            height: 50px;
-        }
+        .dropdown {
+            &:hover {
+                > a {
+                    background-color: $primary-color;
+                }
 
-        > a {
-            display: flex;
+                .dropdown-content {
+                    display: block;
+                }
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                top: 100%;
+                width: 110px;
+                background-color: #f9f9f9;
+                z-index: 1;
+
+                a {
+                    background-color: inherit;
+                    display: block;
+
+                    &:hover {
+                        background-color: $accent-color-two;
+                        color: white;
+                    }
+                }
+            }
         }
     }
 }
