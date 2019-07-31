@@ -6,7 +6,6 @@
     z-index: 1000;
 
     .header-title a {
-        padding: 25px 5px;
         margin: 20px 30px;
         color: $primary-color;
         font-weight: bold;
@@ -26,8 +25,25 @@
         align-items: center;
         height: 50px;
 
+        a {
+            color: $secondary-color;
+            padding: 15px;
+
+            &:hover {
+                background-color: $primary-color;
+            }
+        }
+
+        > a {
+            //display: flex;
+        }
+
         .dropdown {
             &:hover {
+                > a {
+                    background-color: $primary-color;
+                }
+
                 .dropdown-content {
                     display: block;
                 }
@@ -36,12 +52,11 @@
             .dropdown-content {
                 display: none;
                 position: absolute;
-                right: 403px;
-                top: 50px;
-                width: 108px;
+                top: 100%;
+                width: 110px;
                 background-color: #f9f9f9;
                 z-index: 1;
-                
+
                 a {
                     background-color: inherit;
                     display: block;
@@ -52,18 +67,6 @@
                     }
                 }
             }
-        }
-
-        a {
-            color: $secondary-color;
-            padding: 15px;
-            &:hover {
-                background-color: $primary-color;
-            }
-        }
-
-        > a {
-            display: flex;
         }
     }
 }
