@@ -4,6 +4,12 @@ body {
     height: 100%;
 }
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .full-width {
     width: 100vw;
     position: relative;
@@ -28,4 +34,9 @@ body {
     width: 30%;
     background-color: $secondary-color;
     margin: 0 auto;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
 }

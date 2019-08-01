@@ -1,6 +1,14 @@
+// Colors.
 $primary-color: #e67e70;
 $secondary-color: #363636;
 $tertiary-color: #7BBABA;
 $accent-color-one: #f5f5f5;
 $accent-color-two: #363636;
-$gutter-size: 90%;
+
+// Breakpoint Variables.
+$sm: 576px;
+$md: 768px;
+//$lg: 992px;
+$xlg: 1024px;
+
+$gutter-size: 80%;

@@ -9,6 +9,8 @@
   "author": "Katarina",
   "license": "MIT",
   "dependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "hamburgers": "^1.1.3",
     "swiper": "^4.5.0"
   },
   "devDependencies": {
