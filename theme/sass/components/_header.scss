@@ -20,12 +20,17 @@
             width: 100%;
             padding: 70px 0 15px;
 
+            @include breakpoint($md) {
+                padding: 0;
+                width: auto;
+            }
+
             .nav-mobile {
                 color: $secondary-color;
                 position: absolute;
                 top: 0;
                 right: 0;
-                background: white;
+                background: $secondary-color;
                 height: 70px;
                 width: 70px;
                 display: block;
@@ -35,14 +40,11 @@
                 }
 
                 #nav-toggle {
-
-                    @include breakpoint ($md) {
-                        position: absolute;
-                        left: 18px;
-                        top: 22px;
-                        cursor: pointer;
-                        padding: 10px 35px 16px 0px;
-                    }
+                    position: absolute;
+                    left: 18px;
+                    top: 22px;
+                    cursor: pointer;
+                    padding: 10px 35px 16px 0px;
                 }
 
                 #nav-toggle.active {
@@ -83,69 +85,76 @@
                         transform: rotate(-45deg);
                     }
                 }
+            }
 
-                .nav-list {
-                    list-style: none;
-                    margin: 0;
-                    padding: 0;
-                    display: none;
+            .nav-list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: none;
+
+                @include breakpoint($md) {
+                    display: block !important;
+                }
+
+                li {
+                    position: relative;
+                    float: none;
 
                     @include breakpoint($md) {
-                        display: block !important;
+                        float: left;
                     }
 
-                    li {
-                        float: left;
-                        position: relative;
-                        float: none;
+                    a {
+                        padding: 15px;
+                        line-height: 20px;
+                        padding-left: 25%;
 
-                        a {
-                            padding: 15px;
-                            line-height: 20px;
-                            padding-left: 25%;
-
-                            &:hover,
-                            &:visited:hover {
-                                background: $primary-color;
-                                color: white;
-                            }
-
-                            &:not(:only-child):after,
-                            &:visited:not(:only-child):after {
-                                padding-left: 4px;
-                                content: ' ▾';
-                            }
+                        &:hover,
+                        &:visited:hover {
+                            background: $primary-color;
+                            color: white;
                         }
 
-                        a,
-                        a:visited {
-                            display: block;
-                            padding: 0 20px;
-                            line-height: 70px;
-                            color: $secondary-color;
-                            text-decoration: none;
-                            font-weight: bold;
+                        &:not(:only-child):after,
+                        &:visited:not(:only-child):after {
+                            padding-left: 4px;
+                            content: ' ▾';
                         }
+                    }
 
-                        .nav-dropdown {
+                    a,
+                    a:visited {
+                        display: block;
+                        padding: 0 20px;
+                        line-height: 70px;
+                        color: $secondary-color;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+
+                    .nav-dropdown {
+                        display: none;
+                        z-index: 1;
+                        background-color: white;
+                        position: static;
+
+                        @include breakpoint($md) {
                             position: absolute;
-                            display: none;
-                            z-index: 1;
-                            background-color: white;
-                            position: static;
+                        }
 
-                            li {
-                                min-width: 190px;
+                        li {
+                            min-width: 190px;
+                            list-style-type: none;
 
-                                a {
-                                    padding: 15px;
-                                    line-height: 20px;
-                                    padding-left: 30%;
+                            a {
+                                padding: 15px;
+                                line-height: 20px;
+                                padding-left: 30%;
 
-                                    &:hover {
-                                        background-color: $accent-color-two;
-                                        color: white;
-                                    }
+                                &:hover {
+                                    background-color: $accent-color-two;
+                                    color: white;
                                 }
                             }
                         }
