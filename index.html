@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="theme/node_modules/swiper/dist/css/swiper.min.css">
     <script src="theme/build/scripts.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="dist/hamburgers.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +23,11 @@
                 <a href="index.html">HealthMove</a>
             </div> <!-- End of header-title -->
             <nav>
-                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            	<button class="hamburger hamburger--vortex" type="button" id="nav-toggle">
+				  <span class="hamburger-box">
+				    <span class="hamburger-inner"></span>
+				  </span>
+				</button>
                 <ul class="nav-list">
                     <li>
                         <a href="#">Home</a>
@@ -54,7 +59,8 @@
         </div> <!-- End of nav-container -->
     </header> <!-- End of header -->
     <div class="container">
-        <div class="hero-image full-width bottom-spacer"></div> <!-- End hero image -->
+        <div class="hero-image full-width bottom-spacer"></div>
+        <!-- End hero image -->
         <div class="content-divider bottom-spacer"></div>
         <!-- End of content-divider -->
         <div class="header-text-component bottom-spacer">
