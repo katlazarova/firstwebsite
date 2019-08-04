@@ -1,7 +1,10 @@
 .testimonial-container.swiper-container {
     width: 100%;
     height: 450px;
-    padding-top: 10px;
+
+    @include breakpoint($md) {
+        margin-top: 1rem;
+    }
 
     .swiper-slide {
         text-align: center;

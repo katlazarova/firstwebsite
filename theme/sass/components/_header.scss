@@ -40,7 +40,7 @@
                 height: 70px;
                 width: 70px;
                 display: block;
-                border-style: none;
+                border: none;
 
                 @include breakpoint ($lg) {
                     display: none;
@@ -78,7 +78,7 @@
                     border-color: $secondary-color;
 
                     @include breakpoint($lg) {
-                        border-style: none;
+                        border: none;
                     }
 
                     &:last-child {
@@ -125,8 +125,7 @@
                         position: static;
                         padding: 0;
                         background-color: $secondary-color;
-                        object-align: center;
-                        text-align: left;
+                        text-align: center;
 
                         @include breakpoint($lg) {
                             position: absolute;
@@ -139,7 +138,7 @@
                             border-color: white;
 
                             @include breakpoint($lg) {
-                                border-style: none;
+                                border: none;
                             }
 
                             &:last-child {
@@ -149,7 +148,6 @@
                             a {
                                 padding: 15px;
                                 line-height: 20px;
-                                padding-left: 30%;
                                 color: white;
 
                                 @include breakpoint($lg) {

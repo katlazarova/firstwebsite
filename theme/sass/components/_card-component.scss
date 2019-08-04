@@ -12,6 +12,7 @@
         text-align: center;
         padding: 15px;
         font-size: 30px;
+        font-weight: bold;
     }
 
     .row-container {
@@ -34,9 +35,14 @@
             box-sizing: border-box;
             display: block;
 
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+
             @include breakpoint($md) {
                 flex: 0 0 33.333333%;
                 max-width: 33.333333%;
+                margin-bottom: 0;
             }
 
             .card {
@@ -79,9 +85,14 @@
                     }
 
                     a {
-                        color: $secondary-color;
+                        color: white;
                         text-decoration: none;
                         font-weight: bold;
+                        font-size: 20px;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
