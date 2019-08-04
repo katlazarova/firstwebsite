@@ -1,4 +1,3 @@
- </div> <!-- End of testimonial-container -->
         <footer class="footer full-width">
             <div class="footer-container">
                 <div class="copyright-statement">

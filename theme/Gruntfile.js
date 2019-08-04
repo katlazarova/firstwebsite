@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 	// Project configuration.
 	const sass = require('node-sass');
 	require('load-grunt-tasks')(grunt);
-	// Initialise Grunt config 
+	// Initialise Grunt config. 
 	grunt.initConfig({
 		sass: {
 			options: {
@@ -74,7 +74,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	// Register tasks
+	// Register tasks.
 	grunt.registerTask('default', ['sass', 'concat', 'uglify']);
 	grunt.registerTask('sync', ['default', 'watch']);
 	grunt.registerTask('serve', ['concurrent:target']);

@@ -118,5 +118,6 @@
 	</div> <!-- End of testimonial wrapper -->
 	<!-- Add Pagination -->
 	<div class="swiper-pagination"></div>
+</div> <!-- End of testimonial-container -->
 
-	<?php include 'includes/footer.php';?>
+<?php include 'includes/footer.php';?>
