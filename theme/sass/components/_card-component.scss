@@ -1,32 +1,49 @@
 .card-component-container {
-    width: $gutter-size;
-    margin: 20px auto;
+    width: 100%;
+    margin: 0 auto;
     display: block;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 0 2rem;
+
+    @include breakpoint($md) {
+        width: $gutter-size;
+    }
 
     h2 {
         text-align: center;
         padding: 15px;
         font-size: 30px;
+        font-weight: bold;
     }
 
     .row-container {
-        flex-wrap: wrap;
+        flex-direction: column;
         margin-right: -15px;
         margin-left: -15px;
         display: flex;
         box-sizing: border-box;
 
+        @include breakpoint($md) {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
         .card-wrapper {
-            flex: 0 0 33.333333%;
-            max-width: 33.333333%;
             position: relative;
             width: 100%;
             padding-right: 15px;
             padding-left: 15px;
             box-sizing: border-box;
             display: block;
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+
+            @include breakpoint($md) {
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+                margin-bottom: 0;
+            }
 
             .card {
                 display: flex;
@@ -37,6 +54,8 @@
                     width: 100%;
                     height: 225px;
                     overflow: hidden;
+                    border-radius: 10px 10px 0 0;
+
 
                     &:hover {
                         .card-image {
@@ -56,15 +75,24 @@
                     }
                 }
 
-                .text-container {
+                .card-text-container {
                     padding: 20px;
                     background-color: $tertiary-color;
-                    height: 150px;
+                    border-radius: 0 0 10px 10px;
+
+                    @include breakpoint($md) {
+                        height: auto;
+                    }
 
                     a {
-                        color: $secondary-color;
+                        color: white;
                         text-decoration: none;
                         font-weight: bold;
+                        font-size: 20px;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
