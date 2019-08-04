@@ -398,14 +398,11 @@ $(document).ready(function() {
                 spaceBetween: 20,
                 centeredSlides: true
             },
-
             768: {
                 slidesPerView: 2.3,
                 spaceBetween: 30,
                 centeredSlides: true
-
             },
-
             1024: {
                 slidesPerView: 3.3,
                 spaceBetween: 40

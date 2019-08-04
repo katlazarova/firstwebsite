@@ -5,6 +5,7 @@
 
     @include breakpoint($md) {
         width: 80%;
+        padding: 0;
     }
 
     &.left {
@@ -25,18 +26,22 @@
         }
 
         .text-container {
-            text-align: right;
+            text-align: left;
+
+            @include breakpoint($md) {
+                text-align: right;
+            }
         }
     }
 
     .image-container {
         display: block;
         width: 100%;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
 
         @include breakpoint($md) {
-            width: 60%;
-            padding-bottom: none;
+            width: 50%;
+            padding-bottom: 0;
         }
 
         &:hover {
