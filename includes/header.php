@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HealthMove</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/theme/fonts/Quicksand">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/theme/node_modules/swiper/dist/js/swiper.min.js"></script>
     <link rel="stylesheet" href="/theme/node_modules/swiper/dist/css/swiper.min.css">
