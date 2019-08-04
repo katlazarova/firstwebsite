@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="theme/node_modules/swiper/dist/css/swiper.min.css">
     <script src="theme/build/scripts.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="dist/hamburgers.css" rel="stylesheet">
+    <script src="jquery.matchHeight.js" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -23,11 +24,11 @@
                 <a href="index.html">HealthMove</a>
             </div> <!-- End of header-title -->
             <nav>
-            	<button class="hamburger hamburger--vortex" type="button" id="nav-toggle">
-				  <span class="hamburger-box">
-				    <span class="hamburger-inner"></span>
-				  </span>
-				</button>
+                <button class="hamburger hamburger--vortex" type="button" id="nav-toggle">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
                 <ul class="nav-list">
                     <li>
                         <a href="#">Home</a>
@@ -59,8 +60,7 @@
         </div> <!-- End of nav-container -->
     </header> <!-- End of header -->
     <div class="container">
-        <div class="hero-image full-width bottom-spacer"></div>
-        <!-- End hero image -->
+        <div class="hero-image full-width bottom-spacer"></div> <!-- End hero image -->
         <div class="content-divider bottom-spacer"></div>
         <!-- End of content-divider -->
         <div class="header-text-component bottom-spacer">
@@ -100,28 +100,28 @@
                 <div class="card-wrapper">
                     <div class="card card-one">
                         <a href="#" class="card-image-wrapper"><img src="theme/img/volunteer.jpeg" alt="volunteers" class="card-image"></a>
-                        <div class="text-container">
+                        <div class="card-text-container">
                             <a href="#">Volunteer With Us</a>
                             <p> JOIN THE TEAM! Volunteers are a crucial part of our organisation. Working as one team, we combine skills and experience to help those in need.</p>
-                        </div> <!-- End of text-container -->
+                        </div> <!-- End of card-text-container -->
                     </div> <!-- End of card-one -->
                 </div> <!-- End of card wrapper -->
                 <div class="card-wrapper">
                     <div class="card card-two">
                         <a href="#" class="card-image-wrapper"><img src="theme/img/celebration-fundraising.jpeg" alt="birthday party" class="card-image"></a>
-                        <div class="text-container">
+                        <div class="card-text-container">
                             <a href="#">Fundraising in Celebration</a>
                             <p>Whether it's a wedding, anniversary, a birthday, a new baby or your retirement, your big or little event could help raise money to save children's lives.</p>
-                        </div> <!-- End of text-container -->
+                        </div> <!-- End of card-text-container -->
                     </div> <!-- End of card-two -->
                 </div> <!-- End of card-wrapper -->
                 <div class="card-wrapper">
                     <div class="card card-three">
                         <a href="#" class="card-image-wrapper"><img src="theme/img/project-homepage.jpeg" alt="children" class="card-image"></a>
-                        <div class="text-container">
+                        <div class="card-text-container">
                             <a href="#">Donate To Specific Project</a>
                             <p>Look through current projects and choose a specific cause to donate to, personal to you.</p>
-                        </div> <!-- End of text-container -->
+                        </div> <!-- End of card-text-container -->
                     </div> <!-- End of card-three -->
                 </div> <!-- End of card-wrapper -->
             </div> <!-- End of row-container -->
@@ -131,7 +131,7 @@
             <div class="testimonial-wrapper swiper-wrapper">
                 <div class="swiper-slide">
                     <p class="quotation-marks">"</p>
-                    <p>I've had an incredibly positive experience working with Zelda. She was meticulous in finding positions she felt would be suited to my skill set and encouraging and helpful ahead of interviews. She is extremely professional, and I will certainly be turning to Zelda when I need the assistance of a recruiter in future.</p>
+                    <p>I've had an incredibly positive experience working with Zelda. She was meticulous in finding positions she felt would be suited to my skill set and encouraging and helpful ahead of interviews.</p>
                     <p class="who">— Ciara Smith, Team Support Officer at GOAL Global</p>
                 </div>
                 <div class="swiper-slide">
@@ -141,7 +141,7 @@
                 </div>
                 <div class="swiper-slide">
                     <p class="quotation-marks">"</p>
-                    <p>Neil is one of the most professional recruiters I've had the pleasure of working with. Neil's understanding of the Charity industry is extensive, he uses this knowledge alongside his expertise to communicate proactively, efficiently and directly with his candidates, offering quality advice and relevant opportunities. What is extremely refreshing is that Neil has the interest of both his clients and candidates on equal level which allows for better placements.</p>
+                    <p>Neil's understanding of the Charity industry is extensive, he uses this knowledge alongside his expertise to communicate proactively, efficiently and directly with his candidates, offering quality advice and relevant opportunities.</p>
                     <p class="who">— Sarah Mohammed, Supporter Care Manager at Mind</p>
                 </div>
                 <div class="swiper-slide">
@@ -161,12 +161,12 @@
                 </div>
                 <div class="swiper-slide">
                     <p class="quotation-marks">"</p>
-                    <p>I have had a very positive experience of Charity People. Nick took the time to really understand exactly what senior fundraising and board roles I was looking for professionally and as a trustee. They are a pleasure to deal with and consistently go the extra mile for candidates. I cannot recommend them highly enough to recruiters or candidates.</p>
+                    <p>I have had a very positive experience of Charity People. Nick took the time to really understand exactly what senior fundraising and board roles I was looking for professionally and as a trustee.</p>
                     <p class="who">— Sonya Timms, Head of Major Gifts at ICR and Trustee at Elephant Family</p>
                 </div>
                 <div class="swiper-slide">
                     <p class="quotation-marks">"</p>
-                    <p>Working with Tatiana was so easy from the very first phone call. She is very professional, friendly, supporting and definitely has a personal touch, making the best matches. Starting my new role was so quick thanks to Tatiana, all the time I had very clear updates and was informed about next steps. Even I after I've started my new job Tatiana was making sure everything is alright. I recommend Tatiana and Charity People to anyone who is looking for their next placement.</p>
+                    <p>Working with Tatiana was so easy from the very first phone call. She is very professional, friendly, supporting and definitely has a personal touch, making the best matches. Starting my new role was so quick thanks to Tatiana, all the time I had very clear updates and was informed about next steps.</p>
                     <p class="who">— Diana, candidate</p>
                 </div>
             </div> <!-- End of testimonial wrapper -->

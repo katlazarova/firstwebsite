@@ -69,13 +69,13 @@
                     }
                 }
 
-                .text-container {
+                .card-text-container {
                     padding: 20px;
                     background-color: $tertiary-color;
                     border-radius: 0 0 10px 10px;
 
                     @include breakpoint($md) {
-                        height: 20rem;
+                        height: auto;
                     }
 
                     a {

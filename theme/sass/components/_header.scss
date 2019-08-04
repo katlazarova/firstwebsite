@@ -27,7 +27,7 @@
             width: 100%;
             padding: 70px 0 15px;
 
-            @include breakpoint($md) {
+            @include breakpoint($lg) {
                 padding: 0;
                 width: auto;
             }
@@ -42,7 +42,7 @@
                 display: block;
                 border-style: none;
 
-                @include breakpoint ($md) {
+                @include breakpoint ($lg) {
                     display: none;
                 }
 
@@ -66,15 +66,28 @@
                 text-align: center;
                 background-color: white;
 
-                @include breakpoint($md) {
+                @include breakpoint($lg) {
                     display: block !important;
                 }
 
                 li {
                     position: relative;
                     float: none;
+                    border-top: solid;
+                    border-width: thin;
+                    border-color: $secondary-color;
 
-                    @include breakpoint($md) {
+                    @include breakpoint($lg) {
+                        border-style: none;
+                    }
+
+                    &:last-child {
+                        border-bottom: solid;
+                        border-width: thin;
+                        border-color: $secondary-color;
+                    }
+
+                    @include breakpoint($lg) {
                         float: left;
                     }
 
@@ -109,23 +122,39 @@
                     .nav-dropdown {
                         display: none;
                         z-index: 1;
-                        background-color: white;
                         position: static;
                         padding: 0;
+                        background-color: $secondary-color;
+                        object-align: center;
+                        text-align: left;
 
-                        @include breakpoint($md) {
+                        @include breakpoint($lg) {
                             position: absolute;
-                            text-align: left;
+                            background-color: white;
                         }
 
                         li {
                             min-width: 190px;
                             list-style-type: none;
+                            border-color: white;
+
+                            @include breakpoint($lg) {
+                                border-style: none;
+                            }
+
+                            &:last-child {
+                                border-bottom: none;
+                            }
 
                             a {
                                 padding: 15px;
                                 line-height: 20px;
                                 padding-left: 30%;
+                                color: white;
+
+                                @include breakpoint($lg) {
+                                    color: $secondary-color;
+                                }
 
                                 &:hover {
                                     background-color: $secondary-color;
