@@ -22,7 +22,7 @@
         .copyright-statement {
             color: white;
             font-size: 12px;
-            order: 5;
+            order: 4;
 
             @include breakpoint($md) {
                 flex: 0 0 20%;
