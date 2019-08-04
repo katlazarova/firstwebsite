@@ -21,8 +21,13 @@
 
     &.right {
         .image-container {
-            float: right;
-            padding-left: 10px;
+            float: left;
+            padding-right: 10px;
+
+            @include breakpoint($md) {
+                float: right;
+                padding-left: 10px;
+            }
         }
 
         .text-container {

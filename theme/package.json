@@ -15,10 +15,11 @@
   },
   "devDependencies": {
     "grunt": "^1.0.4",
-    "grunt-browser-sync": "^2.2.0",
+    "grunt-concurrent": "^3.0.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-uglify": "^4.0.1",
     "grunt-contrib-watch": "^1.1.0",
+    "grunt-php": "^3.0.0",
     "grunt-sass": "^3.0.2",
     "load-grunt-tasks": "^5.0.0",
     "node-sass": "^4.12.0"

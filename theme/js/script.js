@@ -2,7 +2,7 @@ $(document).ready(function() {
     // Initialize swiper when document ready.
     var testimonialSwiper = new Swiper('.swiper-container.testimonial-container', {
         // Optional parameters.
-        slidesPerView: 'auto',
+        slidesPerView: 3.3,
         spaceBetween: 40,
         breakpoints: {
             576: {
@@ -31,6 +31,8 @@ $(document).ready(function() {
     matchItemsHeights();
     // Calling the menuFnctionality.
     menuFunctionality();
+    // Calling the clickableElement function on card-wrapper. 
+    clickableElement($('.card-component-container .card-wrapper'));
 
 });
 
@@ -57,5 +59,16 @@ function menuFunctionality() {
     $('#nav-toggle').on('click', function() {
         // Toggles 'is-active' class on click. 
         $(this).toggleClass('is-active');
+    });
+};
+
+function clickableElement($cElement) {
+    // Inside cElement, find clickable class. 
+    $cElement.find('.clickable').click(function() {
+        var $item = $(this);
+        // If there is an anchor inside this item, go to new page using URL from first anchor. 
+        if ($item.find('a').length) {
+            window.location = $item.find('a:first').attr('href');
+        }
     });
 };
