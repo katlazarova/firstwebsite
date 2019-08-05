@@ -34,6 +34,8 @@ $(document).ready(function() {
     // Calling the clickableElement function on card-wrapper. 
     clickableElement($('.card-component-container .card-wrapper'));
 
+    addPageNameToBody();
+
 });
 
 // Renders different elements to assume the height of the tallest element - mathches their heights.
@@ -71,4 +73,23 @@ function clickableElement($cElement) {
             window.location = $item.find('a:first').attr('href');
         }
     });
+};
+
+function addPageNameToBody() {
+    // Identifying the full url of the current page.
+    var url = window.location.href;
+
+    /* Splitting the URL at each "/", getting the last item in array, using pop,
+    The last item is then separated at the "." and shift gets the first item in the array,
+    This is identified as the name of current page. */
+    var pageNameOne = url.split('/').slice(-2)[0];
+    var pageNameTwo = url.split('/').pop().split('.').shift();
+    var nameOfPage = (pageNameOne + '-' + pageNameTwo)
+
+    // If the variable === empty string, the class of "home" is added to body, else nameOfPage is added to body. 
+    if (pageNameTwo === '') {
+        $('body').addClass('page-home');
+    } else {
+        $('body').addClass('page-' + nameOfPage);
+    }
 };

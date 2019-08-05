@@ -17,7 +17,7 @@
     <header class="header">
         <div class="nav-container">
             <div class="header-title">
-                <a href="index.html">HealthMove</a>
+                <a href="/">HealthMove</a>
             </div> <!-- End of header-title -->
             <nav>
                 <button class="hamburger hamburger--vortex" type="button" id="nav-toggle">
@@ -32,11 +32,11 @@
                     <li>
                         <a href="#">Learning</a>
                         <ul class="nav-dropdown">
-                            <li><a href="learning/one.php">Tutorial 1</a></li>
-                            <li><a href="learning/two.php">Tutorial 2</a></li>
-                            <li><a href="learning/three.php">Tutorial 3</a></li>
-                            <li><a href="learning/four.php">Tutorial 4</a></li>
-                            <li><a href="learning/five-ajax.php">Tutorial 5</a></li>
+                            <li><a href="/learning/one.php">Tutorial 1</a></li>
+                            <li><a href="/learning/two.php">Tutorial 2</a></li>
+                            <li><a href="/learning/three.php">Tutorial 3</a></li>
+                            <li><a href="/learning/four.php">Tutorial 4</a></li>
+                            <li><a href="/learning/five-ajax.php">Tutorial 5</a></li>
                         </ul>
                     </li>
                     <li>
