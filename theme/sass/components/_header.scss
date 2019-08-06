@@ -107,6 +107,11 @@
                             padding-left: 4px;
                             content: ' ▾';
                         }
+
+                        &.active {
+                            background: $primary-color;
+                            color: white;
+                        }
                     }
 
                     a,
