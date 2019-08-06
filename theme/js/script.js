@@ -36,6 +36,8 @@ $(document).ready(function() {
 
     addPageNameToBody();
 
+    addActiveClassToNavbar();
+
 });
 
 // Renders different elements to assume the height of the tallest element - mathches their heights.
@@ -76,20 +78,29 @@ function clickableElement($cElement) {
 };
 
 function addPageNameToBody() {
-    // Identifying the full url of the current page.
-    var url = window.location.href;
+    // Identifying the location path.
+    var url = window.location.pathname;
 
-    /* Splitting the URL at each "/", getting the last item in array, using pop,
+    /* Removing the first charachter, which is "/", replacing each "/" with a "-",
     The last item is then separated at the "." and shift gets the first item in the array,
     This is identified as the name of current page. */
-    var pageNameOne = url.split('/').slice(-2)[0];
-    var pageNameTwo = url.split('/').pop().split('.').shift();
-    var nameOfPage = (pageNameOne + '-' + pageNameTwo)
+    var nameOfPage = url.substring(1).replace(/[/\\]/g,'-').split('.').shift();
 
     // If the variable === empty string, the class of "home" is added to body, else nameOfPage is added to body. 
-    if (pageNameTwo === '') {
+    if (nameOfPage === '') {
         $('body').addClass('page-home');
     } else {
         $('body').addClass('page-' + nameOfPage);
     }
+};
+
+function addActiveClassToNavbar() {
+    var current = location.pathname;
+    $('.nav-list li a').each(function(){
+        var $this = $(this);
+        // If the current path is like this link, make it active.
+        if($this.attr('href').indexOf(current) !== -1){
+            $this.addClass('active');
+        }
+    })
 };
