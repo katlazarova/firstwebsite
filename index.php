@@ -20,7 +20,7 @@
 			<p>Existuje mnoho podôb pasáží Lorem Ipsum, ale väčšina trpela rôznymi zmenami, vložením humoru, alebo náhodných slov, ktoré nevyzerajú ani trocha dôveryhodne. Ak sa chystáte použiť pasáž z Lorem Ipsum, mali by ste sa presvedčiť, že uprostred textu nie je skrytá žiadna časť, ktorá by vás mohla priviesť do nepríjemnej situácie. Všetky generátory Lorem Ipsum na internete opakujú vopred definované časti textu, takže náš generátor je prvým skutočným generátorom na internete. Používa slovník viac ako 200 latinských slov, a kombinuje ich niekoľkými modelovými vetnými štruktúrami, takže generuje Lorem Ipsum, ktoré vyzerá hodnoverne. Vygenerované Lorem Ipsum je týmto spôsobom vždy bez opakujúcich sa častí, bez vtipov a nenáležitých výrazov, atď.</p>
 		</div> <!-- End of text-container -->
 	</div> <!-- End of text-and-image-container -->
-</div> <!-- End of one -->
+</div> <!-- End of text-and-image-component left -->
 <div class="content-divider bottom-spacer"></div> <!-- End of content-divider -->
 <div class="text-and-image-component right bottom-spacer">
 	<div class="text-and-image-container">
@@ -32,7 +32,7 @@
 			<p>Napriek všeobecnému presvedčeniu nie je Lorem Ipsum len náhodný text. Jeho korene sú v časti klasickej latinskej literatúry z roku 45 pred n.l., takže má viac ako 2000 rokov. Richard McClintock, profesor latinčiny na Hampden-Sydney College vo Virgínii, hľadal jedno z menej určitých latinských slov, consectetur, z pasáže Lorem Ipsum, a ako vyhľadával výskyt tohto slova v klasickej literatúre, objavil jeho nepochybný zdroj. Lorem Ipsum pochádza z odsekov 1.10.32 a 1.10.33 Cicerovho diela "De finibus bonorum et malorum" (O najvyššom dobre a zle), napísaného v roku 45 pred n.l. Táto kniha je pojednaním o teórii etiky, a bola veľmi populárna v renesancii. Prvý riadok Lorem Ipsum, "Lorem ipsum dolor sit amet..", je z riadku v odseku 1.10.32.</p>
 		</div> <!-- End of text-container -->
 	</div> <!-- End of text-and-image-container -->
-</div> <!-- End of two -->
+</div> <!-- End of text-and-image-component right -->
 <div class="content-divider bottom-spacer"></div> <!-- End of content-divider -->
 <div class="card-component-container bottom-spacer">
 	<h2>More Ways To Help</h2>

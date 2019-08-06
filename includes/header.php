@@ -17,7 +17,7 @@
     <header class="header">
         <div class="nav-container">
             <div class="header-title">
-                <a href="index.html">HealthMove</a>
+                <a href="/">HealthMove</a>
             </div> <!-- End of header-title -->
             <nav>
                 <button class="hamburger hamburger--vortex" type="button" id="nav-toggle">
@@ -27,26 +27,26 @@
                 </button>
                 <ul class="nav-list">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
                         <a href="#">Learning</a>
                         <ul class="nav-dropdown">
-                            <li><a href="learning/one.php">Tutorial 1</a></li>
-                            <li><a href="learning/two.php">Tutorial 2</a></li>
-                            <li><a href="learning/three.php">Tutorial 3</a></li>
-                            <li><a href="learning/four.php">Tutorial 4</a></li>
-                            <li><a href="learning/five-ajax.php">Tutorial 5</a></li>
+                            <li><a href="/learning/tutorial-one.php">Tutorial 1</a></li>
+                            <li><a href="/learning/tutorial-two.php">Tutorial 2</a></li>
+                            <li><a href="/learning/tutorial-three.php">Tutorial 3</a></li>
+                            <li><a href="/learning/tutorial-four.php">Tutorial 4</a></li>
+                            <li><a href="/learning/tutorial-five.php">Tutorial 5</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">About Us</a>
+                        <a href="/about-us.php">About Us</a>
                     </li>
                     <li>
-                        <a href="#">Get Involved</a>
+                        <a href="/get-involved.php">Get Involved</a>
                     </li>
                     <li>
-                        <a href="#">Our Projects</a>
+                        <a href="/current-projects.php">Current Projects</a>
                     </li>
                     <li>
                         <a href="#">Help</a>
