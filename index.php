@@ -1,6 +1,6 @@
 <?php include 'includes/header.php';?>
 
-<div class="hero-image full-width bottom-spacer home"></div> <!-- End hero image -->
+<div class="hero-image full-width bottom-spacer"></div> <!-- End hero image -->
 <div class="content-divider bottom-spacer"></div>
 <!-- End of content-divider -->
 <div class="header-text-component bottom-spacer">

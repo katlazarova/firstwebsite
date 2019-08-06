@@ -96,15 +96,16 @@ function addPageNameToBody() {
 
 function addActiveClassToNavbar() {
     var current = location.pathname;
+    // Run function for each anchor tag in the nav-list. 
     $('.nav-list li a').each(function() {
         // Sets the variable to equal $(this).
         var $this = $(this);
         
-        // If the current path is like this link, .
+        // If the current path matches $this link.
         if($this.attr('href').indexOf(current) !== -1){
             // If the current page is not the homepage. 
             if(current !== '/'){
-                // If the parent of the parent of the anchor has the class of nav-dropdown, add an active class to its previous sibling.
+                // If the parent of the parent of the anchor has the class of nav-dropdown, add an active class to the previous sibling.
                 if($this.parent().parent().hasClass('nav-dropdown')){
                     $('.nav-list .nav-dropdown').prev().addClass('active');
                 } else {
