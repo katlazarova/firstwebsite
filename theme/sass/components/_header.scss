@@ -73,22 +73,22 @@
                 li {
                     position: relative;
                     float: none;
-                    border-top: solid;
-                    border-width: thin;
-                    border-color: $secondary-color;
+                    border: 0.5px solid $secondary-color;
 
                     @include breakpoint($lg) {
                         border: none;
                     }
 
                     &:last-child {
-                        border-bottom: solid;
-                        border-width: thin;
-                        border-color: $secondary-color;
+                        border: 0.5px solid $secondary-color;
                     }
 
                     @include breakpoint($lg) {
                         float: left;
+
+                        &:last-child {
+                            border: none;
+                        }
                     }
 
                     a {
