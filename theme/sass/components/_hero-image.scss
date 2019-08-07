@@ -1,8 +1,9 @@
 .hero-image {
     background-image: url("../img/hero-image.jpg");
-    height: 50%;
+    height: 60%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
+    z-index: -1;
+} 

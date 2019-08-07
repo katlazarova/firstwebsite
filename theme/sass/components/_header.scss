@@ -1,65 +1,170 @@
 .header {
-    display: flex;
-    background-color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    height: 70px;
+    background: white;
 
-    .header-title a {
-        margin: 20px 30px;
-        color: $primary-color;
-        font-weight: bold;
-        font-size: 40px;
-    }
+    .nav-container {
+        max-width: 1000px;
+        margin: 0 auto;
 
-    a:link {
-        text-decoration: none;
-    }
+        .header-title {
+            position: absolute;
+            padding-left: 20px;
+            float: left;
+            line-height: 70px;
+            text-transform: uppercase;
+            font-size: 1.4em;
 
-    .header-links {
-        display: flex;
-        position: absolute;
-        right: 15px;
-        font-weight: bold;
-        justify-content: space-between;
-        align-items: center;
-        height: 50px;
-
-        a {
-            color: $secondary-color;
-            padding: 15px;
-
-            &:hover {
-                background-color: $primary-color;
+            a {
+                text-decoration: none;
+                color: $primary-color;
+                font-weight: bold;
             }
         }
 
-        .dropdown {
-            &:hover {
-                > a {
-                    background-color: $primary-color;
+        nav {
+            position: absolute;
+            right: 0;
+            width: 100%;
+            padding: 70px 0 15px;
+
+            @include breakpoint($lg) {
+                padding: 0;
+                width: auto;
+            }
+
+            .hamburger {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: white;
+                height: 70px;
+                width: 70px;
+                display: block;
+                border: none;
+
+                @include breakpoint ($lg) {
+                    display: none;
                 }
 
-                .dropdown-content {
-                    display: block;
+                #nav-toggle {
+                    position: absolute;
+                    right: 0;
+                    cursor: pointer;
+                    padding: 35px;
                 }
             }
 
-            .dropdown-content {
+            .hamburger.is-active {
+                background-color: $primary-color;
+            }
+
+            .nav-list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
                 display: none;
-                position: absolute;
-                top: 100%;
-                width: 110px;
-                background-color: #f9f9f9;
-                z-index: 1;
+                text-align: center;
+                background-color: white;
 
-                a {
-                    background-color: inherit;
-                    display: block;
+                @include breakpoint($lg) {
+                    display: block !important;
+                }
 
-                    &:hover {
-                        background-color: $accent-color-two;
-                        color: white;
+                li {
+                    position: relative;
+                    float: none;
+                    border: thin solid $secondary-color;
+
+                    @include breakpoint($lg) {
+                        border: none;
+                    }
+
+                    &:last-child {
+                        border: thin solid $secondary-color;
+                    }
+
+                    @include breakpoint($lg) {
+                        float: left;
+
+                        &:last-child {
+                            border: none;
+                        }
+                    }
+
+                    a {
+                        padding: 15px;
+                        line-height: 20px;
+                        padding-left: 25%;
+
+                        &:hover,
+                        &:visited:hover {
+                            background: $primary-color;
+                            color: white;
+                        }
+
+                        &:not(:only-child):after,
+                        &:visited:not(:only-child):after {
+                            padding-left: 4px;
+                            content: ' ▾';
+                        }
+
+                        &.active {
+                            background: $primary-color;
+                            color: white;
+                        }
+                    }
+
+                    a,
+                    a:visited {
+                        display: block;
+                        padding: 0 20px;
+                        line-height: 70px;
+                        color: $secondary-color;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+
+                    .nav-dropdown {
+                        display: none;
+                        z-index: 1;
+                        position: static;
+                        padding: 0;
+                        background-color: $secondary-color;
+                        text-align: center;
+
+                        @include breakpoint($lg) {
+                            position: absolute;
+                            background-color: white;
+                        }
+
+                        li {
+                            min-width: 190px;
+                            list-style-type: none;
+                            border-color: white;
+
+                            @include breakpoint($lg) {
+                                border: none;
+                            }
+
+                            &:last-child {
+                                border-bottom: none;
+                            }
+
+                            a {
+                                padding: 15px;
+                                line-height: 20px;
+                                color: white;
+
+                                @include breakpoint($lg) {
+                                    color: $secondary-color;
+                                }
+
+                                &:hover {
+                                    background-color: $secondary-color;
+                                    color: white;
+                                }
+                            }
+                        }
                     }
                 }
             }
