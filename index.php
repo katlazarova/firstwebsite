@@ -10,8 +10,8 @@
 	</div> <!-- End of text-wrapper -->
 </div> <!-- End of header-and-text-component -->
 <div class="content-divider bottom-spacer"></div> <!-- End of content-divider -->
-<div class="text-and-image-component left bottom-spacer">
-	<div class="text-and-image-container">
+<div class="left-right-component left bottom-spacer">
+	<div class="left-right-container">
 		<div class="image-container">
 			<img src="theme/img/vaccinated-child.jpg" alt="girl getting a vaccination" class="responsive-image">
 		</div> <!-- End of image-container -->
@@ -22,8 +22,8 @@
 	</div> <!-- End of text-and-image-container -->
 </div> <!-- End of text-and-image-component left -->
 <div class="content-divider bottom-spacer"></div> <!-- End of content-divider -->
-<div class="text-and-image-component right bottom-spacer">
-	<div class="text-and-image-container">
+<div class="left-right-component right bottom-spacer">
+	<div class="left-right-container">
 		<div class="image-container">
 			<img src="theme/img/girl-in-refugee-camp.jpg" alt="girl in refugee camp" class="responsive-image">
 		</div> <!-- End of image-container -->
@@ -36,7 +36,7 @@
 <div class="content-divider bottom-spacer"></div> <!-- End of content-divider -->
 <div class="card-component-container bottom-spacer">
 	<h2>More Ways To Help</h2>
-	<div class="row-container">
+	<div class="row-container row-container--vertical">
 		<div class="card-wrapper">
 			<div class="card card-one clickable">
 				<div class="card-image-wrapper">

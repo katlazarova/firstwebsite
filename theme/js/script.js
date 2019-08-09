@@ -84,7 +84,7 @@ function addPageNameToBody() {
     /* Removing the first charachter, which is "/", replacing each "/" with a "-",
     The last item is then separated at the "." and shift gets the first item in the array,
     This is identified as the name of current page. */
-    var nameOfPage = url.substring(1).replace(/[/\\]/g,'-').split('.').shift();
+    var nameOfPage = url.substring(1).replace(/[/\\]/g, '-').split('.').shift();
 
     // If the variable === empty string, the class of "home" is added to body, else nameOfPage is added to body. 
     if (nameOfPage === '') {
@@ -100,13 +100,13 @@ function addActiveClassToNavbar() {
     $('.nav-list li a').each(function() {
         // Sets the variable to equal $(this).
         var $this = $(this);
-        
+
         // If the current path matches $this link.
-        if($this.attr('href').indexOf(current) !== -1){
+        if ($this.attr('href').indexOf(current) !== -1) {
             // If the current page is not the homepage. 
-            if(current !== '/'){
+            if (current !== '/') {
                 // If the parent of the parent of the anchor has the class of nav-dropdown, add an active class to the previous sibling.
-                if($this.parent().parent().hasClass('nav-dropdown')){
+                if ($this.parent().parent().hasClass('nav-dropdown')) {
                     $('.nav-list .nav-dropdown').prev().addClass('active');
                 } else {
                     $this.addClass('active');
@@ -118,3 +118,11 @@ function addActiveClassToNavbar() {
         }
     });
 };
+
+function getJsonData() {
+    $.getJSON('post.json', function(data) {
+        $.each(data, function(i, user) {
+            $('ul#users').append('<li class="' + user.lastName + '">' + user.firstName + '</li>');
+        });
+    });
+}

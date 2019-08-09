@@ -1,10 +1,10 @@
-.text-and-image-component {
+.left-right-component {
     width: 100%;
     margin: 0 auto;
     padding: 0 2rem;
 
     @include breakpoint($md) {
-        width: 80%;
+        width: $gutter-size;
         padding: 0;
     }
 
