@@ -1,0 +1,42 @@
+.stats-bar {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 0 2rem;
+
+    @include breakpoint($md) {
+        width: $gutter-size;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+        color: $tertiary-color;
+        text-align: center;
+    }
+
+    .icon-row-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+
+        .icon {
+            margin: 1rem;
+            text-align: center;
+            max-width: 33.333%;
+
+            .icon-image-container {
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            .icon-text-container {
+            	font-size: 20px;
+            	color: $secondary-color;
+            	font-weight: bold;
+            }
+        }
+    }
+}
