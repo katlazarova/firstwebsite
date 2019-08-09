@@ -6,4 +6,17 @@
     background-size: cover;
     position: relative;
     z-index: -1;
-} 
+
+    .page-about-us & {
+        background-image: url("../img/teaching-image.jpeg");
+    }
+
+    .hero-text-box {
+        position: absolute;
+        left: 10vw;
+        bottom: 10vw;
+        text-align: left;
+        font-weight: bold;
+        color: white;
+    }
+}
