@@ -119,10 +119,3 @@ function addActiveClassToNavbar() {
     });
 };
 
-function getJsonData() {
-    $.getJSON('post.json', function(data) {
-        $.each(data, function(i, user) {
-            $('ul#users').append('<li class="' + user.lastName + '">' + user.firstName + '</li>');
-        });
-    });
-}
