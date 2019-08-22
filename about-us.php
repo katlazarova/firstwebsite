@@ -1,6 +1,6 @@
 <?php include 'includes/header.php';?>
 <div class="hero-image full-width bottom-spacer">
-	<div class="hero-text-box">
+	<div class="hero-text">
 		<h2>About Us</h2>
 		<p>Promoting equality for girls worlwide.</p>
 	</div> <!-- End hero-text-box -->
