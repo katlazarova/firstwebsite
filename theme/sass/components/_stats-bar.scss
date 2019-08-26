@@ -10,7 +10,7 @@
     }
 
     h1 {
-        font-size: 30px;
+        font-size: $font-xlarge;
         font-weight: bold;
         color: $tertiary-color;
         text-align: center;
@@ -33,7 +33,7 @@
             }
 
             .icon-text-container {
-            	font-size: 20px;
+            	font-size: $font-large;
             	color: $secondary-color;
             	font-weight: bold;
             }

@@ -16,7 +16,7 @@
 
         .copyright-statement {
             color: white;
-            font-size: 12px;
+            font-size: $font-xsmall;
             order: 4;
 
             @include breakpoint($md) {
@@ -29,7 +29,6 @@
         .footer-navlinks,
         .footer-info-links {
             display: flex;
-            font-size: 14px;
             padding: 0;
             color: white;
 
@@ -42,7 +41,7 @@
             a {
                 text-decoration: none;
                 color: white;
-                font-size: 15px;
+                font-size: $font-small;
 
                 &:hover {
                     text-decoration: underline;

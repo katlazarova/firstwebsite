@@ -7,7 +7,7 @@
 
     .swiper-slide {
         font-style: italic;
-        font-size: 15px;
+        font-size: $font-small;
         flex-direction: column;
         padding-top: 0;
         margin-top: 0;
@@ -18,7 +18,7 @@
     }
 
     .quotation-marks {
-        font-size: 50px;
+        font-size: $font-xlarge;
         font-weight: 900;
         color: $primary-color;
         padding: 5px;
