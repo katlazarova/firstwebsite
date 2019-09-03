@@ -16,14 +16,14 @@
         text-align: center;
     }
 
-    .icon-row-container {
+    .stats-bar-row-container {
 
         @include breakpoint($md) {
             display: flex;
             flex-direction: row;
         }
 
-        .icon {
+        .stat {
             margin: 1rem;
             text-align: center;
 
@@ -31,7 +31,7 @@
                 width: 33.333%;
             }
 
-            .icon-text-container {
+            .stat-text-container {
             	font-size: $font-medium;
                 color: $secondary-color;
                 font-weight: bold;

@@ -11,39 +11,39 @@
 
 <div class="stats-bar">
 	<h1>Our Achievements</h1>
-	<div class="icon-row-container">
-		<div class="icon">
-			<div class="icon-image-container">
+	<div class="stats-bar-row-container">
+		<div class="stat">
+			<div class="stat-image-container">
 				<span style="font-size: 3em; color: black;">
 					<i class="fas fa-globe-americas"></i>
 				</span>
-			</div> <!-- End of icon-image-container -->
+			</div> <!-- End of stat-image-container -->
 
-			<div class="icon-text-container">
+			<div class="stat-text-container">
 				<p>Active in 72 countries.</p>
-			</div> <!-- End of icon-text-container -->
-		</div> <!-- End of icon -->
-		<div class="icon">
-			<div class="icon-image-container">
+			</div> <!-- End of stat-text-container -->
+		</div> <!-- End of stat -->
+		<div class="stat">
+			<div class="stat-image-container">
 				<span style="font-size: 3em; color: black;">
 					<i class="fas fa-child"></i>
 				</span>
-			</div> <!-- End of icon-image-container -->
-			<div class="icon-text-container">
+			</div> <!-- End of stat-image-container -->
+			<div class="stat-text-container">
 				<p>Reached 18 million girls.</p>
-			</div> <!-- End of icon-text-container -->
-		</div> <!-- End of icon -->
-		<div class="icon">
-			<div class="icon-image-container">
+			</div> <!-- End of stat-text-container -->
+		</div> <!-- End of stat -->
+		<div class="stat">
+			<div class="stat-image-container">
 				<span style="font-size: 3em; color: black;">
 					<i class="fas fa-hand-holding-usd"></i>
 				</span>
-			</div> <!-- End of icon-image-container -->
-			<div class="icon-text-container">
+			</div> <!-- End of stat-image-container -->
+			<div class="stat-text-container">
 				<p>78% of income is spent on charitable activities.</p>
-			</div> <!-- End of icon-text-container -->
-		</div> <!-- End of icon -->
-	</div> <!-- End of icon-row-container -->
+			</div> <!-- End of stat-text-container -->
+		</div> <!-- End of stat -->
+	</div> <!-- End of stats-bar-row-container -->
 </div> <!-- End of stats-bar -->
 <div class="content-divider bottom-spacer">
 </div> <!-- End of content-divider -->
