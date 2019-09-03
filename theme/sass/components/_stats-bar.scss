@@ -10,32 +10,31 @@
     }
 
     h1 {
-        font-size: $font-xlarge;
+        font-size: $font-large;
         font-weight: bold;
         color: $tertiary-color;
         text-align: center;
     }
 
     .icon-row-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-content: center;
+
+        @include breakpoint($md) {
+            display: flex;
+            flex-direction: row;
+        }
 
         .icon {
             margin: 1rem;
             text-align: center;
-            max-width: 33.333%;
 
-            .icon-image-container {
-                object-fit: cover;
-                border-radius: 50%;
+            @include breakpoint($md) {
+                width: 33.333%;
             }
 
             .icon-text-container {
-            	font-size: $font-large;
-            	color: $secondary-color;
-            	font-weight: bold;
+            	font-size: $font-medium;
+                color: $secondary-color;
+                font-weight: bold;
             }
         }
     }

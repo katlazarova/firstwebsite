@@ -23,8 +23,10 @@
         box-sizing: border-box;
 
         @include breakpoint($md) {
-            flex-wrap: wrap;
-            flex-direction: row;
+            &--vertical {
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
         }
 
         .card-wrapper {
@@ -52,6 +54,7 @@
 
                 &:hover {
                     cursor: pointer;
+
                     .card-image {
                         transform: scale(1.1);
                     }

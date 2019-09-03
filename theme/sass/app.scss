@@ -3,6 +3,8 @@
 @import "../node_modules/breakpoint-sass/stylesheets/_breakpoint.scss";
 @import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 @import "variables";
+@import "libraries/fontawesome/fontawesome.scss";
+@import "libraries/fontawesome/solid.scss";
 @import "components/global.scss";
 @import "components/header";
 @import "components/header-text-component";
@@ -11,4 +13,5 @@
 @import "components/card-component.scss";
 @import "components/testimonials.scss";
 @import "components/footer.scss";
+@import "components/stats-bar.scss";
 @import "libraries/swiper.scss";

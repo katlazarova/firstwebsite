@@ -32,14 +32,12 @@
 				$('#result').html(data);
 			});
 			*/
-			/*
 			//gets JSON encoded data 
-			$.getJSON('users.json', function(data){
+			/*$.getJSON('users.json', function(data){
 				$.each(data, function(i, user){
-					$('ul#users').append('<li>'+user.firstName+'</li>');
+					$('ul#users').append('<li class="'+user.lastName+'">'+user.firstName+'</li>');
 				});
 			});
-			*/
 			/*
 			//for asynchronous requests (not sure what this means)
 			$.ajax({
