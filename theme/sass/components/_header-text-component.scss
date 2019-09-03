@@ -3,6 +3,11 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 2rem;
+    font-size: $font-medium;
+
+    h2 {
+    	font-size: $font-large;
+    }
 
     @include breakpoint($md) {
     	width: $gutter-size;

@@ -1,19 +1,11 @@
+:root {
+    font-size: 16px;
+}
+
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
     height: 100%;
-
-    h1 {
-        font-size: $font-xlarge;
-    }
-
-    h2 {
-        font-size: $font-large;
-    }
-
-    p {
-        font-size: $font-medium;
-    }
 }
 
 * {
