@@ -11,6 +11,11 @@
             font-style: italic;
             color: $secondary-color;
         }
+
+        img {
+            margin: 0 auto;
+            width: $gutter-size;
+        }
     }
 
     h2 {
