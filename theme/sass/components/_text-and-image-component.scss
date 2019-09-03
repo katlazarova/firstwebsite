@@ -8,6 +8,14 @@
         padding: 0;
     }
 
+    .text-container {
+        font-size: $font-medium;
+
+        & h2 {
+            font-size: $font-large;
+        }
+    }
+
     &.left {
         .image-container {
             float: left;

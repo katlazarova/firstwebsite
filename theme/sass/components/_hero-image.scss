@@ -6,4 +6,28 @@
     background-size: cover;
     position: relative;
     z-index: -1;
-} 
+
+    .page-about-us & {
+        background-image: url("../img/teaching-image.jpeg");
+    }
+
+    .hero-text {
+        position: absolute;
+        left: 5vw;
+        bottom: 5vw;
+        max-width: 15rem;
+        text-align: left;
+        font-weight: bold;
+        color: white;
+        padding: 0 2rem;
+        border-radius: 10px;
+        background-color: transparentize($secondary-color, 0.4);
+        font-size: $font-medium;
+
+        @include breakpoint($md) {
+            max-width: 200rem;
+            left: 10vw;
+            bottom: 5vw;
+        }
+    }
+}

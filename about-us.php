@@ -36,5 +36,11 @@
 	</div> <!-- End of stats-bar -->
 	<div class="content-divider bottom-spacer">
 	</div> <!-- End of content-divider -->
+<div class="hero-image full-width bottom-spacer">
+	<div class="hero-text">
+		<h2>About Us</h2>
+		<p>Promoting equality for girls worlwide.</p>
+	</div> <!-- End hero-text-box -->
+</div> <!-- End hero image -->
 
-	<?php include 'includes/footer.php';?>
+<?php include 'includes/footer.php';?>

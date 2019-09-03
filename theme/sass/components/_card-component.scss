@@ -11,7 +11,7 @@
     h2 {
         text-align: center;
         padding: 15px;
-        font-size: 30px;
+        font-size: $font-large;
         font-weight: bold;
     }
 
@@ -91,7 +91,7 @@
                         color: white;
                         text-decoration: none;
                         font-weight: bold;
-                        font-size: 20px;
+                        font-size: $font-medium;
                     }
                 }
             }
