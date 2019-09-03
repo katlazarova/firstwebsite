@@ -6,6 +6,7 @@
 
     @include breakpoint($md) {
         width: $gutter-size;
+        padding: 0;
     }
 
     h2 {
