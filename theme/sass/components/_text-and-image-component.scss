@@ -3,6 +3,14 @@
     margin: 0 auto;
     padding: 0 2rem;
 
+    .left-right-container {
+        &:hover {
+            img {
+                filter: grayscale(0%);
+            }
+        }
+    }
+
     @include breakpoint($md) {
         width: $gutter-size;
         padding: 0;
@@ -13,6 +21,7 @@
 
         & h2 {
             font-size: $font-large;
+            color: $tertiary-color;
         }
     }
 
@@ -55,12 +64,6 @@
         @include breakpoint($md) {
             width: 50%;
             padding-bottom: 0;
-        }
-
-        &:hover {
-            img {
-                filter: grayscale(0%);
-            }
         }
 
         img {

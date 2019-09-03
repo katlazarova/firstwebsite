@@ -5,8 +5,17 @@
     padding: 0 2rem;
     font-size: $font-medium;
 
+    &.mission-statement {
+        p {
+            font-weight: bold;
+            font-style: italic;
+            color: $secondary-color;
+        }
+    }
+
     h2 {
     	font-size: $font-large;
+        color: $tertiary-color;
     }
 
     @include breakpoint($md) {
