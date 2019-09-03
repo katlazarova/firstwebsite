@@ -5,6 +5,11 @@
     padding: 0 2rem;
     font-size: $font-medium;
 
+    @include breakpoint($md) {
+        padding: 0;
+        width: $gutter-size;
+    }
+
     h2 {
     	font-size: $font-large;
     }
