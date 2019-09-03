@@ -28,8 +28,7 @@
             text-align: center;
 
             @include breakpoint($md) {
-                max-width: 33.333%;
-                display: flex;
+                width: 33.333%;
             }
 
             .icon-text-container {
