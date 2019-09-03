@@ -10,11 +10,21 @@
         width: $gutter-size;
     }
 
-    h2 {
-    	font-size: $font-large;
+    &.mission-statement {
+        p {
+            font-weight: bold;
+            font-style: italic;
+            color: $secondary-color;
+        }
+
+        img {
+            margin: 0 auto;
+            width: $gutter-size;
+        }
     }
 
-    @include breakpoint($md) {
-    	width: $gutter-size;
+    h2 {
+    	font-size: $font-large;
+        color: $tertiary-color;
     }
 }

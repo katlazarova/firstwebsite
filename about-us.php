@@ -47,5 +47,16 @@
 </div> <!-- End of stats-bar -->
 <div class="content-divider bottom-spacer">
 </div> <!-- End of content-divider -->
+<div class="header-text-component bottom-spacer mission-statement">
+	<div class="image-container">
+		<img src="theme/img/girls-school-india.jpg" alt="girls' school in india">
+	</div> <!-- End of image-container -->
+	<h2>Mission Statement</h2>
+	<div class="text-wrapper">
+		<p>"To promote children's rights to education and healthcare and equality for girls around the world."</p>
+	</div> <!-- End of text-wrapper -->
+</div> <!-- End of header-and-text-component -->
+<div class="content-divider bottom-spacer">
+</div> <!-- End of content-divider -->
 
 <?php include 'includes/footer.php';?>
