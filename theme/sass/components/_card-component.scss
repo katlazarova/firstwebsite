@@ -27,6 +27,20 @@
             &--vertical {
                 flex-wrap: wrap;
                 flex-direction: row;
+
+                .card-wrapper {
+                    flex: 0 0 33.333333%;
+                    max-width: 33.333333%;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        @include breakpoint($lg) {
+            &--horizontal {
+                .card-wrapper {
+                    max-width: 50%;
+                }
             }
         }
 
@@ -40,12 +54,6 @@
 
             &:not(:last-child) {
                 margin-bottom: 2rem;
-            }
-
-            @include breakpoint($md) {
-                flex: 0 0 33.333333%;
-                max-width: 33.333333%;
-                margin-bottom: 0;
             }
 
             .card {
@@ -93,6 +101,29 @@
                         text-decoration: none;
                         font-weight: bold;
                         font-size: $font-medium;
+                    }
+                }
+
+                &--horizontal {
+                    .card-image-wrapper {
+                        height: 350px;
+                    }
+
+                    .card-text-container {
+                        height: 350px;
+                    }
+
+                    @include breakpoint($lg) {
+                        flex-direction: row;
+
+                        .card-image-wrapper {
+                            width: auto;
+                            border-radius: 10px 0 0 10px;
+                        }
+
+                        .card-text-container {
+                            border-radius: 0 10px 10px 0;
+                        }
                     }
                 }
             }
