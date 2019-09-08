@@ -96,9 +96,9 @@
         }
 
         &--horizontal {
-            @include breakpoint($md) {
-              flex-direction: row;
-            }
+          @include breakpoint($md) {
+            flex-direction: row;
+          }
 
           .card-image-wrapper {
             height: auto;
@@ -110,21 +110,20 @@
             }
           }
 
-            .card-text-container {
-              border-radius: 0 0 10px 10px;
-              width: 100%;
+          .card-text-container {
+            width: 100%;
 
-              h3 {
-                margin-top: 0;
-                color: $accent-color-one;
-              }
+            h3 {
+              margin-top: 0;
+              color: $accent-color-one;
+            }
 
-              @include breakpoint($md) {
-                border-radius: 0 10px 10px 0;
-              }
+            @include breakpoint($md) {
+              border-radius: 0 10px 10px 0;
             }
           }
         }
       }
     }
   }
+}
