@@ -1,6 +1,6 @@
 .header {
     height: 70px;
-    background: white;
+    background: $accent-color-one;
 
     .nav-container {
         max-width: 1000px;
@@ -36,7 +36,7 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                background: white;
+                background: $accent-color-one;
                 height: 70px;
                 width: 70px;
                 display: block;
@@ -64,7 +64,7 @@
                 padding: 0;
                 display: none;
                 text-align: center;
-                background-color: white;
+                background-color: $accent-color-one;
 
                 @include breakpoint($lg) {
                     display: block !important;
@@ -99,7 +99,7 @@
                         &:hover,
                         &:visited:hover {
                             background: $primary-color;
-                            color: white;
+                            color: $accent-color-one;
                         }
 
                         &:not(:only-child):after,
@@ -110,7 +110,7 @@
 
                         &.active {
                             background: $primary-color;
-                            color: white;
+                            color: $accent-color-one;
                         }
                     }
 
@@ -134,13 +134,13 @@
 
                         @include breakpoint($lg) {
                             position: absolute;
-                            background-color: white;
+                            background-color: $accent-color-one;
                         }
 
                         li {
                             min-width: 190px;
                             list-style-type: none;
-                            border-color: white;
+                            border-color: $accent-color-one;
 
                             @include breakpoint($lg) {
                                 border: none;
@@ -153,7 +153,7 @@
                             a {
                                 padding: 15px;
                                 line-height: 20px;
-                                color: white;
+                                color: $accent-color-one;
 
                                 @include breakpoint($lg) {
                                     color: $secondary-color;
@@ -161,7 +161,7 @@
 
                                 &:hover {
                                     background-color: $secondary-color;
-                                    color: white;
+                                    color: $accent-color-one;
                                 }
                             }
                         }

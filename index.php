@@ -38,7 +38,7 @@
 	<h2>More Ways To Help</h2>
 	<div class="row-container row-container--vertical">
 		<div class="card-wrapper">
-			<div class="card card-one clickable">
+			<div class="card card-one clickable card--vertical">
 				<div class="card-image-wrapper">
 					<img src="theme/img/volunteer.jpeg" alt="volunteers" class="card-image">
 				</div> <!-- End of card-image-wrapper -->
@@ -49,7 +49,7 @@
 			</div> <!-- End of card-one -->
 		</div> <!-- End of card wrapper -->
 		<div class="card-wrapper">
-			<div class="card card-two clickable">
+			<div class="card card-two clickable card--vertical">
 				<div class="card-image-wrapper">
 					<img src="theme/img/celebration-fundraising.jpeg" alt="birthday party" class="card-image">
 				</div> <!-- End of card-image-wrapper -->
@@ -60,7 +60,7 @@
 			</div> <!-- End of card-two -->
 		</div> <!-- End of card-wrapper -->
 		<div class="card-wrapper">
-			<div class="card card-three clickable">
+			<div class="card card-three clickable card--vertical">
 				<div class="card-image-wrapper">
 					<img src="theme/img/project-homepage.jpeg" alt="children" class="card-image">
 				</div> <!-- End of card-image-wrapper -->

@@ -1,101 +1,129 @@
 .card-component-container {
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    padding: 0 2rem;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  padding: 0 2rem;
+
+  @include breakpoint($md) {
+    width: $gutter-size;
+    padding: 0;
+  }
+
+  h2 {
+    text-align: center;
+    padding: 15px;
+    font-size: $font-large;
+    font-weight: bold;
+  }
+
+  .row-container {
+    flex-direction: column;
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
 
     @include breakpoint($md) {
-        width: $gutter-size;
-        padding: 0;
-    }
-
-    h2 {
-        text-align: center;
-        padding: 15px;
-        font-size: $font-large;
-        font-weight: bold;
-    }
-
-    .row-container {
-        flex-direction: column;
-        margin-right: -15px;
-        margin-left: -15px;
-        display: flex;
-        box-sizing: border-box;
-
-        @include breakpoint($md) {
-            &--vertical {
-                flex-wrap: wrap;
-                flex-direction: row;
-            }
-        }
+      &--vertical {
+        flex-wrap: wrap;
+        flex-direction: row;
 
         .card-wrapper {
-            position: relative;
-            width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
-            box-sizing: border-box;
-            display: block;
+          flex: 0 0 33.333333%;
+          max-width: 33.333333%;
+          margin-bottom: 0;
+        }
+      }
+    }
 
-            &:not(:last-child) {
-                margin-bottom: 2rem;
+    .card-wrapper {
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+      .card {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+
+        &:hover {
+          cursor: pointer;
+
+          .card-image {
+            transform: scale(1.1);
+          }
+        }
+
+        .card-image-wrapper {
+          width: 100%;
+          height: 225px;
+          overflow: hidden;
+          border-radius: 10px 10px 0 0;
+          display: flex;
+
+          .card-image {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s ease;
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: ease;
+            transition-delay: initial;
+          }
+        }
+
+        .card-text-container {
+          padding: 20px;
+          background-color: $tertiary-color;
+          border-radius: 0 0 10px 10px;
+
+          @include breakpoint($md) {
+            height: auto;
+          }
+
+          a {
+            color: $accent-color-one;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: $font-medium;
+          }
+        }
+
+        &--horizontal {
+          @include breakpoint($md) {
+            flex-direction: row;
+          }
+
+          .card-image-wrapper {
+            height: auto;
+
+            @include breakpoint($md) {
+              max-width: 300px;
+              width: 300px;
+              border-radius: 10px 0 0 10px;
+            }
+          }
+
+          .card-text-container {
+            width: 100%;
+
+            h3 {
+              margin-top: 0;
+              color: $accent-color-one;
             }
 
             @include breakpoint($md) {
-                flex: 0 0 33.333333%;
-                max-width: 33.333333%;
-                margin-bottom: 0;
+              border-radius: 0 10px 10px 0;
             }
-
-            .card {
-                display: flex;
-                flex-direction: column;
-                position: relative;
-
-                &:hover {
-                    cursor: pointer;
-
-                    .card-image {
-                        transform: scale(1.1);
-                    }
-                }
-
-                .card-image-wrapper {
-                    width: 100%;
-                    height: 225px;
-                    overflow: hidden;
-                    border-radius: 10px 10px 0 0;
-
-                    .card-image {
-                        object-fit: cover;
-                        width: 100%;
-                        height: 100%;
-                        transition: all 0.3s ease;
-                        transition-property: all;
-                        transition-duration: 0.3s;
-                        transition-timing-function: ease;
-                        transition-delay: initial;
-                    }
-                }
-
-                .card-text-container {
-                    padding: 20px;
-                    background-color: $tertiary-color;
-                    border-radius: 0 0 10px 10px;
-
-                    @include breakpoint($md) {
-                        height: auto;
-                    }
-
-                    a {
-                        color: white;
-                        text-decoration: none;
-                        font-weight: bold;
-                        font-size: $font-medium;
-                    }
-                }
-            }
+          }
         }
+      }
     }
+  }
 }
