@@ -1,0 +1,31 @@
+.blog-sidebar-component {
+
+  @include breakpoint($md) {
+    width: 40%
+    float: right;
+  }
+  h2 {
+    text-align: center;
+    font-size: $font-large;
+    color: $tertiary-color;
+  }
+
+  ul {
+    list-style: none;
+    text-align: center;
+
+    li {
+      margin-bottom: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $secondary-color;
+      font-weight: 900;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -98,6 +98,8 @@
         &--horizontal {
           @include breakpoint($md) {
             flex-direction: row;
+            width: 60%;
+            float: left
           }
 
           .card-image-wrapper {
