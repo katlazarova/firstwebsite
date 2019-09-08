@@ -21,7 +21,6 @@
         margin-right: -15px;
         margin-left: -15px;
         display: flex;
-        box-sizing: border-box;
 
         @include breakpoint($md) {
             &--vertical {
@@ -36,20 +35,11 @@
             }
         }
 
-        @include breakpoint($lg) {
-            &--horizontal {
-                .card-wrapper {
-                    //max-width: 50%;
-                }
-            }
-        }
-
         .card-wrapper {
             position: relative;
             width: 100%;
             padding-right: 15px;
             padding-left: 15px;
-            box-sizing: border-box;
             display: block;
 
             &:not(:last-child) {
@@ -65,7 +55,7 @@
                     cursor: pointer;
 
                     .card-image {
-                        transform: scale(1.1);
+                       transform: scale(1.1);
                     }
                 }
 
@@ -105,18 +95,15 @@
                 }
 
                 &--horizontal {
-                    .card-image-wrapper,
-                    .card-text-container {
+                    .card-image-wrapper {
                         height: auto;
+                        max-width: 300px;
+                        border-radius: 10px 0 0 10px;
+                        width: 300px;
                     }
 
                     @include breakpoint($lg) {
                         flex-direction: row;
-
-                        .card-image-wrapper {
-                            max-width: 300px;
-                            border-radius: 10px 0 0 10px;
-                        }
 
                         .card-text-container {
                             border-radius: 0 10px 10px 0;

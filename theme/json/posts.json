@@ -5,7 +5,8 @@
 		"linkText":"Read More...",
 		"link":"#",
 		"imageLink":"theme/img/volunteer.jpeg",
-		"imageAltText":"volunteers"
+		"imageAltText":"volunteers",
+        "date": "18 July 2019"
 	},
 	{
 		"title":"Raising Voices:Young People Speak Up in Parliament",
@@ -13,14 +14,16 @@
 		"linkText":"Read More...",
 		"link":"#",
 		"imageLink":"theme/img/celebration-fundraising.jpeg",
-		"imageAltText":"birthday party"
+		"imageAltText":"birthday party",
+        "date": "4 September 2019"
 	},
 	{
 		"title":"Porque é que o usamos?",
 		"body":"É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.",
 		"linkText":"Read More...",
 		"link":"#",
-		"imageLink":"theme/img/celebration-fundraising.jpeg",
-		"imageAltText":"birthday party"
+		"imageLink":"theme/img/project-homepage.jpeg",
+		"imageAltText":"children",
+        "date": "7 September 2019"
 	}
 ]

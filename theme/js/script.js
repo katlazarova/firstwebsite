@@ -29,7 +29,7 @@ $(document).ready(function() {
     });
     // Calling the matchHeight function.
     matchItemsHeights();
-    // Calling the menuFnctionality.
+    // Calling the menuFunctionality.
     menuFunctionality();
     // Calling the clickableElement function on card-wrapper. 
     clickableElement($('.card-component-container .card-wrapper'));
@@ -38,7 +38,7 @@ $(document).ready(function() {
 
     addActiveClassToNavbar();
 
-    getJSONdata();
+    postCardComponentJsonData();
 
 });
 
@@ -121,11 +121,11 @@ function addActiveClassToNavbar() {
     });
 };
 
-function getJSONdata() { 
+function postCardComponentJsonData() {
     $.getJSON('theme/json/posts.json', function(data) { 
         $.each(data, function(i, post) {
             $('.card-component-container .row-container--horizontal')
-            .append('<div class="card-wrapper"><div class="card card-one clickable card--horizontal"><div class="card-image-wrapper"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image"></div><div class="card-text-container"><h3>'+post.title+'</h3><p>'+post.body+'</p><a href="'+post.link+'">'+post.linkText+'</a></div></div></div>'); 
+            .append('<div class="card-wrapper"><div class="card card-one clickable card--horizontal"><div class="card-image-wrapper"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image"></div><div class="card-text-container"><h3>'+post.title+'</h3><p>'+post.date+'</p><p>'+post.body+'</p><a href="'+post.link+'">'+post.linkText+'</a></div></div></div>');
         }); 
     }); 
 };
