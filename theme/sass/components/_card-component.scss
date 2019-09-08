@@ -88,7 +88,7 @@
           }
 
           a {
-            color: white;
+            color: $accent-color-one;
             text-decoration: none;
             font-weight: bold;
             font-size: $font-medium;
@@ -116,6 +116,7 @@
 
               h3 {
                 margin-top: 0;
+                color: $accent-color-one;
               }
 
               @include breakpoint($md) {
