@@ -39,7 +39,7 @@
         @include breakpoint($lg) {
             &--horizontal {
                 .card-wrapper {
-                    max-width: 50%;
+                    //max-width: 50%;
                 }
             }
         }
@@ -105,24 +105,22 @@
                 }
 
                 &--horizontal {
-                    .card-image-wrapper {
-                        height: 350px;
-                    }
-
+                    .card-image-wrapper,
                     .card-text-container {
-                        height: 350px;
+                        height: auto;
                     }
 
                     @include breakpoint($lg) {
                         flex-direction: row;
 
                         .card-image-wrapper {
-                            width: auto;
+                            max-width: 300px;
                             border-radius: 10px 0 0 10px;
                         }
 
                         .card-text-container {
                             border-radius: 0 10px 10px 0;
+                            width: 100%;
                         }
                     }
                 }
