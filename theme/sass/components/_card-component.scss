@@ -48,12 +48,8 @@
 
       .card {
         display: flex;
-        flex-direction: column;
         position: relative;
-
-        @include breakpoint($md) {
-          flex-direction: row;
-        }
+        flex-direction: column;
 
         &:hover {
           cursor: pointer;
@@ -100,11 +96,14 @@
         }
 
         &--horizontal {
+            @include breakpoint($md) {
+              flex-direction: row;
+            }
+
           .card-image-wrapper {
             height: auto;
 
             @include breakpoint($md) {
-              flex-direction: row;
               max-width: 300px;
               width: 300px;
               border-radius: 10px 0 0 10px;
@@ -114,6 +113,10 @@
             .card-text-container {
               border-radius: 0 0 10px 10px;
               width: 100%;
+
+              h3 {
+                margin-top: 0;
+              }
 
               @include breakpoint($md) {
                 border-radius: 0 10px 10px 0;
