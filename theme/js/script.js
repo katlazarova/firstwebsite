@@ -129,7 +129,7 @@ function postCardComponentJsonData() {
 function slideToggleAccordionContent() {
     $('.accordion').each(function() {
         $(this).click(function() {
-            $(this).siblings('.panel').slideToggle();
+            $(this).next('.panel').slideToggle();
         });
     });
 }
