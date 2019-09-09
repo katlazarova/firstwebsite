@@ -1,7 +1,7 @@
-.blog-sidebar-component {
+.sidebar-container {
 
   @include breakpoint($md) {
-    width: 40%
+    width: 40%;
     float: right;
   }
   h2 {

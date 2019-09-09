@@ -1,9 +1,9 @@
 <?php include 'includes/header.php';?>
-<div class="card-component-container bottom-spacer">
+<div class="card-component-container bottom-spacer card-component-container--horizontal">
     <div class="row-container row-container--horizontal">
     </div> <!-- End of row-container -->
 </div> <!-- End of card-component-container -->
-<div class="blog-sidebar-component">
+<div class="sidebar-container">
     <h2>Featured Posts</h2>
     <ul class="blog-links">
         <li><a href="#">Lorem ipsum began as scrambled, nonsensical Latin ></a></li>

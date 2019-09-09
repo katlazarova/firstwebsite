@@ -7,6 +7,11 @@
   @include breakpoint($md) {
     width: $gutter-size;
     padding: 0;
+
+    &--horizontal {
+      width: 60%;
+      float: left;
+    }
   }
 
   h2 {
@@ -98,8 +103,6 @@
         &--horizontal {
           @include breakpoint($md) {
             flex-direction: row;
-            width: 60%;
-            float: left
           }
 
           .card-image-wrapper {
