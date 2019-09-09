@@ -51,7 +51,7 @@
 	<div class="image-container">
 		<img src="theme/img/girls-school-india.jpg" alt="girls' school in india">
 	</div> <!-- End of image-container -->
-	<h2>Mission Statement</h2>
+	<h1>Mission Statement</h1>
 	<div class="text-wrapper">
 		<p>"To promote children's rights to education and healthcare and equality for girls around the world."</p>
 	</div> <!-- End of text-wrapper -->
