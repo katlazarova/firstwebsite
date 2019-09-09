@@ -44,3 +44,20 @@ body {
     width: 100%;
     height: auto;
 }
+
+.clearfix {
+    clear: both;
+    &:after {
+        content: " ";
+        visibility: hidden;
+        display: block;
+        height: 0;
+    }
+}
+
+h1 {
+    font-size: $font-xlarge;
+    font-weight: bold;
+    color: $tertiary-color;
+    text-align: center;
+}
