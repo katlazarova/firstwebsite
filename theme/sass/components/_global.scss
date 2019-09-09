@@ -44,3 +44,18 @@ body {
     width: 100%;
     height: auto;
 }
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+h1 {
+    font-size: $font-large;
+    font-weight: bold;
+    color: $tertiary-color;
+    text-align: center;
+}

@@ -43,6 +43,9 @@
                         <a href="/about-us.php">About Us</a>
                     </li>
                     <li>
+                        <a href="/blog.php">Blog</a>
+                    </li>
+                    <li>
                         <a href="/get-involved.php">Get Involved</a>
                     </li>
                     <li>

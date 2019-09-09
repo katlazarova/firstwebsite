@@ -9,13 +9,6 @@
         padding: 0;
     }
 
-    h1 {
-        font-size: $font-large;
-        font-weight: bold;
-        color: $tertiary-color;
-        text-align: center;
-    }
-
     .stats-bar-row-container {
 
         @include breakpoint($md) {
