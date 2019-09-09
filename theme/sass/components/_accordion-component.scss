@@ -1,0 +1,23 @@
+.accordion {
+  background-color: $secondary-color;
+  color: $primary-color;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+
+  &:hover {
+    color: $accent-color-one;
+  }
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: $accent-color-one;
+  display: none;
+  overflow: hidden;
+}
