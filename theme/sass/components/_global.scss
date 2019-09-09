@@ -45,12 +45,14 @@ body {
     height: auto;
 }
 
-.clearfix:after {
-    content: " ";
-    visibility: hidden;
-    display: block;
-    height: 0;
+.clearfix {
     clear: both;
+    &:after {
+        content: " ";
+        visibility: hidden;
+        display: block;
+        height: 0;
+    }
 }
 
 h1 {

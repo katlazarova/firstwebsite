@@ -1,6 +1,5 @@
 <?php include 'includes/header.php';?>
     <h1 class="bottom-spacer">Blog</h1>
-    <div class="clearfix">
         <div class="card-component-container bottom-spacer card-component-container--horizontal">
             <div class="row-container row-container--horizontal">
             </div> <!-- End of row-container -->
@@ -16,8 +15,7 @@
                 <li><a href="#">Lorem ipsum was popularized in the 1960s ></a></li>
             </ul>
         </div> <!-- End of blog-sidebar-component -->
-    </div> <!-- End of clearfix -->
-    <div class="content-divider bottom-spacer"></div>
+    <div class="content-divider bottom-spacer clearfix"></div>
     <!-- End of content-divider -->
 
 <?php include 'includes/footer.php';?>
