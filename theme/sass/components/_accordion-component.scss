@@ -1,0 +1,58 @@
+.accordion-component {
+
+  .accordion {
+    background-color: $accent-color-one;
+    color: $secondary-color;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    border: none;
+    transition: 0.4s;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+
+    h3 {
+      display: flex;
+      flex: 1 1 0%;
+    }
+
+    .icons {
+      display: flex;
+      padding: 15px;
+    }
+
+    &:not(:last-child) {
+      border-bottom: thin solid $secondary-color;
+    }
+
+    &:hover,
+    &.active {
+      background-color: $primary-color;
+      color: $accent-color-one;
+    }
+
+    .fa-minus {
+      display:none;
+    }
+
+    &.active {
+      .fa-plus {
+        display: none;
+      }
+
+      .fa-minus {
+        display: flex;
+      }
+    }
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: $accent-color-one;
+    color: $secondary-color;
+    display: none;
+    overflow: hidden;
+  }
+}

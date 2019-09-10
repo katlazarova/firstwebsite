@@ -40,13 +40,14 @@ $(document).ready(function() {
 
     postCardComponentJsonData();
 
+    accordionFunctionality();
+
 });
 
 // Renders different elements to assume the height of the tallest element - mathches their heights.
 function matchItemsHeights() {
     $('.card-component-container .card-text-container').matchHeight();
-};
-
+}
 function menuFunctionality() {
     $('nav ul li a:not(:only-child)').click(function(e) {
         // If anchor is not an only child, it’s sibling must be a drop down list - when clicked, toggle hide and show.
@@ -66,8 +67,7 @@ function menuFunctionality() {
         // Toggles 'is-active' class on click. 
         $(this).toggleClass('is-active');
     });
-};
-
+}
 function clickableElement($cElement) {
     // Inside cElement, find clickable class. 
     $cElement.find('.clickable').click(function() {
@@ -77,8 +77,7 @@ function clickableElement($cElement) {
             window.location = $item.find('a:first').attr('href');
         }
     });
-};
-
+}
 function addPageNameToBody() {
     // Identifying the location path.
     var url = window.location.pathname;
@@ -94,8 +93,7 @@ function addPageNameToBody() {
     } else {
         $('body').addClass('page-' + nameOfPage);
     }
-};
-
+}
 function addActiveClassToNavbar() {
     var current = location.pathname;
     // Run function for each anchor tag in the nav-list. 
@@ -119,13 +117,20 @@ function addActiveClassToNavbar() {
             }
         }
     });
-};
-
+}
 function postCardComponentJsonData() {
-    $.getJSON('theme/json/posts.json', function(data) { 
+    $.getJSON('theme/json/posts.json', function(data) {
         $.each(data, function(i, post) {
             $('.card-component-container .row-container--horizontal')
-            .append('<div class="card-wrapper"><div class="card card-one clickable card--horizontal"><div class="card-image-wrapper"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image responsive-image"></div><div class="card-text-container"><h3>'+post.title+'</h3><p>'+post.date+'</p><p>'+post.body+'</p><a href="'+post.link+'">'+post.linkText+'</a></div></div></div>');
-        }); 
-    }); 
-};
+                .append('<div class="card-wrapper"><div class="card card-one clickable card--horizontal"><div class="card-image-wrapper"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image responsive-image"></div><div class="card-text-container"><h3>'+post.title+'</h3><p>'+post.date+'</p><p>'+post.body+'</p><a href="'+post.link+'">'+post.linkText+'</a></div></div></div>');
+        });
+    });
+}
+function accordionFunctionality() {
+    $('.accordion-component .accordion').each(function() {
+        $(this).click(function() {
+            $(this).next('.panel').slideToggle();
+            $(this).toggleClass('active');
+        });
+    });
+}
