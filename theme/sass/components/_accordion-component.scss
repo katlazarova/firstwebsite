@@ -8,7 +8,6 @@
     padding: 18px;
     text-align: left;
     border: none;
-    outline: none;
     transition: 0.4s;
     width: 100%;
     border-radius: 10px;
@@ -21,6 +20,7 @@
 
     .icons {
       display: flex;
+      padding: 15px;
     }
 
     &:not(:last-child) {
