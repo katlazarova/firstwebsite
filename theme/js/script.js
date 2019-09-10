@@ -40,7 +40,7 @@ $(document).ready(function() {
 
     postCardComponentJsonData();
 
-    slideToggleAccordionContent();
+    accordionFunctionality();
 
 });
 
@@ -126,8 +126,8 @@ function postCardComponentJsonData() {
         });
     });
 }
-function slideToggleAccordionContent() {
-    $('.accordion').each(function() {
+function accordionFunctionality() {
+    $('.accordion-component .accordion').each(function() {
         $(this).click(function() {
             $(this).next('.panel').slideToggle();
             $(this).toggleClass('active');
