@@ -1,5 +1,4 @@
 .accordion-component {
-  border: thin solid $secondary-color;
 
   .accordion {
     background-color: $accent-color-one;
@@ -12,6 +11,17 @@
     outline: none;
     transition: 0.4s;
     width: 100%;
+    border-radius: 10px;
+    display: flex;
+
+    h3 {
+      display: flex;
+      flex: 1 1 0%;
+    }
+
+    .icons {
+      display: flex;
+    }
 
     &:not(:last-child) {
       border-bottom: thin solid $secondary-color;
@@ -21,23 +31,20 @@
     &.active {
       background-color: $primary-color;
       color: $accent-color-one;
-      border-bottom: none;
+    }
+
+    .fa-minus {
+      display:none;
     }
 
     &.active {
       .fa-plus {
         display: none;
       }
-    }
 
-    .fa-plus {
-      position: absolute;
-      right: 50;
-    }
-
-    .fa-minus {
-      position: absolute;
-      right: 50;
+      .fa-minus {
+        display: flex;
+      }
     }
   }
 
