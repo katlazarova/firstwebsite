@@ -1,6 +1,6 @@
 .accordion {
-  background-color: $secondary-color;
-  color: $primary-color;
+  background-color: $accent-color-one;
+  color: $secondary-color;
   font-weight: bold;
   cursor: pointer;
   padding: 18px;
@@ -9,8 +9,14 @@
   border: none;
   outline: none;
   transition: 0.4s;
+  border-bottom: thin solid $secondary-color;
+
+  &:first-child {
+    border-top: thin solid $secondary-color;
+  }
 
   &:hover {
+    background-color: $primary-color;
     color: $accent-color-one;
   }
 }
@@ -18,6 +24,7 @@
 .panel {
   padding: 0 18px;
   background-color: $accent-color-one;
+  color: $secondary-color;
   display: none;
   overflow: hidden;
 }
