@@ -5,10 +5,10 @@
     <button class="accordion">
         <h3>My Account</h3>
         <div class="icons">
-            <span style="font-size: $font-small; color: $secondary-color;">
+            <span>
 					<i class="fas fa-plus"></i>
             </span>
-            <span style="font-size: $font-small; color: $secondary-color;">
+            <span>
                 <i class="fas fa-minus"></i>
             </span>
         </div> <!-- End of icons -->
@@ -20,10 +20,10 @@
     <button class="accordion">
         <h3>Donating</h3>
         <div class="icons">
-            <span style="font-size: $font-small; color: $secondary-color;">
+            <span>
                 <i class="fas fa-plus"></i>
         </span>
-            <span style="font-size: $font-small; color: $secondary-color;">
+            <span>
                 <i class="fas fa-minus"></i>
             </span>
         </div> <!-- End of icons -->
@@ -35,10 +35,10 @@
     <button class="accordion">
         <h3>Contacting the Media Team</h3>
         <div class="icons">
-            <span style="font-size: $font-small; color: $secondary-color;">
+            <span>
                 <i class="fas fa-plus"></i>
             </span>
-            <span style="font-size: $font-small; color: $secondary-color;">
+            <span>
                 <i class="fas fa-minus"></i>
             </span>
         </div> <!-- End of icons -->
@@ -50,10 +50,10 @@
     <button class="accordion">
         <h3>Complaints</h3>
         <div class="icons">
-            <span style="font-size: $font-small; color: $secondary-color;">
+            <span>
                 <i class="fas fa-plus"></i>
             </span>
-            <span style="font-size: $font-small; color: $secondary-color;">
+            <span>
                 <i class="fas fa-minus"></i>
             </span>
         </div> <!-- End of icons -->
