@@ -42,6 +42,8 @@ $(document).ready(function() {
 
     slideToggleAccordionContent();
 
+    addActiveClassToAccordion();
+
 });
 
 // Renders different elements to assume the height of the tallest element - mathches their heights.
@@ -131,5 +133,11 @@ function slideToggleAccordionContent() {
         $(this).click(function() {
             $(this).next('.panel').slideToggle();
         });
+    });
+}
+
+function addActiveClassToAccordion() {
+    $('.accordion').click(function() {
+        $(this).toggleClass('active');
     });
 }
