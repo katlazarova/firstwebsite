@@ -21,11 +21,11 @@
                 </div> <!-- End of footer-info-links -->
                 <div class="social-media-links">
                     <h2>Follow Us</h2>
-                    <ul class="social-media">
-                        <li class="facebook"><a href="http://www.facebook.com" target="_blank"></a></li>
-                        <li class="twitter"><a href="http://www.twitter.com" target="_blank"></a></li>
-                        <li class="instagram"><a href="http://www.instagram.com" target="_blank"></a></li>
-                    </ul>
+                    <div class="social-icons">
+                        <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="http://www.twitter.com" target="_blank"><i class="fas fa-twitter-square"></i></a>
+                        <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div> <!-- End of social-icons -->
                 </div> <!-- End of social-media-links -->
             </div> <!-- End of footer-container -->
         </footer> <!-- End of footer -->
