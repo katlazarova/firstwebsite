@@ -11,10 +11,10 @@
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
         <label for="email">Email</label>
-        <input type="text" id="email" name="email" placeholder="Your email...">
+        <input type="email" id="email" name="email" placeholder="Your email...">
 
         <label for="age">Your Age</label>
-        <input type="text" id="age" name="age" placeholder="Your age...">
+        <input type="number" id="age" name="age" placeholder="Your age..." min="14">
 
         <label for="country">Country</label>
         <select id="country" name="country" required>
