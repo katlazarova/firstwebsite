@@ -79,9 +79,13 @@
                 .fa-facebook-f,
                 .fa-twitter,
                 .fa-instagram {
-                    color: white;
+                    color: $accent-color-one;
                     font-size: $font-large;
                     padding: 10px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
         }
