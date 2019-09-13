@@ -65,6 +65,8 @@
 
             h2 {
                 color: $accent-color-one;
+                padding: 0;
+                margin-bottom: 5px;
             }
 
             .social-icons {
@@ -72,12 +74,14 @@
                 flex-direction: row;
                 padding: 0;
                 list-style-type: none;
+                justify-content: center;
 
                 .fa-facebook-f,
-                .fa-twitter-square,
+                .fa-twitter,
                 .fa-instagram {
                     color: white;
-                    font-size: $font-medium;
+                    font-size: $font-large;
+                    padding: 10px;
                 }
             }
         }

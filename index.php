@@ -25,7 +25,7 @@
 <div class="left-right-component right bottom-spacer">
 	<div class="left-right-container">
 		<div class="image-container">
-			<img src="theme/img/girl-in-refugee-camp.jpg" alt="girl in refugee camp" class="responsive-image">
+			<img src="theme/img/starving-children.jpeg" alt="girl in refugee camp" class="responsive-image">
 		</div> <!-- End of image-container -->
 		<div class="text-container">
 			<h2>Our Impact</h2>
