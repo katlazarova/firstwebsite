@@ -5,13 +5,20 @@
     <form action="action_page.php">
 
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 
         <label for="lname">Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email...">
+
+        <label for="age">Your Age</label>
+        <input type="text" id="age" name="age" placeholder="Your age...">
+
         <label for="country">Country</label>
-        <select id="country" name="country">
+        <select id="country" name="country" required>
+            <option value="">Please Select</option>
             <option value="uk">UK</option>
             <option value="canada">Canada</option>
             <option value="usa">USA</option>
