@@ -42,6 +42,12 @@
                 width: 70px;
                 display: block;
                 border: none;
+                
+                .hamburger-inner,
+                ::before,
+                ::after {
+                    background-color: $accent-color-two;
+                }
 
                 @include breakpoint ($lg) {
                     display: none;
@@ -75,7 +81,7 @@
                 li {
                     position: relative;
                     float: none;
-                    border: thin solid #b6b2b2;
+                    border: thin solid $accent-color-two;
 
                     @include breakpoint($lg) {
                         border: none;
