@@ -88,7 +88,7 @@
                     }
 
                     &:last-child {
-                        border: thin solid $secondary-color;
+                        border: thin solid $accent-color-two;
                     }
 
                     @include breakpoint($lg) {
