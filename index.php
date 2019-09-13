@@ -13,7 +13,7 @@
 <div class="left-right-component left bottom-spacer">
 	<div class="left-right-container">
 		<div class="image-container">
-			<img src="theme/img/vaccinated-child.jpg" alt="girl getting a vaccination" class="responsive-image">
+			<img src="theme/img/vaccinated-child.jpg" alt="boy getting polio treatment" class="responsive-image">
 		</div> <!-- End of image-container -->
 		<div class="text-container">
 			<h2>Why Us?</h2>
@@ -25,7 +25,7 @@
 <div class="left-right-component right bottom-spacer">
 	<div class="left-right-container">
 		<div class="image-container">
-			<img src="theme/img/girl-in-refugee-camp.jpg" alt="girl in refugee camp" class="responsive-image">
+			<img src="theme/img/starving-children.jpeg" alt="children queuing for food in Kenya" class="responsive-image">
 		</div> <!-- End of image-container -->
 		<div class="text-container">
 			<h2>Our Impact</h2>
@@ -62,7 +62,7 @@
 		<div class="card-wrapper">
 			<div class="card card-three clickable card--vertical">
 				<div class="card-image-wrapper">
-					<img src="theme/img/project-homepage.jpeg" alt="children" class="card-image">
+					<img src="theme/img/project-homepage.jpeg" alt="volunteers taking blood pressure" class="card-image">
 				</div> <!-- End of card-image-wrapper -->
 				<div class="card-text-container">
 					<a href="learning/three.php">Donate To Specific Project</a>

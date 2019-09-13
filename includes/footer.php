@@ -13,19 +13,19 @@
                 </div> <!-- End of footer-navlinks -->
                 <div class="footer-info-links">
                     <ul class="footer-links">
-                        <li><a href="#">Help</a></li>
+                        <li><a href="/help.php">Help</a></li>
                         <li><a href="#">Jobs</a></li>
-                        <li><a href="/contact-us.php">Contact Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Terms and Conditions</a></li>
                     </ul>
                 </div> <!-- End of footer-info-links -->
                 <div class="social-media-links">
                     <h2>Follow Us</h2>
-                    <ul class="social-media">
-                        <li class="facebook"><a href="http://www.facebook.com" target="_blank"></a></li>
-                        <li class="twitter"><a href="http://www.twitter.com" target="_blank"></a></li>
-                        <li class="instagram"><a href="http://www.instagram.com" target="_blank"></a></li>
-                    </ul>
+                    <div class="social-icons">
+                        <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div> <!-- End of social-icons -->
                 </div> <!-- End of social-media-links -->
             </div> <!-- End of footer-container -->
         </footer> <!-- End of footer -->

@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HealthMove</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
@@ -52,7 +53,7 @@
                         <a href="/current-projects.php">Current Projects</a>
                     </li>
                     <li>
-                        <a href="#">Help</a>
+                        <a href="/help.php">Help</a>
                     </li>
                 </ul> <!-- End of navlist. -->
             </nav>

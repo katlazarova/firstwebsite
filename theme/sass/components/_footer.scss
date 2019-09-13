@@ -65,52 +65,30 @@
 
             h2 {
                 color: $accent-color-one;
+                padding: 0;
+                margin-bottom: 5px;
             }
 
-            .social-media {
+            .social-icons {
                 display: flex;
                 flex-direction: row;
                 padding: 0;
                 list-style-type: none;
+                justify-content: center;
 
-                .twitter {
-                    margin-right: 3px;
+                .fa-facebook-f,
+                .fa-twitter,
+                .fa-instagram {
+                    color: $accent-color-one;
+                    font-size: $font-large;
+                    padding: 10px;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $tertiary-color;
+                    }
                 }
             }
-        }
-    }
-
-    .facebook a,
-    .twitter a,
-    .instagram a {
-        &:before {
-            content: "";
-            height: 60px;
-            width: 60px;
-            display: block;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-    }
-
-    .facebook a {
-        &:before {
-            background-image: url('../img/facebook-sm.png');
-        }
-    }
-
-    .twitter a {
-        &:before {
-            background-image: url('../img/twitter-sm.png');
-        }
-    }
-
-    .instagram a {
-        &:before {
-            height: 47px;
-            width: 47px;
-            background-image: url('../img/instagram-sm.png');
-            margin-top: 6px;
         }
     }
 }

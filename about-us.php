@@ -49,7 +49,7 @@
 </div> <!-- End of content-divider -->
 <div class="header-text-component bottom-spacer mission-statement">
 	<div class="image-container">
-		<img src="theme/img/girls-school-india.jpg" alt="girls' school in india">
+		<img src="theme/img/primary-school.jpeg" alt="children eating in school in Laos">
 	</div> <!-- End of image-container -->
 	<h1>Mission Statement</h1>
 	<div class="text-wrapper">

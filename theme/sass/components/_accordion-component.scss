@@ -6,21 +6,22 @@
     font-weight: bold;
     cursor: pointer;
     padding: 18px;
-    text-align: left;
     border: none;
+    text-align: left;
     transition: 0.4s;
     width: 100%;
     border-radius: 10px;
     display: flex;
-
-    h3 {
-      display: flex;
-      flex: 1 1 0%;
-    }
+    justify-content: space-between;
+    align-items: center;
 
     .icons {
       display: flex;
       padding: 15px;
+
+      .fa-minus {
+        display:none;
+      }
     }
 
     &:not(:last-child) {
@@ -31,10 +32,6 @@
     &.active {
       background-color: $primary-color;
       color: $accent-color-one;
-    }
-
-    .fa-minus {
-      display:none;
     }
 
     &.active {
