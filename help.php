@@ -4,19 +4,25 @@
     <h2>Get In Touch</h2>
     <form action="action_page.php">
 
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        <label for="fname">First Name
+            <p>*required</p>
+        </label>
+        <input type="text" id="fname" name="firstname" placeholder="First Name" required>
 
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input type="text" id="lname" name="lastname" placeholder="Last Name">
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your email...">
+        <label for="email">Email
+            <p>*required</p>
+        </label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
 
         <label for="age">Your Age</label>
-        <input type="number" id="age" name="age" placeholder="Your age..." min="14">
+        <input type="number" id="age" name="age" placeholder="Age" min="14">
 
-        <label for="country">Country</label>
+        <label for="country">Country
+            <p>*required</p>
+        </label>
         <select id="country" name="country" required>
             <option value="">Please Select</option>
             <option value="uk">UK</option>
