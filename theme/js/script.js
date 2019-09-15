@@ -42,6 +42,8 @@ $(document).ready(function() {
 
     accordionFunctionality();
 
+    validateForm();
+
 });
 
 // Renders different elements to assume the height of the tallest element - mathches their heights.
@@ -132,5 +134,15 @@ function accordionFunctionality() {
             $(this).next('.panel').slideToggle();
             $(this).toggleClass('active');
         });
+    });
+}
+
+function validateForm() {
+    var requiredField = $('.form-control:required');
+    $('form .submit').click(function() {
+        if (requiredField.val().length === 0) {
+            requiredField.addClass('invalid');
+            requiredField.siblings('label').addClass('invalid');
+        }
     });
 }
