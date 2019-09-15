@@ -129,9 +129,12 @@ function postCardComponentJsonData() {
     });
 }
 function accordionFunctionality() {
+    /* For each accordion component, run a click function. */
     $('.accordion-component .accordion').each(function() {
         $(this).click(function() {
+            /* Toggle the panel content on click. */
             $(this).next('.panel').slideToggle();
+            /* With each click on the accordion, toggle the active class */
             $(this).toggleClass('active');
         });
     });
@@ -140,8 +143,10 @@ function accordionFunctionality() {
 function validateForm() {
     var requiredField = $('.form-control:required');
     $('form .submit').click(function() {
+        /* If a required field is empty on form submission, add class invalid to the required field.*/
         if (requiredField.val().length === 0) {
             requiredField.addClass('invalid');
+            /* Add class invalid to the sibling element "label". */
             requiredField.siblings('label').addClass('invalid');
         }
     });

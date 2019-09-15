@@ -4,7 +4,7 @@
     <h2>Get In Touch</h2>
     <form class="form" action="action_page.php">
         <div class="form-group">
-            <label for="fname">First Name
+            <label for="first-name">First Name
                 <span class="required-asterix" title="This field is required">*</span>
             </label>
             <span class="visually-hidden">(required)</span>
@@ -12,7 +12,7 @@
         </div> <!-- End of form-group -->
 
         <div class="form-group">
-            <label for="lname">Last Name</label>
+            <label for="last-name">Last Name</label>
             <input type="text" class="form-control" name="lastname" placeholder="Last Name">
         </div> <!-- End of form-group -->
 
