@@ -42,6 +42,8 @@ $(document).ready(function() {
 
     accordionFunctionality();
 
+    validateForm();
+
 });
 
 // Renders different elements to assume the height of the tallest element - mathches their heights.
@@ -127,10 +129,25 @@ function postCardComponentJsonData() {
     });
 }
 function accordionFunctionality() {
+    // For each accordion component, run a click function.
     $('.accordion-component .accordion').each(function() {
         $(this).click(function() {
+            // Toggle the panel content on click.
             $(this).next('.panel').slideToggle();
+            // With each click on the accordion, toggle the active class.
             $(this).toggleClass('active');
         });
+    });
+}
+
+function validateForm() {
+    var requiredField = $('.form-control:required');
+    $('form .submit').click(function() {
+        // If a required field is empty when submit button is clicked, add class invalid to the required field.
+        if (requiredField.val().length === 0) {
+            requiredField.addClass('invalid');
+            // Add class invalid to the sibling element "label".
+            requiredField.siblings('label').addClass('invalid');
+        }
     });
 }
