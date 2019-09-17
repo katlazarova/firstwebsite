@@ -46,7 +46,7 @@ $(document).ready(function() {
 
     getFormData();
 
-    countChar();
+    countCharacter();
 
 });
 
@@ -156,7 +156,7 @@ function validateForm() {
     });
 }
 
-$.getUrlParam = function(name){
+$.getUrlParameter = function(name){
     /* Variable results is set to equal to the result of the search using RegExp.
     RegExp defines the characters which can be before the word, the word, and characters which can appear after the word.
     RegExp is the search term used by the .exec function which looks for the result in the url. */
@@ -168,8 +168,8 @@ $.getUrlParam = function(name){
 };
 
 function getFormData() {
-    var firstName = $.getUrlParam('firstname');
-    var email = $.getUrlParam('email');
+    var firstName = $.getUrlParameter('firstname');
+    var email = $.getUrlParameter('email');
 
     $('.thank-you-message .first-name').append(firstName);
 
@@ -178,7 +178,7 @@ function getFormData() {
     }
 }
 
-function countChar() {
+function countCharacter() {
     $('.text-area').on("input", function(){
         var maxlength = $(this).attr("maxlength");
         var currentLength = $(this).val().length;
@@ -192,7 +192,7 @@ function countChar() {
             charCounter.text(maxlength - currentLength + " characters remaining");
         }
 
-        if( currentLength >= 450) {
+        if( currentLength >= 250) {
             // Add class "limit-warning" to the character counter when there are 50 characters remaining or less.
             charCounter.addClass('limit-warning');
         }

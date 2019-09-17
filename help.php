@@ -45,7 +45,7 @@
         <div class="form-group">
             <label for="subject">Your inquiry</label>
             <div class="character-counter"></div>
-            <textarea name="subject" class="text-area" placeholder="Type here" maxlength="500" onkeyup="countChar(this)"></textarea>
+            <textarea name="subject" class="text-area" placeholder="Type here" maxlength="300"></textarea>
         </div> <!-- End of form-group -->
 
         <input type="submit" value="Submit" class="submit">
