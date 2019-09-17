@@ -154,17 +154,18 @@ function validateForm() {
     });
 }
 
+$.getUrlParam = function(name){
+    /* Variable results is set to equal to the result of the search using RegExp.
+    RegExp defines the characters which can be before the word, the word, and characters which can appear after the word.
+    RegExp is the search term used by the .exec function which looks for the result in the url. */
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results == null) {
+        return null;
+    }
+    return decodeURI(results[1]) || 0;
+};
+
 function getFormData() {
-    $.getUrlParam = function(name){
-        // Variable results is set to equal to the result of the search using RegExp.
-        // RegExp defines the characters which can be before the word, the word, and characters which can appear after the word.
-        // RegExp is the search term used by the .exec function which looks for the result in the url.
-        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-        if (results==null) {
-            return null;
-        }
-        return decodeURI(results[1]) || 0;
-    };
     var firstName = $.getUrlParam('firstname');
     var email = $.getUrlParam('email');
 
