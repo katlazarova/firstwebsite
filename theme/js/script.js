@@ -46,6 +46,8 @@ $(document).ready(function() {
 
     getFormData();
 
+    countChar();
+
 });
 
 // Renders different elements to assume the height of the tallest element - mathches their heights.
@@ -170,6 +172,29 @@ function getFormData() {
     var email = $.getUrlParam('email');
 
     $('.thank-you-message .first-name').append(firstName);
-    $('.thank-you-message .email').append(email);
+
+    if (email !== null) {
+        $('.thank-you-message .email').append('on ' + email);
+    }
 }
 
+function countChar() {
+    $('.text-area').on("input", function(){
+        var maxlength = $(this).attr("maxlength");
+        var currentLength = $(this).val().length;
+        var charCounter = $('.contact-form-container .character-counter');
+
+        if( currentLength >= maxlength ){
+            // If the current length of the text is 500 or more characters, display the specified text.
+            charCounter.text('You have reached the maximum number of characters.');
+        } else{
+            // If the length of the text is less than 500 characters, display the number of characters remaining.
+            charCounter.text(maxlength - currentLength + " characters remaining");
+        }
+
+        if( currentLength >= 450) {
+            // Add class "limit-warning" to the character counter when there are 50 characters remaining or less.
+            charCounter.addClass('limit-warning');
+        }
+    });
+}
