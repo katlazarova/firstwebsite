@@ -175,8 +175,13 @@ function getFormData() {
     var firstName = $.getUrlParameter('firstname');
     var email = $.getUrlParameter('email');
 
-    $('.thank-you-message .first-name').append(firstName);
+    if (firstName !== null) {
+        firstName = firstName.replace('+', ' ');
+        $('.thank-you-message .first-name').append(firstName);
+    }
+
     if (email !== null) {
+        email = email.replace(/%40/g, '@');
         $('.thank-you-message .email').append('on ' + email);
     }
 }
