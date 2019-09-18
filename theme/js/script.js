@@ -128,7 +128,7 @@ function addActiveClassToNavbar() {
 }
 function postCardComponentJsonData() {
     $.getJSON('theme/json/posts.json', function(data) {
-        // Run function for each card.
+        // Run function for each card. The post variable here represents the json dataset.
         $.each(data, function(i, post) {
             $('.card-component-container .row-container--horizontal')
             // Insert the following markup and json data into the card-component-container div.
@@ -176,7 +176,6 @@ function getFormData() {
     var email = $.getUrlParameter('email');
 
     $('.thank-you-message .first-name').append(firstName);
-
     if (email !== null) {
         $('.thank-you-message .email').append('on ' + email);
     }
@@ -211,7 +210,8 @@ function postCountryJsonData() {
             format: "json"
             // If the json data can be loaded, trigger the following function.
         }).done(function (data) {
-            // Run function for each country in the json data.
+            /* Run function for each country in the json data.
+            countryData is a variable representing the json dataset at the countries array level.*/
             $.each(data['countries'], function (i, countryData) {
 
                 $('.select-country')
