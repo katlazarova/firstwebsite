@@ -44,6 +44,12 @@ $(document).ready(function() {
 
     validateForm();
 
+    getFormData();
+
+    countCharacter();
+
+    postCountryJsonData();
+
 });
 
 // Renders different elements to assume the height of the tallest element - mathches their heights.
@@ -122,8 +128,10 @@ function addActiveClassToNavbar() {
 }
 function postCardComponentJsonData() {
     $.getJSON('theme/json/posts.json', function(data) {
+        // Run function for each card. The post variable here represents the json dataset.
         $.each(data, function(i, post) {
             $('.card-component-container .row-container--horizontal')
+            // Insert the following markup and json data into the card-component-container div.
                 .append('<div class="card-wrapper"><div class="card card-one clickable card--horizontal"><div class="card-image-wrapper"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image responsive-image"></div><div class="card-text-container"><h3>'+post.title+'</h3><p>'+post.date+'</p><p>'+post.body+'</p><a href="'+post.link+'">'+post.linkText+'</a></div></div></div>');
         });
     });
@@ -150,4 +158,75 @@ function validateForm() {
             requiredField.siblings('label').addClass('invalid');
         }
     });
+}
+
+$.getUrlParameter = function(name){
+    /* Variable results is set to equal to the result of the search using RegExp.
+    RegExp defines the characters which can be before the word, the word, and characters which can appear after the word.
+    RegExp is the search term used by the .exec function which looks for the result in the url. */
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results == null) {
+        return null;
+    }
+    return decodeURI(results[1]) || 0;
+};
+
+function getFormData() {
+    var firstName = $.getUrlParameter('firstname');
+    var email = $.getUrlParameter('email');
+
+    if (firstName !== null) {
+        firstName = firstName.replace('+', ' ');
+        $('.thank-you-message .first-name').append(firstName);
+    }
+
+    if (email !== null) {
+        email = email.replace(/%40/g, '@');
+        $('.thank-you-message .email').append('on ' + email);
+    }
+}
+
+function countCharacter() {
+    $('.text-area').on("input", function(){
+        var maxlength = $(this).attr("maxlength");
+        var currentLength = $(this).val().length;
+        var charCounter = $('.contact-form-container .character-counter');
+
+        if( currentLength >= maxlength ){
+            // If the current length of the text is 500 or more characters, display the specified text.
+            charCounter.text('You have reached the maximum number of characters.');
+        } else{
+            // If the length of the text is less than 500 characters, display the number of characters remaining.
+            charCounter.text(maxlength - currentLength + " characters remaining");
+        }
+
+        if( currentLength >= 250) {
+            // Add class "limit-warning" to the character counter when there are 50 characters remaining or less.
+            charCounter.addClass('limit-warning');
+        }
+    });
+}
+
+function postCountryJsonData() {
+    // Run function only on the help page.
+    if (window.location.pathname === '/help.php') {
+        // Link to json data.
+        $.getJSON('http://vocab.nic.in/rest.php/country/json', {
+            format: "json"
+            // If the json data can be loaded, trigger the following function.
+        }).done(function (data) {
+            /* Run function for each country in the json data.
+            countryData is a variable representing the json dataset at the countries array level.*/
+            $.each(data['countries'], function (i, countryData) {
+
+                $('.select-country')
+                // Insert markup and json data into the select element.
+                    .append('<option value="' + countryData.country.country_id + '">' + countryData.country.country_name + '</option>');
+            });
+            // If the json data cannot be loaded, display an error message.
+        }).fail(function (data, textStatus, error) {
+            var err = textStatus + ", " + error;
+            console.log("Request Failed: " + err);
+        });
+    }
 }

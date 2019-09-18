@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/theme/node_modules/swiper/dist/css/swiper.min.css">
     <link rel="stylesheet" href="/theme/build/styles.min.css">
     <script src="/theme/build/script.min.js"></script>
+    <link rel="icon" href="/theme/img/favicon.ico.png" type="image/icon">
 </head>
 
 <body>

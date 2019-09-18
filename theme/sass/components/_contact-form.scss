@@ -9,6 +9,14 @@
     text-align: center;
     margin: 0;
   }
+
+  .character-counter {
+    font-size: $font-xsmall;
+
+    &.limit-warning {
+      color: $highlight-color;
+    }
+  }
 }
 
 

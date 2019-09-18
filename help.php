@@ -2,7 +2,7 @@
 <h1 class="bottom-spacer">Help</h1>
 <div class="contact-form-container">
     <h2>Get In Touch</h2>
-    <form class="form" action="action_page.php">
+    <form class="form" action="/success-page.php">
         <div class="form-group">
             <label for="firstName">First Name
                 <span class="required-asterix" title="This field is required">*</span>
@@ -34,17 +34,15 @@
                 <span class="required-asterix" title="This field is required">*</span>
             </label>
             <span class="visually-hidden">(required)</span>
-            <select class="form-control" name="country" required>
+            <select class="form-control select-country" name="country" required>
                 <option value="">Please Select</option>
-                <option value="uk">UK</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
             </select>
         </div> <!-- End of form-group -->
 
         <div class="form-group">
             <label for="subject">Your inquiry</label>
-            <textarea name="subject" placeholder="Type here"></textarea>
+            <div class="character-counter"></div>
+            <textarea name="subject" class="text-area" placeholder="Type here" maxlength="300"></textarea>
         </div> <!-- End of form-group -->
 
         <input type="submit" value="Submit" class="submit">
