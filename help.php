@@ -34,11 +34,8 @@
                 <span class="required-asterix" title="This field is required">*</span>
             </label>
             <span class="visually-hidden">(required)</span>
-            <select class="form-control" name="country" required>
+            <select class="form-control select-country" name="country" required>
                 <option value="">Please Select</option>
-                <option value="uk">UK</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
             </select>
         </div> <!-- End of form-group -->
 
