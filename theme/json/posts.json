@@ -8,7 +8,7 @@
 		"imageLink":"/theme/img/volunteer.jpeg",
 		"imageAltText":"volunteers",
         "datePosted": "18 July 2019",
-		"author": ["name":"Olivia Benson", "image":"/theme/img/olivia-benson.jpeg"]
+		"author": [{"name":"Olivia Benson", "image":"/theme/img/olivia-benson.jpeg"}]
 	},
 	{
 		"id": "002",
@@ -19,7 +19,7 @@
 		"imageLink":"/theme/img/celebration-fundraising.jpeg",
 		"imageAltText":"birthday party",
         "datePosted": "4 September 2019",
-		"author": ["name":"Meredith Grey", "image":"/theme/img/meredith-grey.jpeg"]
+		"author": [{"name":"Meredith Grey", "image":"/theme/img/meredith-grey.jpeg"}]
 	},
 	{
 		"id": "003",
@@ -30,6 +30,6 @@
 		"imageLink":"/theme/img/project-homepage.jpeg",
 		"imageAltText":"children",
         "datePosted": "7 September 2019",
-		"author": ["name":"Lisa Cuddy", "image":"/theme/img/lisa-cuddy.jpeg"]
+		"author": [{"name":"Lisa Cuddy", "image":"/theme/img/lisa-cuddy.jpeg"}]
 	}
 ]
