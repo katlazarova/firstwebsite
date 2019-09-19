@@ -1,29 +1,38 @@
 [
 	{
+		"id": "101",
 		"title":"Five Trends in Today's Youth Activism",
 		"body":"Want to know what you can learn from today's youth activism? Here are five trends from the global youth climate movement.",
 		"linkText":"Read More...",
 		"link":"#",
-		"imageLink":"theme/img/volunteer.jpeg",
+		"imageLink":"/theme/img/volunteer.jpeg",
 		"imageAltText":"volunteers",
-        "date": "18 July 2019"
+        "date": "18 July 2019",
+		"authorName": "Olivia Benson",
+		"authorImage": "/theme/img/olivia-benson.jpeg"
 	},
 	{
+		"id": "102",
 		"title":"Raising Voices:Young People Speak Up in Parliament",
 		"body":"It's vital that my MP hears my voice.",
 		"linkText":"Read More...",
 		"link":"#",
-		"imageLink":"theme/img/celebration-fundraising.jpeg",
+		"imageLink":"/theme/img/celebration-fundraising.jpeg",
 		"imageAltText":"birthday party",
-        "date": "4 September 2019"
+        "date": "4 September 2019",
+		"authorName": "Meredith Grey",
+		"authorImage": "/theme/img/meredith-grey.jpeg"
 	},
 	{
+		"id": "103",
 		"title":"Porque é que o usamos?",
 		"body":"É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.",
 		"linkText":"Read More...",
 		"link":"#",
-		"imageLink":"theme/img/project-homepage.jpeg",
+		"imageLink":"/theme/img/project-homepage.jpeg",
 		"imageAltText":"children",
-        "date": "7 September 2019"
+        "date": "7 September 2019",
+		"authorName": "Lisa Cuddy",
+		"authorImage": "/theme/img/lisa-cuddy.jpeg"
 	}
 ]

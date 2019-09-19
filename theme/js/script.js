@@ -50,6 +50,8 @@ $(document).ready(function() {
 
     postCountryJsonData();
 
+
+
 });
 
 // Renders different elements to assume the height of the tallest element - mathches their heights.
@@ -230,3 +232,4 @@ function postCountryJsonData() {
         });
     }
 }
+
