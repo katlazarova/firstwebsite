@@ -1,38 +1,35 @@
 [
 	{
-		"id": "101",
+		"id": "001",
 		"title":"Five Trends in Today's Youth Activism",
 		"body":"Want to know what you can learn from today's youth activism? Here are five trends from the global youth climate movement.",
 		"linkText":"Read More...",
-		"link":"#",
+		"link":"/blog/blog-content.php",
 		"imageLink":"/theme/img/volunteer.jpeg",
 		"imageAltText":"volunteers",
-        "date": "18 July 2019",
-		"authorName": "Olivia Benson",
-		"authorImage": "/theme/img/olivia-benson.jpeg"
+        "datePosted": "18 July 2019",
+		"author": ["name":"Olivia Benson", "image":"/theme/img/olivia-benson.jpeg"]
 	},
 	{
-		"id": "102",
+		"id": "002",
 		"title":"Raising Voices:Young People Speak Up in Parliament",
 		"body":"It's vital that my MP hears my voice.",
 		"linkText":"Read More...",
-		"link":"#",
+		"link":"/blog/blog-content.php",
 		"imageLink":"/theme/img/celebration-fundraising.jpeg",
 		"imageAltText":"birthday party",
-        "date": "4 September 2019",
-		"authorName": "Meredith Grey",
-		"authorImage": "/theme/img/meredith-grey.jpeg"
+        "datePosted": "4 September 2019",
+		"author": ["name":"Meredith Grey", "image":"/theme/img/meredith-grey.jpeg"]
 	},
 	{
-		"id": "103",
+		"id": "003",
 		"title":"Porque é que o usamos?",
 		"body":"É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.",
 		"linkText":"Read More...",
-		"link":"#",
+		"link":"/blog/blog-content.php",
 		"imageLink":"/theme/img/project-homepage.jpeg",
 		"imageAltText":"children",
-        "date": "7 September 2019",
-		"authorName": "Lisa Cuddy",
-		"authorImage": "/theme/img/lisa-cuddy.jpeg"
+        "datePosted": "7 September 2019",
+		"author": ["name":"Lisa Cuddy", "image":"/theme/img/lisa-cuddy.jpeg"]
 	}
 ]
