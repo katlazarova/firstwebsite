@@ -238,6 +238,7 @@ function postBlogContent() {
     var postId = $.getUrlParameter('postId');
     $.getJSON('/theme/json/posts.json', function(data) {
             var post = data[postId];
+            // Inserts content into blog-content-container.
             $('.blog-content-container').append('<h2>'+post.title+'</h2>');
     });
 }
