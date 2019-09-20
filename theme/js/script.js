@@ -131,11 +131,10 @@ function addActiveClassToNavbar() {
 function postCardComponentJsonData() {
     $.getJSON('theme/json/posts.json', function(data) {
         // Run function for each card. The post variable here represents the json dataset.
-        console.log(data);
         $.each(data, function(i, post) {
             $('.card-component-container .row-container--horizontal')
             // Insert the following markup and json data into the card-component-container div.
-                .append('<div class="card-wrapper"><div class="card card-one clickable card--horizontal"><div class="card-image-wrapper"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image responsive-image"></div><div class="card-text-container"><h3>'+post.title+'</h3><p>'+post.datePosted+'</p><p>'+post.body+'</p><a href="'+post.link+'?postId='+post.id+'">'+post.linkText+'</a></div></div></div>');
+                .append('<div class="card-wrapper"><div class="card card-one clickable card--horizontal"><div class="card-image-wrapper"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image responsive-image"></div><div class="card-text-container"><h3>'+post.title+'</h3><p>'+post.datePosted+'</p><p>'+post.summary+'</p><a href="'+post.link+'?postId='+post.id+'">'+post.linkText+'</a></div></div></div>');
         });
     });
 }
@@ -239,6 +238,8 @@ function postBlogContent() {
     $.getJSON('/theme/json/posts.json', function(data) {
             var post = data[postId];
             // Inserts content into blog-content-container.
-            $('.blog-content-container').append('<h2>'+post.title+'</h2>');
+            $('.blog-content-container').append('<h2>'+post.title+'</h2><p>'+post.datePosted+'</p><div class="blog-content-text-container bottom-spacer">'+post.body+'</div><div class="blog-content-image-wrapper bottom-spacer"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image responsive-image"></div>');
+            console.log(post);
+            $('.sidebar .author-container').append('<div class="author-image-container"><img src="'+post.author[0].image+'" alt="author image"></div><h3>'+post.author[0].name+'</h3>');
     });
 }

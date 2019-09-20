@@ -1,4 +1,7 @@
 .sidebar-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
   @include breakpoint($md) {
     width: 40%;
