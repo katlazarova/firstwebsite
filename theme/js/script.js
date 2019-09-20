@@ -50,7 +50,7 @@ $(document).ready(function() {
 
     postCountryJsonData();
 
-
+    postBlogContent();
 
 });
 
@@ -131,10 +131,11 @@ function addActiveClassToNavbar() {
 function postCardComponentJsonData() {
     $.getJSON('theme/json/posts.json', function(data) {
         // Run function for each card. The post variable here represents the json dataset.
+        console.log(data);
         $.each(data, function(i, post) {
             $('.card-component-container .row-container--horizontal')
             // Insert the following markup and json data into the card-component-container div.
-                .append('<div class="card-wrapper"><div class="card card-one clickable card--horizontal"><div class="card-image-wrapper"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image responsive-image"></div><div class="card-text-container"><h3>'+post.title+'</h3><p>'+post.date+'</p><p>'+post.body+'</p><a href="'+post.link+'">'+post.linkText+'</a></div></div></div>');
+                .append('<div class="card-wrapper"><div class="card card-one clickable card--horizontal"><div class="card-image-wrapper"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image responsive-image"></div><div class="card-text-container"><h3>'+post.title+'</h3><p>'+post.datePosted+'</p><p>'+post.body+'</p><a href="'+post.link+'?postId='+post.id+'">'+post.linkText+'</a></div></div></div>');
         });
     });
 }
@@ -233,3 +234,10 @@ function postCountryJsonData() {
     }
 }
 
+function postBlogContent() {
+    var postId = $.getUrlParameter('postId');
+    $.getJSON('/theme/json/posts.json', function(data) {
+            var post = data[postId];
+            $('.blog-content-container').append('<h2>'+post.title+'</h2>');
+    });
+}

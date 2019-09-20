@@ -1,6 +1,6 @@
 [
 	{
-		"id": "001",
+		"id": "0",
 		"title":"Five Trends in Today's Youth Activism",
 		"body":"Want to know what you can learn from today's youth activism? Here are five trends from the global youth climate movement.",
 		"linkText":"Read More...",
@@ -11,7 +11,7 @@
 		"author": [{"name":"Olivia Benson", "image":"/theme/img/olivia-benson.jpeg"}]
 	},
 	{
-		"id": "002",
+		"id": "1",
 		"title":"Raising Voices:Young People Speak Up in Parliament",
 		"body":"It's vital that my MP hears my voice.",
 		"linkText":"Read More...",
@@ -22,7 +22,7 @@
 		"author": [{"name":"Meredith Grey", "image":"/theme/img/meredith-grey.jpeg"}]
 	},
 	{
-		"id": "003",
+		"id": "2",
 		"title":"Porque é que o usamos?",
 		"body":"É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.",
 		"linkText":"Read More...",
