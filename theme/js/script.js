@@ -234,12 +234,13 @@ function postCountryJsonData() {
 }
 
 function postBlogContent() {
-    var postId = $.getUrlParameter('postId');
-    $.getJSON('/theme/json/posts.json', function(data) {
+    if (window.location.pathname === '/blog/blog-content.php') {
+        var postId = $.getUrlParameter('postId');
+        $.getJSON('/theme/json/posts.json', function (data) {
             var post = data[postId];
             // Inserts content into blog-content-container.
-            $('.blog-content-container').append('<h2>'+post.title+'</h2><p>'+post.datePosted+'</p><div class="blog-content-text-container bottom-spacer">'+post.body+'</div><div class="blog-content-image-wrapper bottom-spacer"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image responsive-image"></div>');
-            console.log(post);
-            $('.sidebar .author-container').append('<div class="author-image-container"><img src="'+post.author[0].image+'" alt="author image"></div><h3>'+post.author[0].name+'</h3>');
-    });
+            $('.blog-content-container').append('<h2>' + post.title + '</h2><p>' + post.datePosted + '</p><div class="blog-content-text-container bottom-spacer">' + post.body + '</div><div class="blog-content-image-wrapper bottom-spacer"><img src="' + post.imageLink + '" alt="' + post.imageAltText + '" class="card-image responsive-image"></div>');
+            $('.sidebar .author-container').append('<div class="author-image-container"><img src="' + post.author[0].image + '" alt="author image"></div><h3>' + post.author[0].name + '</h3>');
+        });
+    }
 }
