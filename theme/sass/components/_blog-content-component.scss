@@ -1,7 +1,6 @@
 .blog-content-container {
   width: $gutter-size;
   margin: 0 auto;
-  text-align: center;
 
   @include breakpoint($md) {
   width: 60%;
