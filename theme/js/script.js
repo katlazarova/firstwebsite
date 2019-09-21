@@ -44,7 +44,8 @@ $(document).ready(function() {
 
     countCharacter();
 
-    // Calling the clickableElement function on card-wrapper.
+    /* Calling the clickableElement function on card-wrapper.
+    This function needs parameters running through it to work. */
     clickableElement($('.card-component-container .card-wrapper'));
 
 });
