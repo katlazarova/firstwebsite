@@ -16,3 +16,5 @@ learning.html
 ajax
 theme/node_modules/*
 theme/build/*
+theme/.DS_Store
+.DS_Store
