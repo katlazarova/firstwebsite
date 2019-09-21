@@ -175,8 +175,8 @@ $.getUrlParameter = function(name){
 };
 
 function countCharacter() {
-    $('.text-area').on("input", function(){
-        var maxlength = $(this).attr("maxlength");
+    $('.text-area').on('input', function(){
+        var maxlength = $(this).attr('maxlength');
         var currentLength = $(this).val().length;
         var charCounter = $('.contact-form-container .character-counter');
 
@@ -185,7 +185,7 @@ function countCharacter() {
             charCounter.text('You have reached the maximum number of characters.');
         } else{
             // If the length of the text is less than 500 characters, display the number of characters remaining.
-            charCounter.text(maxlength - currentLength + " characters remaining");
+            charCounter.text(maxlength - currentLength + ' characters remaining');
         }
 
         if( currentLength >= 250) {
