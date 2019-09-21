@@ -11,10 +11,6 @@
     background-image: url("/theme/img/child-development-childrens-charity-hero.jpeg");
   }
 
-    .page-blog-blog-content & {
-        background-image: url("/theme/img/volunteer-baby-cuddler.jpeg");
-    }
-
     .hero-text {
         position: absolute;
         left: 5vw;
@@ -34,4 +30,13 @@
       bottom: 5vw;
     }
   }
+}
+
+.blog-hero-image {
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
 }

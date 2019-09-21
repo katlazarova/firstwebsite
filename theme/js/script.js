@@ -36,8 +36,6 @@ $(document).ready(function() {
 
     addActiveClassToNavbar();
 
-    postCardComponentJsonData();
-
     accordionFunctionality();
 
     validateForm();
@@ -45,10 +43,6 @@ $(document).ready(function() {
     getFormData();
 
     countCharacter();
-
-    postCountryJsonData();
-
-    postBlogContent();
 
     // Calling the clickableElement function on card-wrapper.
     clickableElement($('.card-component-container .card-wrapper'));
@@ -129,19 +123,7 @@ function addActiveClassToNavbar() {
         }
     });
 }
-function postCardComponentJsonData() {
-    $.getJSON('theme/json/posts.json', function(data) {
-        // Run function for each card. The post variable here represents the json dataset.
-        $.each(data, function(i, post) {
-            $('.card-component-container .row-container--horizontal')
-            // Insert the following markup and json data into the card-component-container div.
-                .append('<div class="card-wrapper"><div class="card card-one clickable card--horizontal"><div class="card-image-wrapper"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image responsive-image"></div><div class="card-text-container"><h3>'+post.title+'</h3><p>'+post.datePosted+'</p><p>'+post.summary+'</p><a href="'+post.link+'?postId='+post.id+'">'+post.linkText+'</a></div></div></div>');
-        });
-    });
-    setTimeout(function(){
-        clickableElement($('.card-component-container .card-wrapper'));
-    }, 3000);
-}
+
 function accordionFunctionality() {
     // For each accordion component, run a click function.
     $('.accordion-component .accordion').each(function() {
@@ -166,17 +148,6 @@ function validateForm() {
     });
 }
 
-$.getUrlParameter = function(name){
-    /* Variable results is set to equal to the result of the search using RegExp.
-    RegExp defines the characters which can be before the word, the word, and characters which can appear after the word.
-    RegExp is the search term used by the .exec function which looks for the result in the url. */
-    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-    if (results == null) {
-        return null;
-    }
-    return decodeURI(results[1]) || 0;
-};
-
 function getFormData() {
     var firstName = $.getUrlParameter('firstname');
     var email = $.getUrlParameter('email');
@@ -191,6 +162,17 @@ function getFormData() {
         $('.thank-you-message .email').append('on ' + email);
     }
 }
+
+$.getUrlParameter = function(name){
+    /* Variable results is set to equal to the result of the search using RegExp.
+    RegExp defines the characters which can be before the word, the word, and characters which can appear after the word.
+    RegExp is the search term used by the .exec function which looks for the result in the url. */
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results == null) {
+        return null;
+    }
+    return decodeURI(results[1]) || 0;
+};
 
 function countCharacter() {
     $('.text-area').on("input", function(){
@@ -211,40 +193,4 @@ function countCharacter() {
             charCounter.addClass('limit-warning');
         }
     });
-}
-
-function postCountryJsonData() {
-    // Run function only on the help page.
-    if (window.location.pathname === '/help.php') {
-        // Link to json data.
-        $.getJSON('http://vocab.nic.in/rest.php/country/json', {
-            format: "json"
-            // If the json data can be loaded, trigger the following function.
-        }).done(function (data) {
-            /* Run function for each country in the json data.
-            countryData is a variable representing the json dataset at the countries array level.*/
-            $.each(data['countries'], function (i, countryData) {
-
-                $('.select-country')
-                // Insert markup and json data into the select element.
-                    .append('<option value="' + countryData.country.country_id + '">' + countryData.country.country_name + '</option>');
-            });
-            // If the json data cannot be loaded, display an error message.
-        }).fail(function (data, textStatus, error) {
-            var err = textStatus + ", " + error;
-            console.log("Request Failed: " + err);
-        });
-    }
-}
-
-function postBlogContent() {
-    if (window.location.pathname === '/blog/blog-content.php') {
-        var postId = $.getUrlParameter('postId');
-        $.getJSON('/theme/json/posts.json', function (data) {
-            var post = data[postId];
-            // Inserts content into blog-content-container.
-            $('.blog-content-container').append('<h2>' + post.title + '</h2><p>Posted On: ' + post.datePosted + '</p><div class="blog-content-text-container bottom-spacer">' + post.body + '</div><div class="blog-content-image-wrapper bottom-spacer"><img src="' + post.imageLink + '" alt="' + post.imageAltText + '" class="card-image responsive-image"></div>');
-            $('.sidebar .author-container').append('<div class="author-image-container"><img src="' + post.author[0].image + '" alt="author image"></div><h3>' + post.author[0].name + '</h3>');
-        });
-    }
 }

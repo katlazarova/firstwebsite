@@ -15,7 +15,7 @@
         <li><a href="#">Lorem ipsum was popularized in the 1960s ></a></li>
     </ul>
     <div class="twitter-feed">
-        <!-- <a class="twitter-timeline" data-lang="en" data-width="350" data-height="750" data-link-color="#E95F28" href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw">National Park Tweets - Curated tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+        <a class="twitter-timeline" data-lang="en" data-width="350" data-height="750" data-link-color="#E95F28" href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw">National Park Tweets - Curated tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div> <!-- End of twitter-feed -->
 </div> <!-- End of blog-sidebar-component -->
 
