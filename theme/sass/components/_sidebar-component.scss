@@ -6,11 +6,13 @@
     width: 40%;
     float: right;
   }
+
   h2 {
     text-align: center;
     font-size: $font-large;
     color: $tertiary-color;
-    margin-top: 0;
+    margin: 0;
+    padding-top: 0;
   }
 
   ul {
@@ -32,8 +34,16 @@
     }
   }
 
+  .sidebar-link-container {
+    background-color: $accent-color-one;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: $gutter-size;
+    padding: 10px 0;
+  }
+
   .blog-links {
-    width: 80%;
+    width: $gutter-size;
     text-align: center;
     padding: 0;
     margin: 0 auto;
