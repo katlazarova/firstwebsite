@@ -26,6 +26,10 @@
     a {
         text-decoration: none;
         color: $primary-color;
+
+        &:hover {
+          color: $secondary-color;
+        }
     }
   }
 }
