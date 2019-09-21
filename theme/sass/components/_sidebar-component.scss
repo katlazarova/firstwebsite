@@ -1,4 +1,6 @@
 .sidebar-container {
+  display: flex;
+  flex-direction: column;
 
   @include breakpoint($md) {
     width: 40%;
@@ -28,5 +30,24 @@
         text-decoration: underline;
       }
     }
+  }
+
+  .blog-links {
+    width: 80%;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .sidebar-divider {
+    height: 1px;
+    width: 50%;
+    background-color: $secondary-color;
+    margin: 0 auto;
+  }
+
+  .twitter-feed {
+    display: block;
+    text-align: center;
   }
 }
