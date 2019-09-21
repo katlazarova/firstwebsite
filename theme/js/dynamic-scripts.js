@@ -10,13 +10,13 @@ function getBlogCardComponentData() {
     $.getJSON('theme/json/posts.json', function(data) {
         // Run function for each card. The post variable here represents the json dataset.
         $.each(data, function(i, post) {
-            $('.card-component-container--horizontal .card-wrapper')
+            $('.card-component-container .row-container--horizontal')
             // Insert the following markup and json data into the card-component-container div.
                 .append('<div class="card-wrapper"><div class="card card-one clickable card--horizontal"><div class="card-image-wrapper"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image responsive-image"></div><div class="card-text-container"><h3>'+post.title+'</h3><p>'+post.datePosted+'</p><p>'+post.summary+'</p><a href="'+post.link+'?postId='+post.id+'">'+post.linkText+'</a></div></div></div>');
         });
     });
     setTimeout(function(){
-        clickableElement($('.card-component-container .row-container--horizontal'));
+        clickableElement($('.card-component-container--horizontal .card-wrapper'));
     }, 100);
 }
 
@@ -51,7 +51,7 @@ function getBlogContentData() {
         var postId = $.getUrlParameter('postId');
         // If the postId variable is empty, set it to 0.
         if (postId === null) {
-            postId = '0';
+            postId = 0;
         }
         $.getJSON('/theme/json/posts.json', function (data) {
             // Sets variable post to equal the dataset with a specific id.
