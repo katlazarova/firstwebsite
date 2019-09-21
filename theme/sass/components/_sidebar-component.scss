@@ -29,7 +29,10 @@
       font-weight: 900;
 
       &:hover {
-        text-decoration: underline;
+        color: $tertiary-color;
+        .fa-greater-than {
+          color: $tertiary-color;
+        }
       }
     }
   }
@@ -47,6 +50,12 @@
     text-align: center;
     padding: 0;
     margin: 0 auto;
+    font-weight: 900;
+
+    .fa-greater-than {
+      color: $accent-color-two;
+      font-size: $font-xsmall;
+    }
   }
 
   .sidebar-divider {

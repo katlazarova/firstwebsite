@@ -13,11 +13,11 @@
     <div class="sidebar-link-container bottom-spacer">
     <h2>Recent Posts</h2>
     <ul class="blog-links">
-        <li><a href="/blog/blog-content.php">Five Trends in Today's Youth Activism ></a></li>
+        <li><a href="/blog/blog-content.php?postId=0">Five Trends in Today's Youth Activism <i class="fas fa-greater-than"></i></a></li>
 
-        <li><a href="/blog/blog-content.php">Raising Voices: Young People Speak Up in Parliament ></a></li>
+        <li><a href="/blog/blog-content.php?postId=1">Raising Voices: Young People Speak Up in Parliament <i class="fas fa-greater-than"></i></a></li>
 
-        <li><a href="/blog/blog-content.php">Porque é que o usamos? ></a></li>
+        <li><a href="/blog/blog-content.php?postId=2">Porque é que o usamos? <i class="fas fa-greater-than"></i></a></li>
     </ul>
     </div> <!-- End of sidebar-link-container -->
 </div> <!-- End of blog-sidebar-component -->

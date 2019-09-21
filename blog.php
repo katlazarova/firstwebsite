@@ -8,12 +8,12 @@
     <div class="sidebar-link-container bottom-spacer">
     <h2>Article Tags</h2>
     <ul class="blog-links">
-        <li><a href="#">Lorem ipsum began as scrambled, nonsensical Latin ></a></li>
-        <li><a href="#">Creation timelines for the standard lorem ipsum passage vary ></a></li>
-        <li><a href="#">Lorem ipsum began as scrambled, nonsensical Latin ></a></li>
-        <li><a href="#">Lorem ipsum was purposefully designed to have no meaning ></a></li>
-        <li><a href="#">Lorem ipsum began as scrambled, nonsensical Latin ></a></li>
-        <li><a href="#">Lorem ipsum was popularized in the 1960s ></a></li>
+        <li><a href="#">Emergencies and Logistics <i class="fas fa-greater-than"></i></a></li>
+        <li><a href="#">Health <i class="fas fa-greater-than"></i></a></li>
+        <li><a href="#">Girls <i class="fas fa-greater-than"></i></a></li>
+        <li><a href="#">Children's Rights <i class="fas fa-greater-than"></i></a></li>
+        <li><a href="#">Education <i class="fas fa-greater-than"></i></a></li>
+        <li><a href="#">Campaigning <i class="fas fa-greater-than"></i></a></li>
     </ul>
     </div> <!-- End of sidebar-link-container -->
     <div class="twitter-feed bottom-spacer">
