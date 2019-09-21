@@ -9,6 +9,7 @@
 <div class="sidebar sidebar-container">
     <div class="author-container">
     </div> <!-- End of author-container -->
+    <div class="sidebar-divider"></div> <!-- End of sidebar-divider -->
     <h2>Featured Posts</h2>
     <ul class="blog-links">
         <li><a href="/blog/blog-content.php">Lorem ipsum began as scrambled, nonsensical Latin ></a></li>
@@ -22,8 +23,6 @@
         <li><a href="#">Lorem ipsum began as scrambled, nonsensical Latin ></a></li>
 
         <li><a href="#">Lorem ipsum was popularized in the 1960s ></a></li>
-
     </ul>
-
 </div> <!-- End of blog-sidebar-component -->
 <?php include '../includes/footer.php'; ?>

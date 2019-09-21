@@ -1,6 +1,5 @@
 .sidebar-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
 
   @include breakpoint($md) {
@@ -31,6 +30,20 @@
         text-decoration: underline;
       }
     }
+  }
+
+  .blog-links {
+    width: 80%;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .sidebar-divider {
+    height: 1px;
+    width: 50%;
+    background-color: $secondary-color;
+    margin: 0 auto;
   }
 
   .twitter-feed {

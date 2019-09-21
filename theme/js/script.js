@@ -31,8 +31,6 @@ $(document).ready(function() {
     matchItemsHeights();
     // Calling the menuFunctionality.
     menuFunctionality();
-    // Calling the clickableElement function on card-wrapper. 
-    clickableElement($('.card-component-container .card-wrapper'));
 
     addPageNameToBody();
 
@@ -51,6 +49,9 @@ $(document).ready(function() {
     postCountryJsonData();
 
     postBlogContent();
+
+    // Calling the clickableElement function on card-wrapper.
+    clickableElement($('.card-component-container .card-wrapper'));
 
 });
 
@@ -79,10 +80,10 @@ function menuFunctionality() {
     });
 }
 function clickableElement($cElement) {
-    // Inside cElement, find clickable class. 
+    // Inside cElement, find clickable class.
     $cElement.find('.clickable').click(function() {
         var $item = $(this);
-        // If there is an anchor inside this item, go to new page using URL from first anchor. 
+        // If there is an anchor inside this item, go to new page using URL from first anchor.
         if ($item.find('a').length) {
             window.location = $item.find('a:first').attr('href');
         }
@@ -137,6 +138,9 @@ function postCardComponentJsonData() {
                 .append('<div class="card-wrapper"><div class="card card-one clickable card--horizontal"><div class="card-image-wrapper"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image responsive-image"></div><div class="card-text-container"><h3>'+post.title+'</h3><p>'+post.datePosted+'</p><p>'+post.summary+'</p><a href="'+post.link+'?postId='+post.id+'">'+post.linkText+'</a></div></div></div>');
         });
     });
+    setTimeout(function(){
+        clickableElement($('.card-component-container .card-wrapper'));
+    }, 3000);
 }
 function accordionFunctionality() {
     // For each accordion component, run a click function.
@@ -239,7 +243,7 @@ function postBlogContent() {
         $.getJSON('/theme/json/posts.json', function (data) {
             var post = data[postId];
             // Inserts content into blog-content-container.
-            $('.blog-content-container').append('<h2>' + post.title + '</h2><p>' + post.datePosted + '</p><div class="blog-content-text-container bottom-spacer">' + post.body + '</div><div class="blog-content-image-wrapper bottom-spacer"><img src="' + post.imageLink + '" alt="' + post.imageAltText + '" class="card-image responsive-image"></div>');
+            $('.blog-content-container').append('<h2>' + post.title + '</h2><p>Posted On: ' + post.datePosted + '</p><div class="blog-content-text-container bottom-spacer">' + post.body + '</div><div class="blog-content-image-wrapper bottom-spacer"><img src="' + post.imageLink + '" alt="' + post.imageAltText + '" class="card-image responsive-image"></div>');
             $('.sidebar .author-container').append('<div class="author-image-container"><img src="' + post.author[0].image + '" alt="author image"></div><h3>' + post.author[0].name + '</h3>');
         });
     }
