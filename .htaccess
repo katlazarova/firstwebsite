@@ -1,0 +1,7 @@
+ErrorDocument 404 /404-error.php/
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} ^/404/$
+RewriteRule ^(.*)$ /404-error.php
