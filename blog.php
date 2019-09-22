@@ -22,3 +22,4 @@
 </div> <!-- End of blog-sidebar-component -->
 
 <?php include 'includes/footer.php';?>
+
