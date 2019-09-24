@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     // Initialize swiper when document ready.
     var testimonialSwiper = new Swiper('.swiper-container.testimonial-container', {
         // Optional parameters.
@@ -44,9 +44,13 @@ $(document).ready(function() {
 
     countCharacter();
 
+    openDonationContent();
+
     /* Calling the clickableElement function on card-wrapper.
     This function needs parameters running through it to work. */
     clickableElement($('.card-component-container .card-wrapper'));
+
+    document.getElementById("defaultOpen").click();
 
 });
 
@@ -54,29 +58,31 @@ $(document).ready(function() {
 function matchItemsHeights() {
     $('.card-component-container .card-text-container').matchHeight();
 }
+
 function menuFunctionality() {
-    $('nav ul li a:not(:only-child)').click(function(e) {
+    $('nav ul li a:not(:only-child)').click(function (e) {
         // If anchor is not an only child, it’s sibling must be a drop down list - when clicked, toggle hide and show.
         $(this).siblings('.nav-dropdown').toggle();
         $('.dropdown').not($(this).siblings()).hide();
         e.stopPropagation();
     });
-    $('html').click(function() {
+    $('html').click(function () {
         // When anywhere on the page is clicked, the dropdown menu hides.
         $('.nav-dropdown').hide();
     });
-    $('#nav-toggle').click(function() {
+    $('#nav-toggle').click(function () {
         // When clicking on the element, the nav ul shows or hides with a sliding motion.
         $('nav ul').slideToggle();
     });
-    $('#nav-toggle').on('click', function() {
+    $('#nav-toggle').on('click', function () {
         // Toggles 'is-active' class on click. 
         $(this).toggleClass('is-active');
     });
 }
+
 function clickableElement($cElement) {
     // Inside cElement, find clickable class.
-    $cElement.find('.clickable').click(function() {
+    $cElement.find('.clickable').click(function () {
         var $item = $(this);
         // If there is an anchor inside this item, go to new page using URL from first anchor.
         if ($item.find('a').length) {
@@ -84,6 +90,7 @@ function clickableElement($cElement) {
         }
     });
 }
+
 function addPageNameToBody() {
     // Identifying the location path.
     var url = window.location.pathname;
@@ -100,10 +107,11 @@ function addPageNameToBody() {
         $('body').addClass('page-' + nameOfPage);
     }
 }
+
 function addActiveClassToNavbar() {
     var currentPath = location.pathname;
     // Run function for each anchor tag in the nav-list. 
-    $('.nav-list li a').each(function() {
+    $('.nav-list li a').each(function () {
         // Sets the variable to equal $(this).
         var $this = $(this);
 
@@ -127,8 +135,8 @@ function addActiveClassToNavbar() {
 
 function accordionFunctionality() {
     // For each accordion component, run a click function.
-    $('.accordion-component .accordion').each(function() {
-        $(this).click(function() {
+    $('.accordion-component .accordion').each(function () {
+        $(this).click(function () {
             // Toggle the panel content on click.
             $(this).next('.panel').slideToggle();
             // With each click on the accordion, toggle the active class.
@@ -139,7 +147,7 @@ function accordionFunctionality() {
 
 function validateForm() {
     var requiredField = $('.form-control:required');
-    $('form .submit').click(function() {
+    $('form .submit').click(function () {
         // If a required field is empty when submit button is clicked, add class invalid to the required field.
         if (requiredField.val().length === 0) {
             requiredField.addClass('invalid');
@@ -164,7 +172,7 @@ function getFormData() {
     }
 }
 
-$.getUrlParameter = function(name){
+$.getUrlParameter = function (name) {
     /* Variable results is set to equal to the result of the search using RegExp.
     RegExp defines the characters which can be before the word, the word, and characters which can appear after the word.
     RegExp is the search term used by the .exec function which looks for the result in the url. */
@@ -176,22 +184,44 @@ $.getUrlParameter = function(name){
 };
 
 function countCharacter() {
-    $('.text-area').on('input', function(){
+    $('.text-area').on('input', function () {
         var maxlength = $(this).attr('maxlength');
         var currentLength = $(this).val().length;
         var charCounter = $('.contact-form-container .character-counter');
 
-        if( currentLength >= maxlength ){
+        if (currentLength >= maxlength) {
             // If the current length of the text is 500 or more characters, display the specified text.
             charCounter.text('You have reached the maximum number of characters.');
-        } else{
+        } else {
             // If the length of the text is less than 500 characters, display the number of characters remaining.
             charCounter.text(maxlength - currentLength + ' characters remaining');
         }
 
-        if( currentLength >= 250) {
+        if (currentLength >= 250) {
             // Add class "limit-warning" to the character counter when there are 50 characters remaining or less.
             charCounter.addClass('limit-warning');
         }
     });
+}
+
+function openDonationContent(evt, donationType) {
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them.
+    tabcontent = document.getElementsByClassName('tabcontent');
+    if (tabcontent !== null) {
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = 'none';
+        }
+    }
+
+    // Get all elements with class tablinks and remove the active class.
+    tablinks = document.getElementsByClassName('tablinks');
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace('active', '');
+    }
+
+    // Show the current tab, and add an active class to the button that opened the tab
+    document.getElementById(donationType).style.display = 'block';
+    evt.currentTarget.className += 'active';
 }
