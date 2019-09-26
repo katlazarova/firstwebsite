@@ -228,10 +228,9 @@ function openDonationContent(evt, donationType) {
     document.getElementById(donationType).style.display = 'block';
     evt.currentTarget.className += ' active';
 
-    // Add active class to current donate-sum button.
+    // Toggle active class on current donate-sum button.
     $('.donate-sum').click(function() {
-        $(this).addClass(' active');
-        $('donate-sum').not(this).removeClass(' active');
+        $(this).toggleClass(' active');
     });
 }
 
