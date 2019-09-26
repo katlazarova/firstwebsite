@@ -44,13 +44,9 @@ $(document).ready(function () {
 
     countCharacter();
 
-    openDonationContent();
-
     /* Calling the clickableElement function on card-wrapper.
     This function needs parameters running through it to work. */
     clickableElement($('.card-component-container .card-wrapper'));
-
-    document.getElementById("defaultOpen").click();
 
 });
 
@@ -207,6 +203,11 @@ function countCharacter() {
 function openDonationContent(evt, donationType) {
     var i, tabcontent, tablinks;
 
+    // Clicking the donate button redirects to a thank you page.
+    $('.donate-button').click(function(){
+        window.location.href='/thank-you-page.php';
+    });
+
     // Get all elements with class="tabcontent" and hide them.
     tabcontent = document.getElementsByClassName('tabcontent');
     if (tabcontent !== null) {
@@ -218,10 +219,19 @@ function openDonationContent(evt, donationType) {
     // Get all elements with class tablinks and remove the active class.
     tablinks = document.getElementsByClassName('tablinks');
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace('active', '');
+        tablinks[i].className = tablinks[i].className.replace(' active', '');
     }
 
-    // Show the current tab, and add an active class to the button that opened the tab
+    /* Show the current tab, and add an active class to the button that opened the tab.
+    donationType is a variable representing the monthly and single tabcontent id's.
+    This function needs this parameter passing through it. */
     document.getElementById(donationType).style.display = 'block';
-    evt.currentTarget.className += 'active';
+    evt.currentTarget.className += ' active';
+
+    // Add active class to current donate-sum button.
+    $('.donate-sum').click(function() {
+        $(this).addClass(' active');
+        $('donate-sum').not(this).removeClass(' active');
+    });
 }
+

@@ -3,10 +3,12 @@
   text-align: center;
   background-color: $accent-color-one;
   width: 100vw;
+  position: relative;
+  margin-top: -10.5%;
 
   @include breakpoint($md) {
     width: 50%;
-    margin: 0 auto;
+    margin: -10% auto 0 auto;
     border-radius: 10px;
   }
 
@@ -24,7 +26,7 @@
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: $font-small;
+    font-size: $font-xsmall;
 
     @include breakpoint($md) {
       font-size: $font-medium;
@@ -38,10 +40,9 @@
   }
 
   .tabcontent {
-    display: none;
 
-    &.active {
-      background-color: $primary-color;
+    &#single {
+      display: none;
     }
 
     .donate-form-buttons {
@@ -52,8 +53,15 @@
         height: 40px;
         border-radius: 10px;
         border: 1px solid $primary-color;
-        font-size: $font-small;
+        font-size: $font-xsmall;
         margin: 5px;
+
+        &:hover,
+        &:active {
+          cursor: pointer;
+          background-color: $primary-color;
+          color: white;
+        }
 
         @include breakpoint($md) {
           width: 60px;
@@ -98,6 +106,21 @@
       width: $gutter-size;
       margin: 20px auto;
       padding-bottom: 20px;
+    }
+
+    .donate-button {
+      background-color: $primary-color;
+      color: $accent-color-one;
+      border-radius: 10px;
+      height: 40px;
+      width: 80px;
+      font-size: medium;
+      margin-bottom: 20px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $secondary-color;
+      }
     }
   }
 }

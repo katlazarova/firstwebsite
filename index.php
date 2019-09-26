@@ -1,47 +1,49 @@
 <?php include 'includes/header.php'; ?>
 
-<div class="hero-image full-width bottom-spacer"></div> <!-- End hero image -->
-<div class="content-divider bottom-spacer"></div>
-<!-- End of content-divider -->
+<div class="hero-image full-width"></div> <!-- End hero image -->
 <div class="donate-form-container">
     <h2>DONATE</h2>
     <!-- Tab links -->
     <div class="tab">
-        <button id="defaultOpen" class="tablinks" onclick="openDonationContent(event, 'Monthly')">Monthly</button>
-        <button id="defaultOpen" class="tablinks" onclick="openDonationContent(event, 'Single')">Single</button>
+        <button id="defaultOpen" class="tablinks" onclick="openDonationContent(event, 'monthly')">Monthly</button>
+        <button id="defaultOpen" class="tablinks" onclick="openDonationContent(event, 'single')">Single</button>
     </div> <!-- End of tab -->
 
     <!-- Tab content -->
-    <div class="tabcontent" id="donation-type">
+    <div class="tabcontent" id="monthly">
         <div class="donate-form-buttons">
-            <button>£10</button>
-            <button>£15</button>
-            <button>£30</button>
+            <button class="donate-sum">£10</button>
+            <button class="donate-sum">£15</button>
+            <button class="donate-sum">£30</button>
             <div class="form-item-other">
                 <p>£</p>
                 <input type="number" class="donate-form-input" name="donate-amount" min="1">
             </div> <!-- End of form-item-other -->
         </div> <!-- End of donate-form-buttons -->
-        <p class="donate-form-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking
+        <p class="donate-form-text">It is a long established fact that a reader will be distracted by the readable
+            content of a page when looking
             at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
             as opposed to using 'Content here, content here', making it look like readable English. Many desktop
             publishing packages and web page editors now use Lorem Ipsum as their default model. </p>
+        <button class="donate-button">Donate</button>
     </div> <!-- End of tabcontent -->
 
-    <div class="tabcontent" id="donation-type">
+    <div class="tabcontent" id="single">
         <div class="donate-form-buttons">
-            <button>£25</button>
-            <button>£50</button>
-            <button>£100</button>
+            <button class="donate-sum">£25</button>
+            <button class="donate-sum">£50</button>
+            <button class="donate-sum">£100</button>
             <div class="form-item-other">
                 <p>£</p>
                 <input type="number" class="donate-form-input" name="donate-amount" min="1">
             </div> <!-- End of form-item-other -->
         </div> <!-- End of donate-form-buttons -->
-        <p class="donate-form-text">Het is al geruime tijd een bekend gegeven dat een lezer, tijdens het bekijken van de layout van een pagina,
+        <p class="donate-form-text">Het is al geruime tijd een bekend gegeven dat een lezer, tijdens het bekijken van de
+            layout van een pagina,
             afgeleid wordt door de tekstuele inhoud. Het belangrijke punt van het gebruik van Lorem Ipsum is dat het uit
             een min of meer normale verdeling van letters bestaat, in tegenstelling tot "Hier uw tekst, hier uw tekst"
             wat het tot min of meer leesbaar nederlands maakt. </p>
+        <button class="donate-button">Donate</button>
     </div> <!-- End of tabcontent -->
 </div> <!-- End of donate-form-container -->
 <div class="header-text-component bottom-spacer">
