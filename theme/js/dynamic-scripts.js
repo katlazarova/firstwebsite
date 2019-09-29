@@ -4,6 +4,8 @@ $(document).ready(function() {
     appendCountryData();
 
     getBlogContentData();
+
+    getDonationSumData();
 });
 
 function getBlogCardComponentData() {
@@ -62,4 +64,9 @@ function getBlogContentData() {
             $('.sidebar .author-container').append('<div class="author-image-container"><img src="' + post.author[0].image + '" alt="author image"></div><h3>' + post.author[0].name + '</h3>');
         });
     }
+}
+
+function getDonationSumData() {
+    var donationSum = $.getUrlParameter('donationSum');
+    $('.donation-success-message').append('<p>Thank you for your donation of '+ donationSum +'!</p>');
 }

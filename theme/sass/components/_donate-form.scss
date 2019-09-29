@@ -4,11 +4,11 @@
   background-color: $accent-color-one;
   width: 100vw;
   position: relative;
-  margin-top: -15%;
+  margin-top: -20%;
 
   @include breakpoint($md) {
     width: 50%;
-    margin: -15% auto 0 auto;
+    margin: -20% auto 0 auto;
     border-radius: 10px;
   }
 
@@ -102,20 +102,14 @@
       }
     }
 
-    .donate-form-text {
-      width: $gutter-size;
-      margin: 20px auto;
-      padding-bottom: 20px;
-    }
-
     .donate-button {
       background-color: $primary-color;
       color: $accent-color-one;
       border-radius: 10px;
-      height: 60px;
-      width: 100px;
-      font-size: $font-medium;
-      margin-bottom: 20px;
+      height: 100px;
+      width: 150px;
+      font-size: $font-large;
+      margin: 20px;
 
       &:hover {
         cursor: pointer;
