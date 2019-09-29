@@ -200,20 +200,13 @@ function countCharacter() {
     });
 }
 
-function openDonationContent(evt, donationType) {
+function openDonationTab(evt, donationType) {
     var i, tabcontent, tablinks;
 
-    // Clicking the donate button redirects to a thank you page.
-    $('.donate-button').click(function(){
-        window.location.href='/thank-you-page.php';
-    });
-
-    // Get all elements with class="tabcontent" and hide them.
+    // Get all elements with class tabcontent and hide them.
     tabcontent = document.getElementsByClassName('tabcontent');
-    if (tabcontent !== null) {
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = 'none';
-        }
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = 'none';
     }
 
     // Get all elements with class tablinks and remove the active class.
@@ -223,14 +216,45 @@ function openDonationContent(evt, donationType) {
     }
 
     /* Show the current tab, and add an active class to the button that opened the tab.
-    donationType is a variable representing the monthly and single tabcontent id's.
+    donationType is a variable representing the monthly and single tabcontent ids.
     This function needs this parameter passing through it. */
     document.getElementById(donationType).style.display = 'block';
     evt.currentTarget.className += ' active';
+    evt.tabcontent.className += ' active';
 
-    // Toggle active class on current donate-sum button.
-    $('.donate-sum').click(function() {
-        $(this).toggleClass(' active');
+
+    // Removes active class from all buttons on typing into the input.
+    $('.donate-form-input').on('input', function () {
+        $('.donate-sum').removeClass(' active');
     });
+
+    // Clicking the donate button redirects to a thank you page.
+    $('.donate-button').click(function () {
+        window.location.href = '/thank-you-page.php';
+    });
+}
+
+function openDonationText(evt, donationAmount) {
+    var donateFormText, donateSum;
+
+    // Get all elements with class donate-form-text and hide them.
+    donateFormText = document.getElementsByClassName('donate-form-text');
+    for (i = 0; i < donateFormText.length; i++) {
+        donateFormText[i].style.display = 'none';
+    }
+
+    // Get all elements with class donate-sum and remove the active class.
+    donateSum = document.getElementsByClassName('donate-sum');
+    for (i = 0; i < donateSum.length; i++) {
+        donateSum[i].className = tablinks[i].className.replace(' active', '');
+    }
+
+    /* Show the current donate button, and add an active class to it.
+   donationAmount is a variable representing the number on the button ids.
+   This function needs this parameter passing through it. */
+    document.getElementById(donationAmount).style.display = 'block';
+    evt.currentTarget.className += ' active';
+    $(this).siblings('.donate-sum').removeClass(' active');
+    evt.donateFormText.className += ' active';
 }
 

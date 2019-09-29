@@ -4,11 +4,11 @@
   background-color: $accent-color-one;
   width: 100vw;
   position: relative;
-  margin-top: -10.5%;
+  margin-top: -15%;
 
   @include breakpoint($md) {
     width: 50%;
-    margin: -10% auto 0 auto;
+    margin: -15% auto 0 auto;
     border-radius: 10px;
   }
 
@@ -41,7 +41,7 @@
 
   .tabcontent {
 
-    &#single {
+    &.single {
       display: none;
     }
 
@@ -112,9 +112,9 @@
       background-color: $primary-color;
       color: $accent-color-one;
       border-radius: 10px;
-      height: 40px;
-      width: 80px;
-      font-size: medium;
+      height: 60px;
+      width: 100px;
+      font-size: $font-medium;
       margin-bottom: 20px;
 
       &:hover {
