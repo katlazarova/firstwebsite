@@ -236,7 +236,7 @@ function openDonationTab(evt, donationType) {
         var donationSum = $('.tabcontent.active .donate-sum.active').text();
         var donationSumOther = $('.tabcontent.active .donate-form-input.active').val();
 
-        if (donationSum == null) {
+        if (donationSum !== '') {
             window.location.href = '/thank-you-page.php?donationSum=' + donationSum + '';
         }
 

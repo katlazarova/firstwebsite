@@ -75,8 +75,8 @@
       background-color: $primary-color;
       color: $accent-color-one;
       border-radius: 10px;
-      height: 80px;
-      width: 120px;
+      height: 65px;
+      width: 115px;
       font-size: $font-medium;
       margin: 20px;
 
@@ -87,8 +87,8 @@
 
       @include breakpoint($md) {
         font-size: $font-large;
-        height: 100px;
-        width: 150px;
+        height: 75px;
+        width: 125px;
       }
     }
 
