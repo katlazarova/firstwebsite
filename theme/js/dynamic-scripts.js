@@ -68,5 +68,5 @@ function getBlogContentData() {
 
 function getDonationSumData() {
     var donationSum = $.getUrlParameter('donationSum');
-    $('.donation-success-message').append('<p>Thank you for your donation of '+ donationSum +'!</p>');
+    $('.donation-success-message').append('<p>Your donation of '+ donationSum +' goes a long way in helping our mission.</p>');
 }

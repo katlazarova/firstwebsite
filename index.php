@@ -5,7 +5,7 @@
     <h2>DONATE</h2>
     <!-- Tab links -->
     <div class="tab">
-        <button id="defaultOpen monthly" class="tablinks active" onclick="openDonationTab(event, 'monthly')">Monthly
+        <button id="defaultOpen" class="tablinks active" onclick="openDonationTab(event, 'monthly')">Monthly
         </button>
         <button id="defaultOpen" class="tablinks" onclick="openDonationTab(event, 'single')">Single</button>
     </div> <!-- End of tab -->
