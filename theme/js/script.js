@@ -235,7 +235,10 @@ function openDonationTab(evt, donationType) {
     $('.tabcontent .donate-button').click(function () {
         var donationSum = $('.tabcontent.active .donate-sum.active').text();
         var donationSumOther = $('.tabcontent.active .donate-form-input.active').val();
-        window.location.href = '/thank-you-page.php?donationSum=' + donationSum + '';
+
+        if (donationSum == null) {
+            window.location.href = '/thank-you-page.php?donationSum=' + donationSum + '';
+        }
 
         if (donationSum === 'Other') {
             window.location.href = '/thank-you-page.php?donationSum=£' + donationSumOther + '';
