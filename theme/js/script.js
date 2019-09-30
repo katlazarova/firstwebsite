@@ -48,6 +48,8 @@ $(document).ready(function () {
     This function needs parameters running through it to work. */
     clickableElement($('.card-component-container .card-wrapper'));
 
+    openDonationText();
+
 });
 
 // Renders different elements to assume the height of the tallest element - mathches their heights.
@@ -215,7 +217,7 @@ function openDonationTab(evt, donationType) {
         tablinks[i].className = tablinks[i].className.replace(' active', '');
     }
 
-    /* Show the current tab, and add an active class to the button that opened the tab.
+    /* Show the current tab, and add an active class to the tab and the button that opened the tab.
     donationType is a variable representing the monthly and single tabcontent ids.
     This function needs this parameter passing through it. */
     document.getElementById(donationType).style.display = 'block';
@@ -223,15 +225,21 @@ function openDonationTab(evt, donationType) {
     evt.currentTarget.className += ' active';
 
 
-    // Removes active class from all buttons on typing into the input.
-    $('.donate-form-buttons .donate-form-input').on('input', function () {
-        $('.donate-form-buttons .donate-sum').removeClass('active');
+    // Typing into the input field adds active class to the input field and removes the active class from other buttons.
+    $('.form-item-other .donate-form-input').on('input', function () {
+        $(this).addClass('active');
+        $('.donate-form-buttons .donate-sum').not('.donate-sum.active').removeClass('active');
     });
 
     // Clicking the donate button redirects to a thank you page.
     $('.tabcontent .donate-button').click(function () {
         var donationSum = $('.tabcontent.active .donate-sum.active').text();
-        window.location.href = '/thank-you-page.php?donationSum='+donationSum+'';
+        var donationSumOther = $('.tabcontent.active .donate-form-input.active').val();
+        window.location.href = '/thank-you-page.php?donationSum=' + donationSum + '';
+
+        if (donationSum === 'Other') {
+            window.location.href = '/thank-you-page.php?donationSum=£' + donationSumOther + '';
+        }
     });
 
     // Add active class on current donate-sum button.
@@ -241,4 +249,27 @@ function openDonationTab(evt, donationType) {
             $(this).siblings().removeClass('active');
         });
     });
+}
+
+function openDonationText(evt, donationAmount) {
+    var i, donationText, donateSum;
+
+    // Get all elements with class donate-form-text and hide them.
+    donationText = document.getElementsByClassName('donate-form-text');
+    for (i = 0; i < donationText.length; i++) {
+        donationText[i].style.display = 'none';
+    }
+
+    // Get all elements with class donate-sum and remove the active class.
+    donateSum = document.getElementsByClassName('donate-sum');
+    for (i = 0; i < donateSum.length; i++) {
+        donateSum[i].className = donateSum[i].className.replace(' active', '');
+    }
+
+    /* Show the current text, and add an active class to it, and the button that opened it.
+    donationAmount is a variable representing the donate-sum ids.
+    This function needs this parameter passing through it. */
+    document.getElementById(donationAmount).style.display = 'inline-block';
+    document.getElementById(donationAmount).className += ' active';
+    evt.currentTarget.className += ' active';
 }

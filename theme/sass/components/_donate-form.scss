@@ -7,7 +7,7 @@
   margin-top: -20%;
 
   @include breakpoint($md) {
-    width: 50%;
+    width: 60%;
     margin: -20% auto 0 auto;
     border-radius: 10px;
   }
@@ -49,16 +49,16 @@
       margin-top: 10px;
 
       .donate-sum {
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         border-radius: 10px;
         border: 1px solid $primary-color;
         font-size: $font-xsmall;
         margin: 5px;
 
         @include breakpoint($md) {
-          width: 60px;
-          height: 60px;
+          width: 65px;
+          height: 65px;
           font-size: $font-medium;
         }
 
@@ -69,11 +69,56 @@
           color: white;
         }
       }
+    }
+
+    .donate-button {
+      background-color: $primary-color;
+      color: $accent-color-one;
+      border-radius: 10px;
+      height: 80px;
+      width: 120px;
+      font-size: $font-medium;
+      margin: 20px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $secondary-color;
+      }
+
+      @include breakpoint($md) {
+        font-size: $font-large;
+        height: 100px;
+        width: 150px;
+      }
+    }
+
+    .donate-form-text {
+      margin: 0 auto;
+      font-size: $font-xsmall;
+      width: 100%;
+
+      @include breakpoint($md) {
+        font-size: $font-medium;
+      }
+
+      &.active {
+        background-color: $primary-color;
+        color: $accent-color-one
+      }
+
+      p {
+        width: $gutter-size;
+        text-align: center;
+        display: block;
+        margin: 10px auto;
+      }
 
       .form-item-other {
-        display: flex;
-        justify-content: center;
+        display: inline-flex;
         align-items: center;
+        font-size: $font-xsmall;
+        margin: 0 auto;
+        padding-bottom: 4px;
 
         p {
           font-size: $font-small;
@@ -86,11 +131,11 @@
         }
 
         .donate-form-input {
-          width: 75px;
-          height: 45px;
+          width: 70px;
+          height: 40px;
           border-radius: 10px;
           border: 1px solid $primary-color;
-          font-size: $font-small;
+          font-size: $font-xsmall;
           margin-bottom: 0;
 
           @include breakpoint($md) {
@@ -99,21 +144,6 @@
             font-size: $font-medium;
           }
         }
-      }
-    }
-
-    .donate-button {
-      background-color: $primary-color;
-      color: $accent-color-one;
-      border-radius: 10px;
-      height: 100px;
-      width: 150px;
-      font-size: $font-large;
-      margin: 20px;
-
-      &:hover {
-        cursor: pointer;
-        background-color: $secondary-color;
       }
     }
   }
