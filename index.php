@@ -18,23 +18,31 @@
             <button class="donate-sum" onclick="openDonationText(event, '30')">£30</button>
             <button class="donate-sum" onclick="openDonationText(event, 'other-monthly')">Other</button>
         </div> <!-- End of donate-form-buttons -->
-        <div class="donate-form-text 10-monthly" id="10">
-            <p>Could provide an art set for an ex-child soldier like Peter to develop his passion and skill for
-                painting.</p>
-        </div> <!-- End of donate-form-text 10 -->
-        <div class="donate-form-text 15-monthly" id="15">
-            <p>Could provide an early years book for a child like Faisal attending pre-school in a refugee camp.</p>
-        </div> <!-- End of donate-form-text 15 -->
-        <div class="donate-form-text 30-monthly" id="30">
-            <p>Could provide antibiotics to help a baby like Lawrence with severe acute malnutrition back to health.</p>
-        </div> <!-- End of donate-form-text 30 -->
-        <div class="donate-form-text other-monthly" id="other-monthly">
-            <div class="form-item-other">
-                <p>£</p>
-                <input type="number" class="donate-form-input" name="donate-amount" min="1">
-            </div> <!-- End of form-item-other -->
-        </div> <!-- End of donate-form-text other-monthly -->
-        <button class="donate-button">Donate</button>
+        <div class="donation-content-panel">
+            <div class="triangle-left">
+                <div class="inner-triangle"></div>
+            </div> <!-- End of triangle-left -->
+            <div class="donate-form-text-container">
+                <div class="donate-form-text 10-monthly" id="10">
+                    <p>Could provide an art set for an ex-child soldier like Peter to develop his passion and skill for
+                        painting.</p>
+                </div> <!-- End of 10 -->
+                <div class="donate-form-text 15-monthly" id="15">
+                    <p>Could provide an early years book for a child like Faisal attending pre-school in a refugee
+                        camp.</p>
+                </div> <!-- End of 15 -->
+                <div class="donate-form-text 30-monthly" id="30">
+                    <p>Could provide antibiotics to help a baby like Lawrence with severe acute malnutrition back to
+                        health.</p>
+                </div> <!-- End of 30 -->
+                <div class="donate-form-text other-monthly" id="other-monthly">
+                    <div class="form-item-other">
+                        <p>£</p>
+                        <input type="number" class="donate-form-input" name="donate-amount" min="1">
+                    </div> <!-- End of form-item-other -->
+                </div> <!-- End of other-monthly -->
+            </div> <!-- End of donate-form-text-container -->
+        </div> <!-- End of donation-content-panel -->
     </div> <!-- End of tabcontent -->
 
     <div class="tabcontent single" id="single">
@@ -44,26 +52,33 @@
             <button class="donate-sum" onclick="openDonationText(event, '100')">£100</button>
             <button class="donate-sum" onclick="openDonationText(event, 'other-single')">Other</button>
         </div> <!-- End of donate-form-buttons -->
-        <div class="donate-form-text 25-single" id="25">
-            <p>Could give a bright child like Harriet essential schoolbooks and stationary when she returns to
-                school. </p>
-        </div> <!-- End of donate-form-text 25-->
-        <div class="donate-form-text 50-single" id="50">
-            <p>Could give a baby with malnutrition like Lawrence a month of highly nutritious food to help them
-                recover. </p>
-        </div> <!-- End of donate-form-text 50-->
-        <div class="donate-form-text 100-single" id="100">
-            <p>Could buy interactive games for refugee children like Faisal and his friends to play and learn
-                together. </p>
-        </div> <!-- End of donate-form-text 100-->
-        <div class="donate-form-text other-single" id="other-single">
-            <div class="form-item-other">
-                <p>£</p>
-                <input type="number" class="donate-form-input" name="donate-amount" min="1">
-            </div> <!-- End of form-item-other -->
-        </div> <!-- End of donate-form-text other-single -->
-        <button class="donate-button">Donate</button>
+        <div class="donation-content-panel">
+            <div class="triangle-left">
+                <div class="inner-triangle"></div>
+            </div> <!-- End of triangle-left -->
+            <div class="donate-form-text-container">
+                <div class="donate-form-text 25-single" id="25">
+                    <p>Could give a bright child like Harriet essential schoolbooks and stationary when she returns to
+                        school. </p>
+                </div> <!-- End of 25-->
+                <div class="donate-form-text 50-single" id="50">
+                    <p>Could give a baby with malnutrition like Lawrence a month of highly nutritious food to help them
+                        recover. </p>
+                </div> <!-- End of 50-->
+                <div class="donate-form-text 100-single" id="100">
+                    <p>Could buy interactive games for refugee children like Faisal and his friends to play and learn
+                        together. </p>
+                </div> <!-- End of 100-->
+                <div class="donate-form-text other-single" id="other-single">
+                    <div class="form-item-other">
+                        <p>£</p>
+                        <input type="number" class="donate-form-input" name="donate-amount" min="1">
+                    </div> <!-- End of form-item-other -->
+                </div> <!-- End of other-single -->
+            </div> <!-- End of donate-form-text-container -->
+        </div> <!-- End of donation-content-panel -->
     </div> <!-- End of tabcontent -->
+    <button class="donate-button">Donate</button>
 </div> <!-- End of donate-form-container -->
 <div class="header-text-component bottom-spacer">
     <h2>Donating To HealthMove</h2>

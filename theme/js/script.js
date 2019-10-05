@@ -48,7 +48,9 @@ $(document).ready(function () {
     This function needs parameters running through it to work. */
     clickableElement($('.card-component-container .card-wrapper'));
 
-    openDonationText();
+    // openDonationText(event, 25);
+
+    arrowAnimation();
 
 });
 
@@ -249,7 +251,10 @@ function openDonationTab(evt, donationType) {
     $('.donate-form-buttons .donate-sum').each(function () {
         $(this).click(function () {
             $(this).addClass('active');
+            // Remove active class from the other buttons.
             $(this).siblings().removeClass('active');
+            // Add active class to triangle-left when a button is clicked.
+            $('.triangle-left').addClass('active');
         });
     });
 }
@@ -275,4 +280,17 @@ function openDonationText(evt, donationAmount) {
     document.getElementById(donationAmount).style.display = 'inline-block';
     document.getElementById(donationAmount).className += ' active';
     evt.currentTarget.className += ' active';
+}
+
+function arrowAnimation() {
+    var initialPosition = $('.donate-form-buttons button').first().position();
+    $('.donation-content-panel .triangle-left').css({left: initialPosition.left + 30});
+
+    $('.donate-form-buttons .donate-sum').each(function () {
+        var targetButton = $(this).position();
+
+        $(this).click(function () {
+            $('.donation-content-panel .triangle-left').animate({left: targetButton.left + 30});
+        });
+    });
 }

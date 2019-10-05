@@ -71,80 +71,113 @@
       }
     }
 
-    .donate-button {
-      background-color: $primary-color;
-      color: $accent-color-one;
-      border-radius: 10px;
-      height: 65px;
-      width: 115px;
-      font-size: $font-medium;
-      margin: 20px;
+    .donation-content-panel {
+      position: relative;
 
-      &:hover {
-        cursor: pointer;
-        background-color: $secondary-color;
+      .triangle-left {
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid $primary-color;
+        transform: rotate(90deg);
+        position: absolute;
+        top: -12px;
+        display: none;
+
+        &.active {
+          display: block;
+        }
+
+        .inner-triangle {
+          position: relative;
+          top: -13px;
+          left: 2px;
+          width: 0;
+          height: 0;
+          border-top: 13px solid transparent;
+          border-bottom: 13px solid transparent;
+          border-right: 13px solid $primary-color;
+        }
       }
 
-      @include breakpoint($md) {
-        font-size: $font-large;
-        height: 75px;
-        width: 125px;
-      }
-    }
-
-    .donate-form-text {
-      margin: 10px auto;
-      font-size: $font-xsmall;
-      width: 100%;
-
-      @include breakpoint($md) {
-        font-size: $font-medium;
-      }
-
-      &.active {
-        background-color: $primary-color;
-        color: $accent-color-one
-      }
-
-      p {
-        width: $gutter-size;
-        text-align: center;
-        display: block;
+      .donate-form-text {
         margin: 10px auto;
-      }
-
-      .form-item-other {
-        display: inline-flex;
-        align-items: center;
         font-size: $font-xsmall;
-        margin: 0 auto;
-        padding-bottom: 4px;
+        width: 100%;
+        display: none;
+
+        @include breakpoint($md) {
+          font-size: $font-medium;
+        }
+
+        &.active {
+          display: inline-block;
+          background-color: $primary-color;
+          color: $accent-color-one
+        }
 
         p {
-          font-size: $font-small;
-          margin: 0;
-          padding: 7px;
-
-          @include breakpoint($md) {
-            font-size: $font-medium;
-          }
+          width: $gutter-size;
+          text-align: center;
+          display: block;
+          margin: 10px auto;
         }
 
-        .donate-form-input {
-          width: 70px;
-          height: 40px;
-          border-radius: 10px;
-          border: 1px solid $primary-color;
+        .form-item-other {
+          display: inline-flex;
+          align-items: center;
           font-size: $font-xsmall;
-          margin-bottom: 0;
+          margin: 0 auto;
+          padding-bottom: 4px;
 
-          @include breakpoint($md) {
-            width: 100px;
-            height: 50px;
-            font-size: $font-medium;
+          p {
+            font-size: $font-small;
+            margin: 0;
+            padding: 7px;
+
+            @include breakpoint($md) {
+              font-size: $font-medium;
+            }
+          }
+
+          .donate-form-input {
+            width: 70px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid $primary-color;
+            font-size: $font-xsmall;
+            margin-bottom: 0;
+
+            @include breakpoint($md) {
+              width: 100px;
+              height: 50px;
+              font-size: $font-medium;
+            }
           }
         }
       }
+    }
+  }
+
+  .donate-button {
+    background-color: $primary-color;
+    color: $accent-color-one;
+    border-radius: 10px;
+    height: 65px;
+    width: 115px;
+    font-size: $font-medium;
+    margin: 20px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $secondary-color;
+    }
+
+    @include breakpoint($md) {
+      font-size: $font-large;
+      height: 75px;
+      width: 125px;
     }
   }
 }

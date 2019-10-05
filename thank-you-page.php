@@ -5,5 +5,9 @@
     <div class="donation-success-message">
     </div> <!-- End of donation-success-message -->
 </div> <!-- End of thank-you-message -->
+<div class="link-to-blog">
+    <p>Find out about the work we're doing</p>
+<a href="/blog.php">here</a>
+</div> <!-- End of link-to-blog -->
 </div> <!-- End of container (page) -->
 </body>
