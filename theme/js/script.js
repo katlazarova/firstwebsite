@@ -52,7 +52,38 @@ $(document).ready(function () {
 
     arrowAnimation();
 
+    processDonation();
+
 });
+
+function processDonation() {
+    // Clicking the donate button redirects to a thank you page.
+    $('.donate-form-container .donate-button').click(function () {
+
+                                            // .form-buttons.active
+        var donationSum = $('.donate-form-buttons .form-buttons.active .donate-sum.active').text();
+        var donationSumOther = $('.donate-form-buttons .form-buttons.active .donate-form-input.active').val();
+
+        if (donationSum !== '') {
+            window.location.href = '/thank-you-page.php?donationSum=' + donationSum + '';
+        }
+
+        if (donationSum === 'Other') {
+            window.location.href = '/thank-you-page.php?donationSum=£' + donationSumOther + '';
+        }
+    });
+
+    // // Add active class on current donate-sum button.
+    // $('.donate-form-buttons .donate-sum').each(function () {
+    //     $(this).click(function () {
+    //         $(this).addClass('active');
+    //         // Remove active class from the other buttons.
+    //         $(this).siblings().removeClass('active');
+    //         // Add active class to triangle-left when a button is clicked.
+    //         $('.triangle-left').addClass('active');
+    //     });
+    // });
+}
 
 // Renders different elements to assume the height of the tallest element - mathches their heights.
 function matchItemsHeights() {
@@ -207,8 +238,8 @@ function countCharacter() {
 function openDonationTab(evt, donationType) {
     var i, tabcontent, tablinks;
 
-    // Get all elements with class tabcontent and hide them.
-    tabcontent = document.getElementsByClassName('tabcontent');
+    // Get all elements with class donate-form-buttons and hide them.
+    tabcontent = document.getElementsByClassName('form-buttons');
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = 'none';
     }
@@ -220,43 +251,31 @@ function openDonationTab(evt, donationType) {
     }
 
     /* Show the current tab, and add an active class to the tab and the button that opened the tab.
-    donationType is a variable representing the monthly and single tabcontent ids.
+    donationType is a variable representing the monthly and single donate-form-buttons ids.
     This function needs this parameter passing through it. */
     document.getElementById(donationType).style.display = 'block';
-    document.getElementById(donationType).className += ' active';
+    // document.getElementById(donationType).className += ' active';
     evt.currentTarget.className += ' active';
-
-
     // Typing into the input field adds active class to the input field and removes the active class from other buttons.
     $('.form-item-other .donate-form-input').on('input', function () {
         $(this).addClass('active');
         $('.donate-form-buttons .donate-sum').not('.donate-sum.active').removeClass('active');
     });
 
-    // Clicking the donate button redirects to a thank you page.
-    $('.tabcontent .donate-button').click(function () {
-        var donationSum = $('.tabcontent.active .donate-sum.active').text();
-        var donationSumOther = $('.tabcontent.active .donate-form-input.active').val();
+    console.log(donationType);
+    $('.donate-form-buttons').find('.active').removeClass('active');
+    $('.tabcontent').find('.active').removeClass('active');
 
-        if (donationSum !== '') {
-            window.location.href = '/thank-you-page.php?donationSum=' + donationSum + '';
-        }
+    if (donationType === 'single') {
+        $('.donate-form-buttons .single').addClass('active');
+        $('.donate-form-buttons .single .donate-sum').first().addClass('active');
+        $('.tabcontent .donate-form-text-single .donate-form-text').first().addClass('active');
+    } else {
+        $('.donate-form-buttons .monthly').addClass('active');
+        $('.donate-form-buttons .monthly .donate-sum').first().addClass('active');
+        $('.tabcontent .donate-form-text-monthly .donate-form-text').first().addClass('active');
+    }
 
-        if (donationSum === 'Other') {
-            window.location.href = '/thank-you-page.php?donationSum=£' + donationSumOther + '';
-        }
-    });
-
-    // Add active class on current donate-sum button.
-    $('.donate-form-buttons .donate-sum').each(function () {
-        $(this).click(function () {
-            $(this).addClass('active');
-            // Remove active class from the other buttons.
-            $(this).siblings().removeClass('active');
-            // Add active class to triangle-left when a button is clicked.
-            $('.triangle-left').addClass('active');
-        });
-    });
 }
 
 function openDonationText(evt, donationAmount) {
@@ -278,19 +297,29 @@ function openDonationText(evt, donationAmount) {
     donationAmount is a variable representing the donate-sum ids.
     This function needs this parameter passing through it. */
     document.getElementById(donationAmount).style.display = 'inline-block';
-    document.getElementById(donationAmount).className += ' active';
+   document.getElementById(donationAmount).className += ' active';
     evt.currentTarget.className += ' active';
+
+    evt.currentTarget.parentElement.className += ' active';
+    //console.log();
 }
 
 function arrowAnimation() {
+    // Defines the variable for the position of the first of the donate form buttons.
     var initialPosition = $('.donate-form-buttons button').first().position();
-    $('.donation-content-panel .triangle-left').css({left: initialPosition.left + 30});
+    // Defines the position of the middle of each of the donate sum buttons.
+    var buffer = $('.donate-form-buttons .donate-sum').outerWidth() / 2;
+
+    // sets the initial position of the arrow to equal the middle of the first button.
+    $('.donation-content-panel .triangle-left').css({left: initialPosition.left + buffer});
 
     $('.donate-form-buttons .donate-sum').each(function () {
+        // Sets the position of the clicked button.
         var targetButton = $(this).position();
 
         $(this).click(function () {
-            $('.donation-content-panel .triangle-left').animate({left: targetButton.left + 30});
+            // On click of each button, the arrow is moved to the middle of the active button.
+            $('.donation-content-panel .triangle-left').animate({left: targetButton.left + buffer});
         });
     });
 }

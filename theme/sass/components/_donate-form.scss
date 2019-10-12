@@ -39,37 +39,37 @@
     }
   }
 
-  .tabcontent {
+  .donate-form-buttons {
+    margin-top: 10px;
 
-    &.single {
+    .single {
       display: none;
     }
 
-    .donate-form-buttons {
-      margin-top: 10px;
+    .donate-sum {
+      width: 45px;
+      height: 45px;
+      border-radius: 10px;
+      border: 1px solid $primary-color;
+      font-size: $font-xsmall;
+      margin: 5px;
 
-      .donate-sum {
-        width: 45px;
-        height: 45px;
-        border-radius: 10px;
-        border: 1px solid $primary-color;
-        font-size: $font-xsmall;
-        margin: 5px;
+      @include breakpoint($md) {
+        width: 65px;
+        height: 65px;
+        font-size: $font-medium;
+      }
 
-        @include breakpoint($md) {
-          width: 65px;
-          height: 65px;
-          font-size: $font-medium;
-        }
-
-        &:hover,
-        &.active {
-          cursor: pointer;
-          background-color: $primary-color;
-          color: white;
-        }
+      &:hover,
+      &.active {
+        cursor: pointer;
+        background-color: $primary-color;
+        color: white;
       }
     }
+  }
+
+  .tabcontent {
 
     .donation-content-panel {
       position: relative;
@@ -83,11 +83,6 @@
         transform: rotate(90deg);
         position: absolute;
         top: -12px;
-        display: none;
-
-        &.active {
-          display: block;
-        }
 
         .inner-triangle {
           position: relative;
