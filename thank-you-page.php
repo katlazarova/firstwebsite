@@ -7,7 +7,7 @@
 </div> <!-- End of thank-you-message -->
 <div class="link-to-blog">
     <p>Find out about the work we're doing</p>
-<a href="/blog.php">here</a>
+<a href="/blog.php">here</a><p>.</p>
 </div> <!-- End of link-to-blog -->
 </div> <!-- End of container (page) -->
 </body>

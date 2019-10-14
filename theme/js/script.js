@@ -48,8 +48,6 @@ $(document).ready(function () {
     This function needs parameters running through it to work. */
     clickableElement($('.card-component-container .card-wrapper'));
 
-    // openDonationText(event, 25);
-
     arrowAnimation();
 
     processDonation();
@@ -225,6 +223,12 @@ function countCharacter() {
 }
 
 function openDonationTab() {
+    var monthlyFormButtons = $('.donate-form-buttons .monthly.form-buttons');
+    var singleFormButtons = $('.donate-form-buttons .single.form-buttons');
+    var monthlyFormDonationAmount = $('.donate-form-buttons .monthly.form-buttons .donate-sum');
+    var singleFormDonationAmount = $('.donate-form-buttons .single.form-buttons .donate-sum');
+    var monthlyDonationText = $('.donate-form-text-monthly .donate-form-text');
+    var singleDonationText = $('.donate-form-text-single .donate-form-text');
 
     setInitialPosition = function(){
         // Defines the variable for the position of the first of the donate form buttons.
@@ -242,32 +246,29 @@ function openDonationTab() {
         //Clicking on tablinks adds an active class and removes it from the sibling element.
         $(this).addClass('active').siblings().removeClass('active');
         if ($(this).hasClass('monthly')) {
-            // If the tablinks button clicked has a class of monthly, show the monthly form buttons.
-            $('.donate-form-buttons .monthly.form-buttons').show();
+            // If the tablinks button clicked has a class of monthly, show the monthly form buttons and add an active class.
+            monthlyFormButtons.show().addClass('active');
             // Hide and remove active class from single buttons when monthly tab is clicked.
-            $('.donate-form-buttons .single.form-buttons').removeClass('active').hide();
-            $('.donate-form-buttons .single.form-buttons .donate-sum').removeClass('active');
-            // Remove active class from single donate form text.
-            $('.donate-form-text-single .donate-form-text').removeClass('active');
-            // Add active class to the first donate form monthly text.
-            $('.donate-form-text-monthly .donate-form-text').first().addClass('active');
-            $('.monthly.form-buttons .donate-sum').first().addClass('active');
-            $('.donate-form-buttons .monthly.form-buttons').addClass('active');
-            $('.donate-form-text-single .donate-form-text').removeClass('active');
+            singleFormButtons.removeClass('active').hide();
+            // Remove active class from buttons in the single tab and the single tab text.
+            singleFormDonationAmount.removeClass('active');
+            singleDonationText.removeClass('active');
+            // Add active class to the first donate form monthly text and button.
+            monthlyDonationText.first().addClass('active');
+            monthlyFormDonationAmount.first().addClass('active');
             setInitialPosition();
         } else {
-            // If the class on the clicked tablinks element is not monthly, show the single form buttons.
-            $('.donate-form-buttons .single.form-buttons').show();
+            // If the class on the clicked tablinks element is not monthly, show the single form buttons and add an active class.
+            singleFormButtons.show().addClass('active');
             // Hide and remove active class from monthly form buttons.
-            $('.donate-form-buttons .monthly.form-buttons').removeClass('active').hide();
-            $('.donate-form-buttons .monthly.form-buttons .donate-sum').removeClass('active');
-            // Remove active class from monthly donate form text.
-            $('.donate-form-text-monthly .donate-form-text').removeClass('active');
+            monthlyFormButtons.removeClass('active').hide();
+            // Remove active class from monthly donate form text and button.
+            monthlyDonationText.removeClass('active');
+            monthlyFormDonationAmount.removeClass('active');
             // Add active class to the first single donate sum button.
-            $('.single.form-buttons .donate-sum').first().addClass('active');
-            $('.donate-form-buttons .single.form-buttons').addClass('active');
+            singleFormDonationAmount.first().addClass('active');
             // Add active class to the first donate form single text.
-            $('.donate-form-text-single .donate-form-text').first().addClass('active');
+            singleDonationText.first().addClass('active');
             setInitialPosition();
         }
     });
@@ -276,15 +277,15 @@ function openDonationTab() {
         $(this).addClass('active').siblings().removeClass('active');
 
         var buttonPosition = $('.donate-form-buttons .donate-sum.active').index();
-        var targetTextMonthly = $('.donate-form-text-monthly .donate-form-text')[buttonPosition];
-        var targetTextSingle = $('.donate-form-text-single .donate-form-text')[buttonPosition];
+        var targetTextMonthly = monthlyDonationText[buttonPosition];
+        var targetTextSingle = singleDonationText[buttonPosition];
 
         if ($(this).parent().hasClass('monthly')) {
             $('.donate-form-text-monthly').find(targetTextMonthly).addClass('active').siblings().removeClass('active');
-            $('.donate-form-text-single .donate-form-text').removeClass('active');
+            singleDonationText.removeClass('active');
         } else {
             $('.donate-form-text-single').find(targetTextSingle).addClass('active').siblings().removeClass('active');
-            $('.donate-form-text-monthly .donate-form-text').removeClass('active');
+            monthlyDonationText.removeClass('active');
         }
     });
 
