@@ -29,7 +29,7 @@
                 </button>
                 <ul class="nav-list">
                     <li>
-                        <a href="/">Home</a>
+                        <a href="/index.php">Home</a>
                     </li>
                     <li>
                         <a href="#">Learning</a>
