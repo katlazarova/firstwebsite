@@ -27,6 +27,7 @@
     padding: 14px 16px;
     transition: 0.3s;
     font-size: $font-xsmall;
+    background-color: white;
 
     @include breakpoint($md) {
       font-size: $font-medium;
@@ -53,6 +54,7 @@
       border: 1px solid $primary-color;
       font-size: $font-xsmall;
       margin: 5px;
+      background-color: white;
 
       @include breakpoint($md) {
         width: 65px;

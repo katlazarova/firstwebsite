@@ -61,13 +61,12 @@ function processDonation() {
     $('.donate-form-container .donate-button').click(function () {
         var donationSum = $('.donate-form-buttons .form-buttons .donate-sum.active').text();
         var donationSumOther = $('.donate-form-text .donate-form-input.active').val();
-        var donationInputValue = $('.donate-form-text .donate-form-input').val();
 
         if (donationSum !== '' && donationSum !== 'Other') {
-            window.location.href = '/thank-you-page.php?donationSum=' + donationSum + '';
+            window.location.href = '/thank-you-page.php?donationSum=' + donationSum;
         }
-        if (donationSum === 'Other' && donationInputValue !== '') {
-            window.location.href = '/thank-you-page.php?donationSum=£' + donationSumOther + '';
+        if (donationSum === 'Other' && $('.donate-form-text .donate-form-input').hasClass('active')) {
+            window.location.href = '/thank-you-page.php?donationSum=£' + donationSumOther;
         }
     });
 }
