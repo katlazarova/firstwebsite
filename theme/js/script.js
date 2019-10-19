@@ -202,7 +202,7 @@ $.getUrlParameter = function (name) {
 };
 
 function countCharacter() {
-    $('.text-area').on('input', function () {
+    $('.form-group .text-area').on('input', function () {
         var maxlength = $(this).attr('maxlength');
         var currentLength = $(this).val().length;
         var charCounter = $('.contact-form-container .character-counter');
@@ -242,6 +242,10 @@ function openDonationTab() {
         $('.donate-form-buttons ' +'.'+ otherAmount + '.form-buttons .donate-sum').removeClass('active');
         // Add an active class to the first button of the active tab and remove it from its siblings.
         $('.donate-form-buttons ' +'.'+ mainAmount + '.form-buttons .donate-sum').first().addClass('active').siblings().removeClass('active');
+        // Add active class to the first donate form text and remove it from the siblings.
+        $('.donate-form-text-'+ mainAmount + ' .donate-form-text').first().addClass('active').siblings().removeClass('active');
+        // Remove active class from the donate form text in the inactive tab.
+        $('.donate-form-text-'+ otherAmount +' .donate-form-text').removeClass('active');
     };
 
     setInitialPosition();
@@ -254,20 +258,11 @@ function openDonationTab() {
             var otherAmount = 'single';
             tabFunctionality(mainAmount, otherAmount);
             setInitialPosition();
-            // Add active class to the first donate form monthly text and remove it from the siblings.
-            $('.donate-form-text-monthly .donate-form-text').first().addClass('active').siblings().removeClass('active');
-            // Remove active class from the single donate form text.
-            $('.donate-form-text-single .donate-form-text').removeClass('active');
-
         } else {
             mainAmount = 'single';
             otherAmount = 'monthly';
             tabFunctionality(mainAmount, otherAmount);
             setInitialPosition();
-            // Add active class to the first donate form monthly text and remove it from its siblings.
-            $('.donate-form-text-single .donate-form-text').first().addClass('active').siblings().removeClass('active');
-            // Remove active class from monthly text.
-            $('.donate-form-text-monthly .donate-form-text').removeClass('active');
         }
     });
 
@@ -276,8 +271,8 @@ function openDonationTab() {
         $(this).addClass('active').siblings().removeClass('active');
 
         var buttonPosition = $('.donate-form-buttons .donate-sum.active').index();
-        var targetTextMonthly = $('.donate-form-text-monthly .donate-form-text') [buttonPosition];
-        var targetTextSingle = $('.donate-form-text-single .donate-form-text') [buttonPosition];
+        var targetTextMonthly = $('.donate-form-text-monthly .donate-form-text')[buttonPosition];
+        var targetTextSingle = $('.donate-form-text-single .donate-form-text')[buttonPosition];
 
         if ($(this).parent().hasClass('monthly')) {
             /* If the donation button clicked is in the monthly tab, find the text which has the same position in the array as the clicked button.
