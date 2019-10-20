@@ -148,7 +148,7 @@
                     <img src="theme/img/volunteer.jpeg" alt="volunteers" class="card-image">
                 </div> <!-- End of card-image-wrapper -->
                 <div class="card-text-container">
-                    <a href="learning/one.php">Volunteer With Us</a>
+                    <a href="/learning/tutorial-one.php" aria-label="Volunteer With Us">Volunteer With Us</a>
                     <p> JOIN THE TEAM! Volunteers are a crucial part of our organisation. Working as one team, we
                         combine skills and experience to help those in need.</p>
                 </div> <!-- End of card-text-container -->
@@ -160,7 +160,7 @@
                     <img src="theme/img/celebration-fundraising.jpeg" alt="birthday party" class="card-image">
                 </div> <!-- End of card-image-wrapper -->
                 <div class="card-text-container">
-                    <a href="learning/two.php">Fundraising in Celebration</a>
+                    <a href="/learning/tutorial-two.php" aria-label="Fundraising in Celebration">Fundraising in Celebration</a>
                     <p>Whether it's a wedding, anniversary, a birthday, a new baby or your retirement, your big or
                         little event could help raise money to save children's lives.</p>
                 </div> <!-- End of card-text-container -->
@@ -173,7 +173,7 @@
                          class="card-image">
                 </div> <!-- End of card-image-wrapper -->
                 <div class="card-text-container">
-                    <a href="learning/three.php">Donate To Specific Project</a>
+                    <a href="/learning/tutorial-three.php" aria-label="Donate To Specific Project">Donate To Specific Project</a>
                     <p>Look through current projects and choose a specific cause to donate to, personal to you.</p>
                 </div> <!-- End of card-text-container -->
             </div> <!-- End of card-three -->

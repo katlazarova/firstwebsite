@@ -34,5 +34,29 @@
 		"imageAltText":"children",
         "datePosted": "7 September 2019",
 		"author": [{"name":"Lisa Cuddy", "image":"/theme/img/lisa-cuddy.jpeg"}]
+	},
+	{
+		"id": "3",
+		"title":"An Impending Humanitarian Disaster",
+		"summary":"An impending humanitarian disaster is looming in North East Syria.",
+		"body": "Alison Griffin, our Head of Conflict and Humanitarian Campaigns, said, “Our priority is to ensure that the best interests of children are met, and that essential support is provided to them. Our teams are still present in the area and delivering our programmes, and we are preparing to scale up to meet the increased needs.”\n\n“The reports of civilian deaths, including those of two children, and several more injured are devastating. North East Syria is home to people who are all too familiar with the horrors of war. Many have been displaced more than once already. Imagine being a parent forced to bundle up your belongings and move your children in search of safety once again. With winter around the corner, families are worried for their lives and are thinking only of getting their children to somewhere safe and warm.”",
+		"linkText":"Read More...",
+		"link":"/blog/blog-content.php",
+		"imageLink":"/theme/img/project-homepage.jpeg",
+		"imageAltText":"children",
+		"datePosted": "7 September 2019",
+		"author": [{"name":"Lisa Cuddy", "image":"/theme/img/lisa-cuddy.jpeg"}]
+	},
+	{
+		"id": "4",
+		"title":"5 Big Wins Worth Celebrating On International Day Of The Girl 2019",
+		"summary":"É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica.",
+		"body":"Normaali palanen Lorem Ipsumia, jota on käytetty 1500-luvulla on toistettu alla niille jotka ovat vain kiinnostuneita. Osiot 1.10.32 ja 1.10.33 \"de Finibus Bonorum et Malorum\":ksesta, Cicerolta, ovat myös toistettu niiden tarkoissa alkuperäisissä muodoissaan, joita seuraa englantilaiset versiot vuodelta 1914, kääntäjänä H. Rackman.\n\nMistä minä saan sitä?\nOn olemassa monta eri versiota Lorem Ipsumin kappaleista, mutta suurin osa on kärsinyt muunnoksista joissain muodoissa, kuten huumorin tai sattumanvaraisesti asetetuin sanoin jotka eivät näytä edes vähän uskottavalta. Jos sinä aiot käyttää kappaletta Lorem Ipsumista, sinun pitää tarkistaa, ettei tekstin seassa ole mitään nolostuttavaa. Kaikki Lorem Ipsum-generaattorit Internetissä tuntuvat toistavan ennalta määriteltyjä palasia tarpeen mukaan, tehden tästä ensimmäisen aidon generaattorin Internetissä. Se käyttää 200 latinalaisen sanan sanakirjaa, johon on yhdistetty kourallinen mallilauseiden rakenteita luoden Lorem Ipsumin, joka näyttää järjelliseltä. Generoitu Lorem Ipsum on siten aina vapaa toistoilta, huumorilta jne.",
+		"linkText":"Read More...",
+		"link":"/blog/blog-content.php",
+		"imageLink":"/theme/img/project-homepage.jpeg",
+		"imageAltText":"children",
+		"datePosted": "7 September 2019",
+		"author": [{"name":"Lisa Cuddy", "image":"/theme/img/lisa-cuddy.jpeg"}]
 	}
 ]
