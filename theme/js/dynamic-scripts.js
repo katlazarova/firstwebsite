@@ -14,7 +14,7 @@ function getBlogCardComponentData() {
         $.each(data, function(i, post) {
             $('.card-component-container .row-container--horizontal')
             // Insert the following markup and json data into the card-component-container div.
-                .append('<div class="card-wrapper"><div class="card card-one clickable card--horizontal"><div class="card-image-wrapper"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image responsive-image"></div><div class="card-text-container"><h3>'+post.title+'</h3><p>'+post.datePosted+'</p><p>'+post.summary+'</p><a href="'+post.link+'?postId='+post.id+'">'+post.linkText+'</a></div></div></div>');
+                .append('<div class="card-wrapper"><div class="card card-one clickable card--horizontal"><div class="card-image-wrapper"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image responsive-image"></div><div class="card-text-container"><h3>'+post.title+'</h3><p>'+post.datePosted+'</p><p>'+post.summary+'</p><a href="'+post.link+'?postId='+post.id+'" aria-label="'+post.title+'">'+post.linkText+'</a></div></div></div>');
         });
     });
     setTimeout(function(){
