@@ -53,7 +53,6 @@ $(document).ready(function () {
     processDonation();
 
     openDonationTab();
-
 });
 
 function processDonation() {

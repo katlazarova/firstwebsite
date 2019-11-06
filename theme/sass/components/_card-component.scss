@@ -31,6 +31,10 @@
           margin-bottom: 0;
         }
       }
+
+      &--horizontal {
+        margin-left: 0;
+      }
     }
 
     .card-wrapper {
@@ -39,6 +43,14 @@
       padding-right: 15px;
       padding-left: 15px;
       display: block;
+
+      &.hidden {
+        display: none;
+      }
+
+      &.visible {
+        display: block;
+      }
 
       &:not(:last-child) {
         margin-bottom: 2rem;
@@ -122,6 +134,20 @@
           }
         }
       }
+    }
+  }
+
+  .show-more {
+    margin: 0 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: $tertiary-color;
+    color: $accent-color-one;
+    font-size: $font-xsmall;
+    font-weight: bold;
+
+    &:hover {
+      cursor: pointer;
     }
   }
 }

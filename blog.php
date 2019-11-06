@@ -3,6 +3,7 @@
 <div class="card-component-container bottom-spacer card-component-container--horizontal">
     <div class="row-container row-container--horizontal">
     </div> <!-- End of row-container -->
+    <button class="show-more">Show More</button>
 </div> <!-- End of card-component-container -->
 <div class="sidebar sidebar-container">
     <div class="sidebar-link-container bottom-spacer">
