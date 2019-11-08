@@ -11,16 +11,16 @@
         </div> <!-- End of tab -->
         <div class="donate-form-buttons">
             <div class="monthly form-buttons active" id="monthly">
-                <button class="donate-sum active">£10</button>
-                <button class="donate-sum">£15</button>
-                <button class="donate-sum">£30</button>
-                <button class="donate-sum">Other</button>
+                <button class="donate-sum button button-small button-outline active">£10</button>
+                <button class="donate-sum button button-small button-outline">£15</button>
+                <button class="donate-sum button button-small button-outline">£30</button>
+                <button class="donate-sum button button-small button-outline">Other</button>
             </div> <!-- End of monthly -->
             <div class="single form-buttons" id="single">
-                <button class="donate-sum">£25</button>
-                <button class="donate-sum">£50</button>
-                <button class="donate-sum">£100</button>
-                <button class="donate-sum">Other</button>
+                <button class="donate-sum button button-small button-outline">£25</button>
+                <button class="donate-sum button button-small button-outline">£50</button>
+                <button class="donate-sum button button-small button-outline">£100</button>
+                <button class="donate-sum button button-small button-outline">Other</button>
             </div> <!-- End of single -->
         </div> <!-- End of donate-form-buttons -->
 
@@ -82,7 +82,7 @@
             </div> <!-- End of donation-content-panel -->
         </div> <!-- End of tabcontent -->
     </div> <!-- End of tab-wrapper -->
-    <button class="donate-button">Donate</button>
+    <button class="donate-button button button-medium button-primary">Donate</button>
 </div> <!-- End of donate-form-container -->
 
 

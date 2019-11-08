@@ -46,29 +46,6 @@
     .single {
       display: none;
     }
-
-    .donate-sum {
-      width: 45px;
-      height: 45px;
-      border-radius: 10px;
-      border: 1px solid $primary-color;
-      font-size: $font-xsmall;
-      margin: 5px;
-      background-color: white;
-
-      @include breakpoint($md) {
-        width: 65px;
-        height: 65px;
-        font-size: $font-medium;
-      }
-
-      &:hover,
-      &.active {
-        cursor: pointer;
-        background-color: $primary-color;
-        color: white;
-      }
-    }
   }
 
   .tabcontent {
@@ -155,27 +132,6 @@
           }
         }
       }
-    }
-  }
-
-  .donate-button {
-    background-color: $primary-color;
-    color: $accent-color-one;
-    border-radius: 10px;
-    height: 65px;
-    width: 115px;
-    font-size: $font-medium;
-    margin: 20px;
-
-    &:hover {
-      cursor: pointer;
-      background-color: $secondary-color;
-    }
-
-    @include breakpoint($md) {
-      font-size: $font-large;
-      height: 75px;
-      width: 125px;
     }
   }
 }

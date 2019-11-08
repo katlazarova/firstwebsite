@@ -1,0 +1,66 @@
+.button {
+  border-radius: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.button-small {
+  font-size: $font-xsmall;
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+
+  @include breakpoint($md) {
+    font-size: $font-medium;
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.button-medium {
+  font-size: $font-medium;
+  height: 65px;
+  width: 115px;
+  margin: 20px;
+
+  @include breakpoint($md) {
+    font-size: $font-large;
+    height: 75px;
+    width: 125px;
+  }
+}
+
+.button-large {
+  font-size: $font-large;
+}
+
+.button-outline {
+  border: 1px solid $primary-color;
+  background-color: white;
+
+  &:hover,
+  &.active {
+    background-color: $primary-color;
+    color: white;
+  }
+}
+
+.button-primary {
+  background-color: $primary-color;
+  color: $accent-color-one;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+.button-secondary {
+  background-color: $tertiary-color;
+  color: $accent-color-one;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}

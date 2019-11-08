@@ -43,6 +43,7 @@
       padding-right: 15px;
       padding-left: 15px;
       display: block;
+      margin-bottom: 2rem;
 
       &.hidden {
         display: none;
@@ -50,10 +51,6 @@
 
       &.visible {
         display: block;
-      }
-
-      &:not(:last-child) {
-        margin-bottom: 2rem;
       }
 
       .card {
@@ -138,16 +135,12 @@
   }
 
   .show-more {
-    margin: 0 15px;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: $tertiary-color;
-    color: $accent-color-one;
-    font-size: $font-xsmall;
-    font-weight: bold;
+    margin: 0;
+    width: 5rem;
 
-    &:hover {
-      cursor: pointer;
+    @include breakpoint($md) {
+      width: 7rem;
+      margin: 0 15px;
     }
   }
 }

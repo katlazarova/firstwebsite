@@ -9,7 +9,9 @@ $(document).ready(function() {
 });
 
 $.fn.extend({
+    // Sets the function for toggling text with a and b serving as parameters to depict the 2 options for the text.
     toggleText: function(a, b){
+        // If current text is b, return a, else return b.
         return this.text(this.text() == b ? a : b);
     }
 });
@@ -31,15 +33,15 @@ function getBlogCardComponentData() {
 
     setTimeout(function(){
         clickableElement($('.card-component-container--horizontal .card-wrapper'));
-        showMoreButtonFunctionality();
+        showMoreContent();
     }, 100);
 }
-function showMoreButtonFunctionality() {
+function showMoreContent() {
     $('.card-component-container .show-more').click( function() {
         $(this).toggleText('Show More', 'Show Less');
 
         if ($('.card-component-container .card-wrapper:not(.visible)')) {
-            $('.card-component-container .card-wrapper').toggleClass('hidden');
+            $('.card-component-container .card-wrapper:not(.visible)').toggleClass('hidden');
         }
     });
 }
