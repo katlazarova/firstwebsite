@@ -1,4 +1,5 @@
-.button {
+.btn {
+  padding: 1rem 0.8rem;
   border-radius: 10px;
 
   &:hover {
@@ -6,37 +7,27 @@
   }
 }
 
-.button-small {
+.btn-small {
   font-size: $font-xsmall;
-  width: 45px;
-  height: 45px;
-  margin: 5px;
 
   @include breakpoint($md) {
     font-size: $font-medium;
-    width: 65px;
-    height: 65px;
   }
 }
 
-.button-medium {
+.btn-medium {
   font-size: $font-medium;
-  height: 65px;
-  width: 115px;
-  margin: 20px;
 
   @include breakpoint($md) {
     font-size: $font-large;
-    height: 75px;
-    width: 125px;
   }
 }
 
-.button-large {
+.btn-large {
   font-size: $font-large;
 }
 
-.button-outline {
+.btn-outline {
   border: 1px solid $primary-color;
   background-color: white;
 
@@ -47,7 +38,7 @@
   }
 }
 
-.button-primary {
+.btn-primary {
   background-color: $primary-color;
   color: $accent-color-one;
 
@@ -56,11 +47,24 @@
   }
 }
 
-.button-secondary {
+.btn-secondary {
   background-color: $tertiary-color;
   color: $accent-color-one;
 
   &:hover {
     background-color: $secondary-color;
+  }
+}
+
+.btn-tab {
+  background-color: white;
+  border-radius: 0;
+  border: none;
+  transition: 0.3s;
+
+  &:hover,
+  &.active {
+    background-color: $primary-color;
+    color: $accent-color-one;
   }
 }

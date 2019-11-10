@@ -133,14 +133,9 @@
       }
     }
   }
-
-  .show-more {
-    margin: 0;
-    width: 5rem;
-
+  .btn-container {
     @include breakpoint($md) {
-      width: 7rem;
-      margin: 0 15px;
+      padding: 15px;
     }
   }
 }

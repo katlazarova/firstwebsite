@@ -297,9 +297,10 @@ function arrowAnimation() {
         $(this).click(function () {
             // Sets the position of the clicked button.
             var targetButton = $(this).position();
+            var buffer = $(this).outerWidth() / 2;
 
             // On click of each button, the arrow is moved to the middle of the active button.
-            $('.donation-content-panel .triangle-left').animate({left: targetButton.left + 22.5});
+            $('.donation-content-panel .triangle-left').animate({left: targetButton.left + buffer});
         });
     });
 }
