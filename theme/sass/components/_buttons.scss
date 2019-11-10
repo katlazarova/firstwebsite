@@ -1,6 +1,12 @@
 .btn {
   padding: 1rem 0.8rem;
   border-radius: 10px;
+  transition: 0.3s;
+  font-size: $font-medium;
+
+  @include breakpoint($md) {
+    font-size: $font-large;
+  }
 
   &:hover {
     cursor: pointer;
@@ -15,14 +21,6 @@
   }
 }
 
-.btn-medium {
-  font-size: $font-medium;
-
-  @include breakpoint($md) {
-    font-size: $font-large;
-  }
-}
-
 .btn-large {
   font-size: $font-large;
 }
@@ -31,8 +29,7 @@
   border: 1px solid $primary-color;
   background-color: white;
 
-  &:hover,
-  &.active {
+  &:hover {
     background-color: $primary-color;
     color: white;
   }
@@ -60,10 +57,8 @@
   background-color: white;
   border-radius: 0;
   border: none;
-  transition: 0.3s;
 
-  &:hover,
-  &.active {
+  &:hover {
     background-color: $primary-color;
     color: $accent-color-one;
   }

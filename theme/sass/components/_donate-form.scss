@@ -20,6 +20,13 @@
 
   .tab {
     overflow: hidden;
+
+    .tablinks {
+      &.active {
+        background-color: $primary-color;
+        color: $accent-color-one;
+      }
+    }
   }
 
   .donate-form-buttons {
@@ -27,6 +34,11 @@
 
     .donate-sum {
       margin: 5px;
+
+      &.active {
+        background-color: $primary-color;
+        color: white;
+      }
     }
 
     .single {

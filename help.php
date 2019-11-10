@@ -45,7 +45,7 @@
             <textarea name="subject" class="text-area" placeholder="Type here" maxlength="300"></textarea>
         </div> <!-- End of form-group -->
 
-        <input type="submit" value="Submit" class="submit">
+        <input type="submit" value="Submit" class="submit btn btn-primary">
     </form>
 </div> <!-- End of contact-form-container -->
 <h2>FAQ</h2>

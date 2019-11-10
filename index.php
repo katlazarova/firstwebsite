@@ -82,7 +82,7 @@
             </div> <!-- End of donation-content-panel -->
         </div> <!-- End of tabcontent -->
     </div> <!-- End of tab-wrapper -->
-    <button class="donate-button btn btn-medium btn-primary">Donate</button>
+    <button class="donate-button btn btn-primary">Donate</button>
 </div> <!-- End of donate-form-container -->
 
 
