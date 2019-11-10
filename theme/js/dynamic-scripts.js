@@ -8,18 +8,42 @@ $(document).ready(function() {
     getDonationSumData();
 });
 
+$.fn.extend({
+    // Sets the function for toggling text with a and b serving as parameters to depict the 2 options for the text.
+    toggleText: function(a, b){
+        // If current text is b, return a, else return b.
+        return this.text(this.text() == b ? a : b);
+    }
+});
+
 function getBlogCardComponentData() {
     $.getJSON('theme/json/posts.json', function(data) {
         // Run function for each card. The post variable here represents the json dataset.
         $.each(data, function(i, post) {
+            if ( i >= 3) {
+                var visibility = 'hidden';
+            } else {
+                var visibility = 'visible';
+            }
             $('.card-component-container .row-container--horizontal')
             // Insert the following markup and json data into the card-component-container div.
-                .append('<div class="card-wrapper"><div class="card card-one clickable card--horizontal"><div class="card-image-wrapper"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image responsive-image"></div><div class="card-text-container"><h3>'+post.title+'</h3><p>'+post.datePosted+'</p><p>'+post.summary+'</p><a href="'+post.link+'?postId='+post.id+'" aria-label="'+post.title+'">'+post.linkText+'</a></div></div></div>');
+                .append('<div class="card-wrapper '+visibility+'"><div class="card clickable card--horizontal"><div class="card-image-wrapper"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image responsive-image"></div><div class="card-text-container"><h3>'+post.title+'</h3><p>'+post.datePosted+'</p><p>'+post.summary+'</p><a href="'+post.link+'?postId='+post.id+'" aria-label="'+post.title+'">'+post.linkText+'</a></div></div></div>');
         });
     });
+
     setTimeout(function(){
         clickableElement($('.card-component-container--horizontal .card-wrapper'));
+        showMoreContent();
     }, 100);
+}
+function showMoreContent() {
+    $('.card-component-container .show-more').click( function() {
+        $(this).toggleText('Show More', 'Show Less');
+
+        if ($('.card-component-container .card-wrapper:not(.visible)')) {
+            $('.card-component-container .card-wrapper:not(.visible)').toggleClass('hidden');
+        }
+    });
 }
 
 function appendCountryData() {

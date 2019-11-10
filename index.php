@@ -5,22 +5,22 @@
     <h2>DONATE</h2>
     <div class="tab-wrapper">
         <div class="tab">
-            <button id="defaultOpen" class="tablinks monthly active">Monthly
+            <button id="defaultOpen" class="tablinks btn btn-small btn-tab monthly active">Monthly
             </button>
-            <button id="defaultOpen" class="tablinks single">Single</button>
+            <button id="defaultOpen" class="tablinks btn btn-small btn-tab single">Single</button>
         </div> <!-- End of tab -->
         <div class="donate-form-buttons">
             <div class="monthly form-buttons active" id="monthly">
-                <button class="donate-sum active">£10</button>
-                <button class="donate-sum">£15</button>
-                <button class="donate-sum">£30</button>
-                <button class="donate-sum">Other</button>
+                <button class="donate-sum btn btn-small btn-outline active">£10</button>
+                <button class="donate-sum btn btn-small btn-outline">£15</button>
+                <button class="donate-sum btn btn-small btn-outline">£30</button>
+                <button class="donate-sum btn btn-small btn-outline">Other</button>
             </div> <!-- End of monthly -->
             <div class="single form-buttons" id="single">
-                <button class="donate-sum">£25</button>
-                <button class="donate-sum">£50</button>
-                <button class="donate-sum">£100</button>
-                <button class="donate-sum">Other</button>
+                <button class="donate-sum btn btn-small btn-outline">£25</button>
+                <button class="donate-sum btn btn-small btn-outline">£50</button>
+                <button class="donate-sum btn btn-small btn-outline">£100</button>
+                <button class="donate-sum btn btn-small btn-outline">Other</button>
             </div> <!-- End of single -->
         </div> <!-- End of donate-form-buttons -->
 
@@ -82,7 +82,7 @@
             </div> <!-- End of donation-content-panel -->
         </div> <!-- End of tabcontent -->
     </div> <!-- End of tab-wrapper -->
-    <button class="donate-button">Donate</button>
+    <button class="donate-button btn btn-primary">Donate</button>
 </div> <!-- End of donate-form-container -->
 
 
