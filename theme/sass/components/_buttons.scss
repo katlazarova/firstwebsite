@@ -63,3 +63,15 @@
     color: $accent-color-one;
   }
 }
+
+.btn-close {
+  border: none;
+  height: 2rem;
+  background-color: white;
+  color: $primary-color;
+  padding: 1rem;
+  font-size: $font-small;
+  font-weight: 700;
+  line-height: 1;
+
+}
