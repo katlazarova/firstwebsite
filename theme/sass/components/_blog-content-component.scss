@@ -1,0 +1,16 @@
+.blog-content-container {
+  width: $gutter-size;
+  margin: 0 auto;
+
+  @include breakpoint($md) {
+  width: 60%;
+  float: left;
+    text-align: left;
+}
+
+  h2 {
+    margin-top: 0;
+    text-align: left;
+    padding-left: 0;
+  }
+}

@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HealthMove</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="/theme/node_modules/swiper/dist/css/swiper.min.css">
     <link rel="stylesheet" href="/theme/build/styles.min.css">
     <script src="/theme/build/script.min.js"></script>
+    <link rel="icon" href="/theme/img/favicon.ico.png" type="image/icon">
 </head>
 
 <body>
@@ -43,13 +45,16 @@
                         <a href="/about-us.php">About Us</a>
                     </li>
                     <li>
+                        <a href="/blog.php">Blog</a>
+                    </li>
+                    <li>
                         <a href="/get-involved.php">Get Involved</a>
                     </li>
                     <li>
                         <a href="/current-projects.php">Current Projects</a>
                     </li>
                     <li>
-                        <a href="#">Help</a>
+                        <a href="/help.php">Help</a>
                     </li>
                 </ul> <!-- End of navlist. -->
             </nav>

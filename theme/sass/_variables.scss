@@ -3,6 +3,16 @@ $primary-color: #e67e70;
 $secondary-color: #363636;
 $tertiary-color: #7BBABA;
 $accent-color-one: #f5f5f5;
+$accent-color-two: #9a9696;
+$highlight-color: #d80000;
+
+// Font sizes.
+$font-xsmall: 0.75rem;
+$font-small: 1rem;
+$font-medium: 1.2rem;
+$font-large: 2rem;
+$font-xlarge: 3rem;
+$font-xxlarge: 5rem;
 
 // Breakpoint Variables.
 $sm: 576px;
@@ -11,3 +21,5 @@ $lg: 992px;
 $xlg: 1024px;
 
 $gutter-size: 80%;
+
+$fa-font-path: "../fonts/webfonts";

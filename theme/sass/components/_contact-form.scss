@@ -1,0 +1,22 @@
+.contact-form-container {
+  border-radius: 10px;
+  background-color: $accent-color-one;
+  padding: 20px;
+  width: $gutter-size;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    margin: 0;
+  }
+
+  .character-counter {
+    font-size: $font-xsmall;
+
+    &.limit-warning {
+      color: $highlight-color;
+    }
+  }
+}
+
+

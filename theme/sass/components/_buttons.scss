@@ -1,0 +1,65 @@
+.btn {
+  padding: 1rem 0.8rem;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-size: $font-medium;
+
+  @include breakpoint($md) {
+    font-size: $font-large;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-small {
+  font-size: $font-xsmall;
+
+  @include breakpoint($md) {
+    font-size: $font-medium;
+  }
+}
+
+.btn-large {
+  font-size: $font-large;
+}
+
+.btn-outline {
+  border: 1px solid $primary-color;
+  background-color: white;
+
+  &:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  color: $accent-color-one;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+.btn-secondary {
+  background-color: $tertiary-color;
+  color: $accent-color-one;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+.btn-tab {
+  background-color: white;
+  border-radius: 0;
+  border: none;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $accent-color-one;
+  }
+}

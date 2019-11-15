@@ -1,6 +1,6 @@
 .header {
     height: 70px;
-    background: white;
+    background: $accent-color-one;
 
     .nav-container {
         max-width: 1000px;
@@ -12,7 +12,7 @@
             float: left;
             line-height: 70px;
             text-transform: uppercase;
-            font-size: 1.4em;
+            font-size: $font-large;
 
             a {
                 text-decoration: none;
@@ -26,6 +26,7 @@
             right: 0;
             width: 100%;
             padding: 70px 0 15px;
+            z-index: 1;
 
             @include breakpoint($lg) {
                 padding: 0;
@@ -36,11 +37,17 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                background: white;
+                background: $accent-color-one;
                 height: 70px;
                 width: 70px;
                 display: block;
                 border: none;
+                
+                .hamburger-inner,
+                ::before,
+                ::after {
+                    background-color: $accent-color-two;
+                }
 
                 @include breakpoint ($lg) {
                     display: none;
@@ -64,7 +71,8 @@
                 padding: 0;
                 display: none;
                 text-align: center;
-                background-color: white;
+                background-color: $accent-color-one;
+                z-index: 1;
 
                 @include breakpoint($lg) {
                     display: block !important;
@@ -73,14 +81,14 @@
                 li {
                     position: relative;
                     float: none;
-                    border: thin solid $secondary-color;
+                    border: thin solid $accent-color-two;
 
                     @include breakpoint($lg) {
                         border: none;
                     }
 
                     &:last-child {
-                        border: thin solid $secondary-color;
+                        border: thin solid $accent-color-two;
                     }
 
                     @include breakpoint($lg) {
@@ -92,14 +100,22 @@
                     }
 
                     a {
-                        padding: 15px;
-                        line-height: 20px;
-                        padding-left: 25%;
+                        display: block;
+                        padding: 0 20px;
+                        line-height: 70px;
+                        color: $secondary-color;
+                        text-decoration: none;
+                        font-weight: bold;
+
+                        &.active {
+                            background: $primary-color;
+                            color: $accent-color-one;
+                        }
 
                         &:hover,
                         &:visited:hover {
                             background: $primary-color;
-                            color: white;
+                            color: $accent-color-one;
                         }
 
                         &:not(:only-child):after,
@@ -107,21 +123,6 @@
                             padding-left: 4px;
                             content: ' ▾';
                         }
-
-                        &.active {
-                            background: $primary-color;
-                            color: white;
-                        }
-                    }
-
-                    a,
-                    a:visited {
-                        display: block;
-                        padding: 0 20px;
-                        line-height: 70px;
-                        color: $secondary-color;
-                        text-decoration: none;
-                        font-weight: bold;
                     }
 
                     .nav-dropdown {
@@ -134,13 +135,13 @@
 
                         @include breakpoint($lg) {
                             position: absolute;
-                            background-color: white;
+                            background-color: $accent-color-one;
                         }
 
                         li {
                             min-width: 190px;
                             list-style-type: none;
-                            border-color: white;
+                            border-color: $accent-color-one;
 
                             @include breakpoint($lg) {
                                 border: none;
@@ -153,7 +154,7 @@
                             a {
                                 padding: 15px;
                                 line-height: 20px;
-                                color: white;
+                                color: $accent-color-one;
 
                                 @include breakpoint($lg) {
                                     color: $secondary-color;
@@ -161,7 +162,7 @@
 
                                 &:hover {
                                     background-color: $secondary-color;
-                                    color: white;
+                                    color: $accent-color-one;
                                 }
                             }
                         }

@@ -3,6 +3,8 @@
 @import "../node_modules/breakpoint-sass/stylesheets/_breakpoint.scss";
 @import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 @import "variables";
+@import "libraries/fontawesome/fontawesome.scss";
+@import "libraries/fontawesome/solid.scss";
 @import "components/global.scss";
 @import "components/header";
 @import "components/header-text-component";
@@ -11,4 +13,16 @@
 @import "components/card-component.scss";
 @import "components/testimonials.scss";
 @import "components/footer.scss";
-@import "libraries/swiper.scss";
+@import "components/stats-bar.scss";
+@import "components/sidebar-component";
+@import "components/accordion-component.scss";
+@import "components/contact-form.scss";
+@import "components/success-page";
+@import "components/blog-content-component";
+@import "components/author-component.scss";
+@import "components/404-error-page";
+@import "components/donate-form.scss";
+@import "components/thank-you-page.scss";
+@import "components/buttons.scss";
+@import "libraries/swiper/swiper.scss";
+

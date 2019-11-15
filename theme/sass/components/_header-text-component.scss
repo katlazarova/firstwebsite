@@ -1,10 +1,35 @@
 .header-text-component {
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 2rem;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  font-size: $font-medium;
 
-    @include breakpoint($md) {
-    	width: $gutter-size;
+  .page-blog-blog-content & {
+    width: 60%;
+    float: left;
+  }
+
+  @include breakpoint($md) {
+    padding: 0;
+    width: $gutter-size;
+  }
+
+  &.mission-statement {
+    p {
+      font-weight: bold;
+      font-style: italic;
+      color: $secondary-color;
     }
+
+    img {
+      margin: 0 auto;
+      width: $gutter-size;
+    }
+  }
+
+  h2 {
+    font-size: $font-large;
+    color: $tertiary-color;
+  }
 }
