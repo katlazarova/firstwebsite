@@ -311,8 +311,6 @@ function arrowAnimation() {
 function modalFunctionality() {
     var visited = Cookies.get('visited');
 
-    Cookies.remove('visited');
-
     // When the newsletter signup modal is showing, set a 3 day cookie session and hide the success modal.
     $('.modal.newsletter-signup').on('shown.bs.modal', function() {
         Cookies.set('visited', 'true', { expires: 3 });
