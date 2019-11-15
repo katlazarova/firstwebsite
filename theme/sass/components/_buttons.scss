@@ -3,6 +3,7 @@
   border-radius: 10px;
   transition: 0.3s;
   font-size: $font-medium;
+  border: none;
 
   @include breakpoint($md) {
     font-size: $font-large;
@@ -62,4 +63,20 @@
     background-color: $primary-color;
     color: $accent-color-one;
   }
+}
+
+.btn-close {
+  border: none;
+  height: 2rem;
+  background-color: white;
+  color: $primary-color;
+  padding: 1rem;
+  font-size: $font-small;
+  font-weight: 700;
+  line-height: 1;
+
+  &:hover {
+    color: $secondary-color;
+  }
+
 }
