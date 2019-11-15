@@ -28,14 +28,17 @@
         justify-content: space-between;
         padding: 15px;
         border-bottom: 1px solid $accent-color-one;
+
+        @include breakpoint($md) {
         line-height: 0.5;
+        }
       }
 
       .modal-body {
         position: relative;
         padding: 15px;
 
-        .newsletter-submission-container {
+        .newsletter-signup {
           text-align: left;
         }
       }
@@ -44,6 +47,17 @@
         text-align: center;
         border-top: 1px solid $accent-color-one;
         padding: 15px;
+      }
+    }
+  }
+
+  &.success {
+    .modal-dialog {
+      color: #155724;
+      background-color: #d4edda;
+      .modal-header {
+        text-align: center;
+        display: block;
       }
     }
   }

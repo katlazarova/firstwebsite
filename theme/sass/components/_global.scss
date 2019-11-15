@@ -116,19 +116,6 @@ textarea {
     }
 }
 
-input[type=submit] {
-    background-color: $primary-color;
-    color: $accent-color-one;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-
-    &:hover {
-        background-color: $secondary-color;
-    }
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;

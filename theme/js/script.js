@@ -311,24 +311,33 @@ function arrowAnimation() {
 function modalFunctionality() {
     var visited = Cookies.get('visited');
 
+    Cookies.remove('visited');
+
+    // When the newsletter signup modal is showing, set a 3 day cookie session and hide the success modal.
     $('.modal.newsletter-signup').on('shown.bs.modal', function() {
         Cookies.set('visited', 'true', { expires: 3 });
+        $('modal.success').modal('hide');
     });
 
+    // If a cookie session is not set, show the newsletter signup modal 3 seconds after page load.
     if (visited !== 'true') {
         setTimeout(function () {
             $('.modal.newsletter-signup').modal({backdrop: true});
         }, 3000);
     }
 
-    $('.newsletter-submission-container .modal-form').on('submit', function() {
+    // When modal form is submitted, show the success modal, hide the signup modal and set a 10 day cookie session.
+    $('.newsletter-signup .modal-form').on('submit', function() {
         event.preventDefault();
         $('.modal.success').modal('show');
         $('.modal.newsletter-signup').modal('hide');
         Cookies.set('visited', 'true', { expires: 10 });
     });
 
+    // Hide the success modal when the close button is clicked.
     $('.modal.success .modal-footer .btn').click(function() {
         $('.modal.success').modal('hide');
     });
 }
+
+

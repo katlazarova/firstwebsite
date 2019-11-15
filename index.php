@@ -1,64 +1,5 @@
 <?php include 'includes/header.php'; ?>
 
-<div class="modal newsletter-signup" role="dialog">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Sign Up For Our Newsletter!</h4>
-                <button type="button" class="close btn btn-close" data-dismiss="modal">
-                    <span>x</span>
-                </button>
-            </div> <!-- End of modal-header -->
-            <div class="modal-body">
-                <div class="newsletter-submission-container">
-                    <form class="modal-form">
-                        <div class="form-group">
-                            <label for="firstName">First Name
-                                <span class="required-asterix" title="This field is required">*</span>
-                            </label>
-                            <span class="visually-hidden">(required)</span>
-                            <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
-                        </div> <!-- End of form-group -->
-                        <div class="form-group">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" class="form-control" name="lastname" placeholder="Last Name">
-                        </div> <!-- End of form-group -->
-                        <div class="form-group">
-                            <label for="email">Email
-                                <span class="required-asterix" title="This field is required">*</span>
-                            </label>
-                            <span class="visually-hidden">(required)</span>
-                            <input type="email" class="form-control" name="email" placeholder="Email" required>
-                        </div> <!-- End of form-group -->
-                </div> <!-- End of newsletter-submission-container -->
-            </div> <!-- End of modal-body -->
-            <div class="modal-footer">
-                <input type="submit" value="Sign Up" class="submit btn btn-small btn-primary">
-            </div> <!-- End of modal-footer -->
-            </form> <!-- End of form -->
-        </div> <!-- End of modal-content -->
-    </div> <!-- End of modal-dialog -->
-</div> <!-- End of modal newsletter-signup -->
-
-<div class="modal success" role="dialog">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Success!</h4>
-                <button type="button" class="close btn btn-close" data-dismiss="modal">
-                    <span>x</span>
-                </button>
-            </div> <!-- End of modal-header -->
-            <div class="modal-body">
-                <p>Thank you for signing up to our newsletter!</p>
-            </div> <!-- End of modal-body -->
-            <div class="modal-footer">
-                <button class="btn btn-small btn-primary">Close</button>
-            </div> <!-- End of modal-footer -->
-        </div> <!-- End of modal-content -->
-    </div> <!-- End of modal-dialog -->
-</div> <!-- End of modal success -->
-
 <div class="hero-image full-width"></div> <!-- End hero image -->
 <div class="donate-form-container">
     <h2>DONATE</h2>
@@ -325,5 +266,61 @@
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
 </div> <!-- End of testimonial-container -->
+
+<div class="modal newsletter-signup" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Sign Up For Our Newsletter!</h4>
+                <button type="button" class="close btn btn-close" data-dismiss="modal">
+                    <span>x</span>
+                </button>
+            </div> <!-- End of modal-header -->
+            <form class="modal-form">
+            <div class="modal-body">
+                <div class="newsletter-signup">
+                        <div class="form-group">
+                            <label for="firstName">First Name
+                                <span class="required-asterix" title="This field is required">*</span>
+                            </label>
+                            <span class="visually-hidden">(required)</span>
+                            <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
+                        </div> <!-- End of form-group -->
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                        </div> <!-- End of form-group -->
+                        <div class="form-group">
+                            <label for="email">Email
+                                <span class="required-asterix" title="This field is required">*</span>
+                            </label>
+                            <span class="visually-hidden">(required)</span>
+                            <input type="email" class="form-control" name="email" placeholder="Email" required>
+                        </div> <!-- End of form-group -->
+                </div> <!-- End of newsletter-signup -->
+            </div> <!-- End of modal-body -->
+            <div class="modal-footer">
+                <input type="submit" value="Sign Up" class="submit btn btn-small btn-primary">
+            </div> <!-- End of modal-footer -->
+            </form> <!-- End of form -->
+        </div> <!-- End of modal-content -->
+    </div> <!-- End of modal-dialog -->
+</div> <!-- End of modal newsletter-signup -->
+
+<div class="modal success" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Success!</h2>
+            </div> <!-- End of modal-header -->
+            <div class="modal-body">
+                <p>Thank you for signing up to our newsletter!</p>
+            </div> <!-- End of modal-body -->
+            <div class="modal-footer">
+                <button class="btn btn-small btn-primary">Close</button>
+            </div> <!-- End of modal-footer -->
+        </div> <!-- End of modal-content -->
+    </div> <!-- End of modal-dialog -->
+</div> <!-- End of modal success -->
 
 <?php include 'includes/footer.php'; ?>
