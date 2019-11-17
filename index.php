@@ -8,7 +8,7 @@
             <button id="defaultOpen" class="tablinks btn btn-small btn-tab monthly active">Monthly
             </button>
             <button id="defaultOpen" class="tablinks btn btn-small btn-tab single">Single</button>
-        </div> <!-- End of tab -->
+        </div> <!-- End of tab. -->
         <div class="donate-form-buttons">
             <div class="monthly form-buttons active" id="monthly">
                 <button class="donate-sum btn btn-small btn-outline active">£10</button>
