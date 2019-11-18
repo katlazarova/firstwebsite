@@ -7,8 +7,8 @@
                     <ul class="footer-links">
                         <li><a href="/">Home</a></li>
                         <li><a href="/about-us.php">About Us</a></li>
-                        <li><a href="/get-involved.php">Get Involved</a></li>
-                        <li><a href="/current-projects.php">Current Projects</a></li>
+                        <li><a href="#">Get Involved</a></li>
+                        <li><a href="#">Current Projects</a></li>
                     </ul>
                 </div> <!-- End of footer-navlinks -->
                 <div class="footer-info-links">

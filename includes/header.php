@@ -50,10 +50,10 @@
                         <a href="/blog.php">Blog</a>
                     </li>
                     <li>
-                        <a href="/get-involved.php">Get Involved</a>
+                        <a href="#">Get Involved</a>
                     </li>
                     <li>
-                        <a href="/current-projects.php">Current Projects</a>
+                        <a href="#">Current Projects</a>
                     </li>
                     <li>
                         <a href="/help.php">Help</a>
