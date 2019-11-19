@@ -50,12 +50,6 @@
                         <a href="/blog.php">Blog</a>
                     </li>
                     <li>
-                        <a href="/get-involved.php">Get Involved</a>
-                    </li>
-                    <li>
-                        <a href="/current-projects.php">Current Projects</a>
-                    </li>
-                    <li>
                         <a href="/help.php">Help</a>
                     </li>
                 </ul> <!-- End of navlist. -->

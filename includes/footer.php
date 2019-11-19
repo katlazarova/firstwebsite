@@ -7,16 +7,12 @@
                     <ul class="footer-links">
                         <li><a href="/">Home</a></li>
                         <li><a href="/about-us.php">About Us</a></li>
-                        <li><a href="/get-involved.php">Get Involved</a></li>
-                        <li><a href="/current-projects.php">Current Projects</a></li>
+                        <li><a href="/blog.php">Blog</a></li>
                     </ul>
                 </div> <!-- End of footer-navlinks -->
                 <div class="footer-info-links">
                     <ul class="footer-links">
                         <li><a href="/help.php">Help</a></li>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Terms and Conditions</a></li>
                     </ul>
                 </div> <!-- End of footer-info-links -->
                 <div class="social-media-links">

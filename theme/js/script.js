@@ -314,7 +314,7 @@ function modalFunctionality() {
     // When the newsletter signup modal is showing, set a 3 day cookie session and hide the success modal.
     $('.modal.newsletter-signup').on('shown.bs.modal', function() {
         Cookies.set('visited', 'true', { expires: 3 });
-        $('modal.success').modal('hide');
+        $('.modal.success').modal('hide');
     });
 
     // If a cookie session is not set, show the newsletter signup modal 3 seconds after page load.
