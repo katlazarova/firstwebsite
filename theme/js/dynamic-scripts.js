@@ -57,10 +57,8 @@ function appendCountryData() {
             /* Run function for each country in the json data.
             countryData is a variable representing the json dataset at the countries array level.*/
             $.each(data['countries'], function (i, countryData) {
-
                 // Insert markup and json data into the select element.
-                $('.select-country')
-                    .append('<option value="' + countryData.country.country_id + '">' + countryData.country.country_name + '</option>');
+                $('.select-country').append('<option value="' + countryData.country.country_id + '">' + countryData.country.country_name + '</option>');
             });
             // If the json data cannot be loaded, display an error message.
         }).fail(function (data, textStatus, error) {
