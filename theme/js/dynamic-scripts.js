@@ -17,24 +17,26 @@ $.fn.extend({
 });
 
 function getBlogCardComponentData() {
-    $.getJSON('theme/json/posts.json', function(data) {
-        // Run function for each card. The post variable here represents the json dataset.
-        $.each(data, function(i, post) {
-            if ( i >= 3) {
-                var visibility = 'hidden';
-            } else {
-                var visibility = 'visible';
-            }
-            $('.card-component-container .row-container--horizontal')
-            // Insert the following markup and json data into the card-component-container div.
-                .append('<div class="card-wrapper '+visibility+'"><div class="card clickable card--horizontal"><div class="card-image-wrapper"><img src="'+post.imageLink+'" alt="'+post.imageAltText+'" class="card-image responsive-image"></div><div class="card-text-container"><h3>'+post.title+'</h3><p>'+post.datePosted+'</p><p>'+post.summary+'</p><a href="'+post.link+'?postId='+post.id+'" aria-label="'+post.title+'">'+post.linkText+'</a></div></div></div>');
+    if (window.location.pathname === '/blog.php') {
+        $.getJSON('theme/json/posts.json', function (data) {
+            // Run function for each card. The post variable here represents the json dataset.
+            $.each(data, function (i, post) {
+                if (i >= 3) {
+                    var visibility = 'hidden';
+                } else {
+                    var visibility = 'visible';
+                }
+                $('.card-component-container .row-container--horizontal')
+                // Insert the following markup and json data into the card-component-container div.
+                    .append('<div class="card-wrapper ' + visibility + '"><div class="card clickable card--horizontal"><div class="card-image-wrapper"><img src="' + post.imageLink + '" alt="' + post.imageAltText + '" class="card-image responsive-image"></div><div class="card-text-container"><h3>' + post.title + '</h3><p>' + post.datePosted + '</p><p>' + post.summary + '</p><a href="' + post.link + '?postId=' + post.id + '" aria-label="' + post.title + '">' + post.linkText + '</a></div></div></div>');
+            });
         });
-    });
 
-    setTimeout(function(){
-        clickableElement($('.card-component-container--horizontal .card-wrapper'));
-        showMoreContent();
-    }, 100);
+        setTimeout(function () {
+            clickableElement($('.card-component-container--horizontal .card-wrapper'));
+            showMoreContent();
+        }, 100);
+    }
 }
 function showMoreContent() {
     $('.card-component-container .show-more').click( function() {
