@@ -17,3 +17,5 @@ ajax
 theme/node_modules/*
 theme/.DS_Store
 .DS_Store
+
+.cpanel.yml
