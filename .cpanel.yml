@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/healthmove/
+    - export DEPLOYPATH=/home/qk6vt4cuc3ga/public_html/
     - /bin/cp -a * $DEPLOYPATH
