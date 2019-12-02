@@ -8,10 +8,7 @@
     <title>HealthMove</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/theme/node_modules/swiper/dist/js/swiper.min.js"></script>
-    <script src="/theme/node_modules/js-cookie/src/js.cookie.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/theme/node_modules/swiper/dist/css/swiper.min.css">
     <link rel="stylesheet" href="/theme/build/styles.min.css">
     <script src="/theme/build/script.min.js"></script>
     <link rel="icon" href="/theme/img/favicon.ico.png" type="image/icon">
@@ -48,12 +45,6 @@
                     </li>
                     <li>
                         <a href="/blog.php">Blog</a>
-                    </li>
-                    <li>
-                        <a href="/get-involved.php">Get Involved</a>
-                    </li>
-                    <li>
-                        <a href="/current-projects.php">Current Projects</a>
                     </li>
                     <li>
                         <a href="/help.php">Help</a>
