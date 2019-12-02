@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/healthmove/
+    - /bin/cp -a * $DEPLOYPATH
