@@ -151,7 +151,7 @@
                 bonorum et malorum" (O najvyššom dobre a zle), napísaného v roku 45 pred n.l. Táto kniha je
                 pojednaním o
                 teórii etiky, a bola veľmi populárna v renesancii. Prvý riadok Lorem Ipsum, "Lorem ipsum dolor sit
-                amet..", je z riadku v odseku 1.10.32.</p>
+                amet..", je z riadku v odseku 1.10.23.</p>
         </div> <!-- End of text-container -->
     </div> <!-- End of text-and-image-container -->
 </div> <!-- End of text-and-image-component right -->
