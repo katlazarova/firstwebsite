@@ -16,11 +16,12 @@
 
         .copyright-statement {
             color: $tertiary-color;
-            font-size: $font-small;
+            font-size: $font-xsmall;
             font-weight: bold;
             order: 4;
             padding: 5px 1px;
             margin: 2px;
+            text-align: center;
 
             .github-link {
                 color: $accent-color-one;
@@ -37,6 +38,8 @@
                 flex: 0 0 33%;
                 max-width: 33%;
                 order: 0;
+                font-size: $font-small;
+                text-align: left;
             }
         }
 
@@ -49,10 +52,12 @@
             font-weight: bold;
             flex-direction: column;
             margin-bottom: 5px;
+            text-align: center;
 
             @include breakpoint($md) {
                 flex: 0 0 33%;
                 max-width: 33%;
+                text-align: left;
             }
 
             p {
