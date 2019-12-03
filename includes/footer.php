@@ -1,21 +1,18 @@
         <footer class="footer full-width">
             <div class="footer-container">
                 <div class="copyright-statement">
-                    <p>Copyright © 2019 Katarina Lazarova and Lincoln Chawora. All Rights Reserved</p>
-                    <p>https://github.com/katlazarova/healthmove.git</p>
+                    <p>Copyright © 2019 Coded by Katarina Lazarova and Lincoln Chawora.</p>
+                    <a href="https://github.com/katlazarova/healthmove.git" class="github-link" target="_blank">Look under the hood of this site and checkout the Github repository</a>
                 </div> <!-- End of copyright-statement -->
                 <div class="footer-navlinks">
+                    <p>Navigation</p>
                     <ul class="footer-links">
                         <li><a href="/">Home</a></li>
                         <li><a href="/about-us.php">About Us</a></li>
                         <li><a href="/blog.php">Blog</a></li>
-                    </ul>
-                </div> <!-- End of footer-navlinks -->
-                <div class="footer-info-links">
-                    <ul class="footer-links">
                         <li><a href="/help.php">Help</a></li>
                     </ul>
-                </div> <!-- End of footer-info-links -->
+                </div> <!-- End of footer-navlinks -->
                 <div class="social-media-links">
                     <h2>Follow Us</h2>
                     <div class="social-icons">
