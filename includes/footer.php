@@ -2,6 +2,7 @@
             <div class="footer-container">
                 <div class="copyright-statement">
                     <p>Copyright © 2019 Katarina Lazarova and Lincoln Chawora. All Rights Reserved</p>
+                    <p>https://github.com/katlazarova/healthmove.git</p>
                 </div> <!-- End of copyright-statement -->
                 <div class="footer-navlinks">
                     <ul class="footer-links">
