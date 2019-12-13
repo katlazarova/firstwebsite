@@ -40,7 +40,8 @@
                     font-size: $font-xsmall;
                     text-decoration: underline;
 
-                    &:hover {
+                    &:hover,
+                    &:focus {
                         color: $tertiary-color;
                     }
                 }
