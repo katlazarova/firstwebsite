@@ -2,8 +2,10 @@
             <div class="footer-container">
                 <div class="copyright-statement">
                     <p>Copyright © 2019 Coded by Katarina Lazarova and Lincoln Chawora.</p>
-                    <a href="https://github.com/katlazarova/healthmove.git" class="github-link" target="_blank">Look under the hood of this site and checkout the Github repository</a>
-                </div> <!-- End of copyright-statement -->
+                    <div class="github-link">
+                    <p class="github-link-text">Look under the hood of this site and </p><a href="https://github.com/katlazarova/healthmove.git" class="github-anchor" target="_blank">checkout the Github repository here</a><p class="github-link-text">.</p>
+                    </div> <!-- End of github-link -->
+                    </div> <!-- End of copyright-statement -->
                 <div class="footer-navlinks">
                     <p>Navigation</p>
                     <ul class="footer-links">

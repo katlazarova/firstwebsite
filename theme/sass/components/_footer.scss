@@ -24,13 +24,26 @@
             text-align: center;
 
             .github-link {
-                color: $accent-color-one;
-                font-size: $font-xsmall;
-                text-decoration: none;
-                font-weight: normal;
 
-                &:hover {
+                .github-link-text {
+                    color: $accent-color-one;
+                    font-size: $font-xsmall;
+                    text-decoration: none;
+                    font-weight: normal;
+                    padding: 3px;
+                    display: inline;
+                }
+
+                .github-anchor {
+                    color: $accent-color-one;
+                    font-weight: normal;
+                    font-size: $font-xsmall;
                     text-decoration: underline;
+
+                    &:hover,
+                    &:focus {
+                        color: $tertiary-color;
+                    }
                 }
             }
 
