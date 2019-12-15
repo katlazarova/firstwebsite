@@ -15,27 +15,66 @@
         }
 
         .copyright-statement {
-            color: $accent-color-one;
+            color: $tertiary-color;
             font-size: $font-xsmall;
+            font-weight: bold;
             order: 4;
+            padding: 5px 1px;
+            margin: 2px;
+            text-align: center;
+
+            .github-link {
+
+                .github-link-text {
+                    color: $accent-color-one;
+                    font-size: $font-xsmall;
+                    text-decoration: none;
+                    font-weight: normal;
+                    padding: 3px;
+                    display: inline;
+                }
+
+                .github-anchor {
+                    color: $accent-color-one;
+                    font-weight: normal;
+                    font-size: $font-xsmall;
+                    text-decoration: underline;
+
+                    &:hover,
+                    &:focus {
+                        color: $tertiary-color;
+                    }
+                }
+            }
 
             @include breakpoint($md) {
-                flex: 0 0 20%;
-                max-width: 20%;
+                flex: 0 0 33%;
+                max-width: 33%;
                 order: 0;
+                font-size: $font-small;
+                text-align: left;
             }
         }
 
-        .footer-navlinks,
-        .footer-info-links {
+        .footer-navlinks {
             display: flex;
             padding: 0;
-            color: $accent-color-one;
+            align-items: center;
+            color: $tertiary-color;
+            font-size: $font-small;
+            font-weight: bold;
+            flex-direction: column;
+            margin-bottom: 5px;
+            text-align: center;
 
             @include breakpoint($md) {
-                flex: 0 0 25%;
-                max-width: 25%;
-                justify-content: center;
+                flex: 0 0 33%;
+                max-width: 33%;
+                text-align: left;
+            }
+
+            p {
+                margin-bottom: 0;
             }
 
             a {
@@ -49,24 +88,21 @@
             }
         }
 
-        .footer-info-links {
-            justify-content: start;
-        }
-
         ul {
             max-width: 90%;
             display: flex;
-            padding: 1px;
+            padding: 5px 1px;
+            margin: 2px;
             flex-direction: column;
             list-style-type: none;
         }
 
         .social-media-links {
-
             h2 {
-                color: $accent-color-one;
+                color: $tertiary-color;
                 padding: 0;
                 margin-bottom: 5px;
+                margin-top: 10px;
             }
 
             .social-icons {
