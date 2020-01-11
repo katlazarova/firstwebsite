@@ -52,7 +52,7 @@ function appendCountryData() {
     // Run function only on the help page.
     if (window.location.pathname === '/help.php') {
         // Link to json data.
-        $.getJSON('http://vocab.nic.in/rest.php/country/json', {
+        $.getJSON('theme/json/countries.json', {
             format: "json"
             // Once the json has been loaded, trigger the following function.
         }).done(function (data) {
