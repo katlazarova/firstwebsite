@@ -10,6 +10,14 @@
     margin: 0;
   }
 
+  form {
+    text-align: center;
+
+    .form-group {
+      text-align: left;
+    }
+  }
+
   .character-counter {
     font-size: $font-xsmall;
 

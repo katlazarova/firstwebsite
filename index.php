@@ -88,7 +88,7 @@
             </div> <!-- End of donation-content-panel -->
         </div> <!-- End of tabcontent -->
     </div> <!-- End of tab-wrapper -->
-    <button class="donate-button btn btn-primary">Donate</button>
+    <button class="donate-button btn btn-primary btn-large">Donate</button>
 </div> <!-- End of donate-form-container -->
 
 
@@ -205,61 +205,46 @@
         <div class="swiper-slide">
             <p class="quotation-marks">"</p>
             <p>I've had an incredibly positive experience working with Zelda. She was meticulous in finding
-                positions
-                she felt would be suited to my skill set and encouraging and helpful ahead of interviews.</p>
-            <p class="who">— Ciara Smith, Team Support Officer at GOAL Global</p>
+                positions she felt would be suited to my skill set.</p>
+            <p class="who">— Ciara Smith, Team Support Officer</p>
         </div>
         <div class="swiper-slide">
             <p class="quotation-marks">"</p>
-            <p>Anna is a fantastic recruiter. She is upbeat, dynamic, professional, supportive and dedicated to
-                finding
-                the right fit for employer and employee. I highly recommend her; she is a recruiter who cares.</p>
-            <p class="who">— Richard Molyneux, Membership Operations Manager at BADMINTON England</p>
+            <p>Anna is a fantastic recruiter. She is upbeat, dynamic, professional, supportive and dedicated.</p>
+            <p class="who">— Richard Molyneux, Membership Operations Manager</p>
         </div>
         <div class="swiper-slide">
             <p class="quotation-marks">"</p>
             <p>Neil's understanding of the Charity industry is extensive, he uses this knowledge alongside his
-                expertise
-                to communicate proactively, efficiently and directly with his candidates, offering quality advice
-                and
-                relevant opportunities.</p>
-            <p class="who">— Sarah Mohammed, Supporter Care Manager at Mind</p>
+                expertise to communicate proactively.</p>
+            <p class="who">— Sarah Mohammed, Supporter Care Manager</p>
         </div>
         <div class="swiper-slide">
             <p class="quotation-marks">"</p>
             <p>I have "temped" for well over a decade and it is rare to encounter recruiters who are as efficient,
-                personable and professional as Ben. He is indeed a credit to the Charity People team and I wish him
-                continued professional progression.</p>
-            <p class="who">— Roseann Ayton, Candidate</p>
+                personable and professional as Ben.</p>
+            <p class="who">— Roseann Ayton</p>
         </div>
         <div class="swiper-slide">
             <p class="quotation-marks">"</p>
             <p>Neil was my recruitment guru while looking for a new role. His attention to detail and his knowledge
-                of
-                the sector is 1st class.</p>
+                of the sector is 1st class.</p>
             <p class="who">— Allison Spittle, Senior Supporter Services Officer</p>
         </div>
         <div class="swiper-slide">
             <p class="quotation-marks">"</p>
-            <p>Neil has a refreshingly personable and motivating approach to recruitment and I would (and have!)
-                highly
-                recommend him to anyone who is considering a career transition or looking for their next growth
-                opportunity.</p>
-            <p class="who">— Esther Arthur, Development Manager (Global Programme Countries) at Sightsavers</p>
+            <p>Neil has a refreshingly personable and motivating approach to recruitment.</p>
+            <p class="who">— Esther Arthur, Development Manager (Global Programme Countries)</p>
         </div>
         <div class="swiper-slide">
             <p class="quotation-marks">"</p>
             <p>I have had a very positive experience of Charity People. Nick took the time to really understand
-                exactly
-                what senior fundraising and board roles I was looking for professionally and as a trustee.</p>
-            <p class="who">— Sonya Timms, Head of Major Gifts at ICR and Trustee at Elephant Family</p>
+                exactly what senior fundraising and board roles I was looking for.</p>
+            <p class="who">— Sonya Timms, Head of Major Gifts at ICR and Trustee</p>
         </div>
         <div class="swiper-slide">
             <p class="quotation-marks">"</p>
-            <p>Working with Tatiana was so easy from the very first phone call. She is very professional, friendly,
-                supporting and definitely has a personal touch, making the best matches. Starting my new role was so
-                quick thanks to Tatiana, all the time I had very clear updates and was informed about next
-                steps.</p>
+            <p>Working with Tatiana was so easy from the very first phone call.</p>
             <p class="who">— Diana, candidate</p>
         </div>
     </div> <!-- End of testimonial wrapper -->
