@@ -102,6 +102,4 @@
             “how and when” still remain something of a mystery, with competing theories and timelines.</p>
     </div><!-- End of panel -->
 </div> <!-- End of accordion-component -->
-<div class="content-divider bottom-spacer"></div>
-<!-- End of content-divider -->
 <?php include 'includes/footer.php'; ?>
